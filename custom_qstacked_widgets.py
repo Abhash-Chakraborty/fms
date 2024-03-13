@@ -15,11 +15,11 @@ You can customize the animations using a JSon file or Python statements
 ########################################################################
 ## IMPORTS
 ########################################################################
-from PySide2 import QtWidgets, QtGui, QtCore
-from PySide2.QtCore import QTimeLine
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
+from PySide6 import QtWidgets, QtGui, QtCore
+from PySide6.QtCore import QTimeLine
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
 # JSON FOR READING THE JSON STYLESHEET
 import json
 ########################################################################
