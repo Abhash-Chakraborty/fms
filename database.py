@@ -3,47 +3,48 @@ from PySide2.QtCore import *
 import pyautogui
 import os.path
 
-
-
-
-class salva_dados:    
-    #TODO# CRIA BANCO DE DADOS
-    def testedb(self):
+class SaveData:
+    # TODO: CREATE DATABASE
+    def test_db(self):
         while True:
             a = (os.path.dirname(os.path.realpath(__file__)))
             if(os.path.exists(''+a+'/bando_de_valores.db')):
-                pyautogui.alert('Banco de Dados já criado na pasta raiz, portanto nao será possivel criar um novo Arquivo\ Por favor acesse as configurações do programa para apagar o DB já existente.')
+                pyautogui.alert('Database already created in the root folder, so it will not be possible to create a new file. Please access the program settings to delete the existing DB.')
                 break
             else:
-                pyautogui.alert('Banco de dados nao encontrado Criando no diretorio raiz favor aguarde')
-                banco=sqlite3.connect(''+a+'/bando_de_valores.db')
-                cursor=banco.cursor()
-                cursor.execute("CREATE TABLE IF NOT EXISTS card_active (id INTEGER,nome_cartao text,titular text,limite REAL,final INTEGER,vencimento text,fechamento text)")
+                pyautogui.alert('Database not found. Creating in the root directory. Please wait.')
+                database = sqlite3.connect(''+a+'/bando_de_valores.db')
+                cursor = database.cursor()
+                cursor.execute("CREATE TABLE IF NOT EXISTS card_active (id INTEGER, nome_cartao text, titular text, limite REAL, final INTEGER, vencimento text, fechamento text)")
                 
-                #TABLE CONTAS BANCARIAS
-                cursor.execute("CREATE TABLE IF NOT EXISTS contas_bancarias(id int,saldo_inicial text,nome_banco text,agencia int,num_conta int,titular text, cartao_credito_id text)")
-                #TABLE PAGAMENTOS SALDO
-                cursor.execute("CREATE TABLE IF NOT EXISTS pagamentos_saldo(id_lancamento int,id_bank int,tipo_e_s text,valor ,ref_vencimento text,data_pagamento text,saldo_atual text,id_discount int)")
+                # BANK ACCOUNTS TABLE
+                cursor.execute("CREATE TABLE IF NOT EXISTS bank_accounts(id int, saldo_inicial text, nome_banco text, agencia int, num_conta int, titular text, cartao_credito_id text)")
                 
-                #CONFIGURACOES DE CONTAS
-                cursor.execute("CREATE TABLE IF NOT EXISTS config_contas(conta_padrao_bank int)")
+                # BALANCE PAYMENTS TABLE
+                cursor.execute("CREATE TABLE IF NOT EXISTS balance_payments(id_lancamento int, id_bank int, tipo_e_s text, valor , ref_vencimento text, data_pagamento text, saldo_atual text, id_discount int)")
                 
+                # ACCOUNT CONFIGURATIONS
+                cursor.execute("CREATE TABLE IF NOT EXISTS config_accounts(conta_padrao_bank int)")
                 
-                #NOVO LANÇAMENTO
-                cursor.execute("CREATE TABLE IF NOT EXISTS new_lancamento (id_lancamento int,id_bank int,data_lancamento text,categoria text,pagamento text,valor int,tipo text,descricao text)")
-                #LANCAMENTO VENCIMENTO
-                cursor.execute("CREATE TABLE IF NOT EXISTS status_lancamento  (id_lancamento int,id_bank int,vencimento text,status_pago text)")
-                #LANÇAMENTO RECORRENTE
-                cursor.execute("CREATE TABLE IF NOT EXISTS config_lancamento(id_lancamento int,id_bank int,recorrente text,recorrente_m_d_s_y text,recorrente_dia text,anexo text)")
-                #SETS PRIORIDADE
-                cursor.execute("CREATE TABLE IF NOT EXISTS prioridade_value(id_lancamento int,id_bank int,prioridade text)")
-                # PDF PATCHS 
-                cursor.execute("CREATE TABLE IF NOT EXISTS pdf_patchs(id_lancamento int,id_bank int,patch text, date_insert text, date_update text, ref_mes text)")
+                # NEW ENTRY
+                cursor.execute("CREATE TABLE IF NOT EXISTS new_entry (id_lancamento int, id_bank int, data_lancamento text, category text, payment text, valor int, type text, description text)")
                 
-                #CONFIGURAÇÕES DA APLICAÇÃO:
-                cursor.execute("CREATE TABLE IF NOT EXISTS config_aplicacao (id int,tema text,hide_show_zeros_faturas text, shadow_ui text)")
-                banco.close()
-                pyautogui.alert('Banco de dados Criado no diretorio raiz')
-
+                # DUE DATE ENTRY
+                cursor.execute("CREATE TABLE IF NOT EXISTS status_entry (id_lancamento int, id_bank int, vencimento text, status_paid text)")
                 
-                break 
+                # RECURRING ENTRY
+                cursor.execute("CREATE TABLE IF NOT EXISTS config_entry(id_lancamento int, id_bank int, recurring text, recurring_m_d_s_y text, recurring_day text, attachment text)")
+                
+                # SETS PRIORITY
+                cursor.execute("CREATE TABLE IF NOT EXISTS priority_value(id_lancamento int, id_bank int, priority text)")
+                
+                # PDF PATCHES
+                cursor.execute("CREATE TABLE IF NOT EXISTS pdf_patches(id_lancamento int, id_bank int, patch text, date_insert text, date_update text, ref_month text)")
+                
+                # APPLICATION SETTINGS:
+                cursor.execute("CREATE TABLE IF NOT EXISTS app_settings (id int, theme text, hide_show_zeros_in_invoices text, shadow_ui text)")
+                
+                database.close()
+                pyautogui.alert('Database Created in the root directory.')
+                
+                break
