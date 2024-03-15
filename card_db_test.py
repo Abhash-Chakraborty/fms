@@ -271,7 +271,7 @@ class Return_Values_Calcs:
 
         mes = '01'
         ano = ano
-        janeiro = 0
+        Janeiro = 0
 
         
 
@@ -279,7 +279,7 @@ class Return_Values_Calcs:
         
         for i in range(12):
             nome_mes = i+1
-            if  janeiro > 0:
+            if  Janeiro > 0:
                 add = 1
             else:
                 add = 0
@@ -292,7 +292,7 @@ class Return_Values_Calcs:
             ano = ab[0:4]
             mes =  ab[5:7]
             filter = "%s-%s"%(ano,mes)
-            janeiro = janeiro +1
+            Janeiro = Janeiro +1
             
         #QUERY
             #apenas pendente             cursor.execute("SELECT SUM (valor_transacao) FROM "+str(card)+"  where strftime('%Y-%m', data_filter) = '"+filter+"' GROUP BY status_payment  HAVING status_payment = 'pendente' ") #TODO Carrega FINAL_CARTAO DB e seta
@@ -300,7 +300,7 @@ class Return_Values_Calcs:
             cursor.execute("SELECT SUM (valor_transacao) FROM "+str(card)+"  where strftime('%Y-%m', data_filter) = '"+filter+"'") #TODO Carrega FINAL_CARTAO DB e seta
             result = cursor.fetchall()
             lista_meses.append(result[0][0])
-            invert = {'01':'Janeiro','02':'Fevereiro','03':'Marco','04':'Abril','05':'Maio','06':'Junho','07':'Julho','08':'Agosto','09':'Setembro','10':'Outubro','11':'Novembro','12':'Dezembro'}
+            invert = {'01':'Janeiro','02':'February','03':'Marco','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'December'}
 
 
         #QT INDEX LINES:
@@ -763,7 +763,7 @@ class Main_page_values:
 
         mes = '01'
         ano = ano
-        janeiro = 0
+        Janeiro = 0
 
         
 
@@ -771,7 +771,7 @@ class Main_page_values:
         
         for i in range(12):
             nome_mes = i+1
-            if  janeiro > 0:
+            if  Janeiro > 0:
                 add = 1
             else:
                 add = 0
@@ -784,7 +784,7 @@ class Main_page_values:
             ano = ab[0:4]
             mes =  ab[5:7]
             filter = "%s-%s"%(ano,mes)
-            janeiro = janeiro +1
+            Janeiro = Janeiro +1
             
         #QUERY
             #apenas pendente             cursor.execute("SELECT SUM (valor_transacao) FROM "+str(card)+"  where strftime('%Y-%m', data_filter) = '"+filter+"' GROUP BY status_payment  HAVING status_payment = 'pendente' ") #TODO Carrega FINAL_CARTAO DB e seta
@@ -792,7 +792,7 @@ class Main_page_values:
             cursor.execute("SELECT SUM (valor_transacao) FROM "+str(card)+"  where strftime('%Y-%m', data_filter) = '"+filter+"'") #TODO Carrega FINAL_CARTAO DB e seta
             result = cursor.fetchall()
             lista_meses.append(result[0][0])
-            invert = {'01':'Janeiro','02':'Fevereiro','03':'Marco','04':'Abril','05':'Maio','06':'Junho','07':'Julho','08':'Agosto','09':'Setembro','10':'Outubro','11':'Novembro','12':'Dezembro'}
+            invert = {'01':'Janeiro','02':'February','03':'Marco','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'December'}
 
 
         #QT INDEX LINES:

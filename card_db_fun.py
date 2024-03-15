@@ -1697,7 +1697,7 @@ class funcoes_cartao(Ui_MainWindow):
         ano = self.label_2.text()
         stacked = self.extrat_meses
         
-        valores = {'Janeiro':1,'Fevereiro':2,'Marco':3,'Abril':4,'Maio':5,'Junho':6,'Julho':7,'Agosto':8,'Setembro':9,'Outubro':10,'Novembro':11,'Dezembro':12}
+        valores = {'Janeiro':1,'February':2,'Marco':3,'April':4,'May':5,'June':6,'July':7,'August':8,'September':9,'October':10,'November':11,'December':12}
         
         captura_int_mes = valores[mes]
         
@@ -1731,7 +1731,7 @@ class funcoes_cartao(Ui_MainWindow):
 
 
         #inverte a lista pra pegar no final a palavra do mes
-        invert = {'01':'Janeiro','02':'Fevereiro','03':'Marco','04':'Abril','05':'Maio','06':'Junho','07':'Julho','08':'Agosto','09':'Setembro','10':'Outubro','11':'Novembro','12':'Dezembro'}
+        invert = {'01':'Janeiro','02':'February','03':'Marco','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'December'}
 
         captura_str_mes = invert[set_mes]
         self.label_3.setText(captura_str_mes)
@@ -1807,7 +1807,7 @@ class funcoes_cartao(Ui_MainWindow):
         
     def _return_mes_string(self):
         mes_string = funcoes_cartao._mes2(self)
-        invert = {'01':'Janeiro','02':'Fevereiro','03':'Marco','04':'Abril','05':'Maio','06':'Junho','07':'Julho','08':'Agosto','09':'Setembro','10':'Outubro','11':'Novembro','12':'Dezembro'}
+        invert = {'01':'Janeiro','02':'February','03':'Marco','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'December'}
         set_mes = mes_string[0:2]
         captura_str_mes = invert[set_mes]
         set_ano = mes_string[2:6]
@@ -1890,7 +1890,7 @@ class funcoes_cartao(Ui_MainWindow):
         ano = mes[0:4]
         mesf = mes[5:7]
         mes = '%s'%(mesf)
-        dict = {'01':'Janeiro','02':'Fevereiro','03':'Marco','04':'Abril','05':'Maio','06':'Junho','07':'Julho','08':'Agosto','09':'Setembro','10':'Outubro','11':'Novembro','12':'Dezembro'}
+        dict = {'01':'Janeiro','02':'February','03':'Marco','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'December'}
         mes = dict[mes]
         return mes
     
@@ -1902,7 +1902,7 @@ class funcoes_cartao(Ui_MainWindow):
         ano = mes[0:4]
         mesf = mes[5:7]
         mes = '%s'%(mesf)
-        dict = {'01':'Janeiro','02':'Fevereiro','03':'Marco','04':'Abril','05':'Maio','06':'Junho','07':'Julho','08':'Agosto','09':'Setembro','10':'Outubro','11':'Novembro','12':'Dezembro'}
+        dict = {'01':'Janeiro','02':'February','03':'Marco','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'December'}
         mes = dict[mes]
         return mes
     def _ano_apenas(self): #sempre ano atual 082022
@@ -1958,7 +1958,7 @@ class funcoes_cartao(Ui_MainWindow):
                 rowPosition = self.table_faturas_ind.rowCount()
                 self.table_faturas_ind.insertRow(rowPosition)
                 
-                diconario = {'1':'Janeiro','2':'Fevereiro','3':'Marco','4':'Abril','5':'Maio','6':'Junho','7':'Julho','8':'Agosto','9':'Setembro','10':'Outubro','11':'Novembro','12':'Dezembro'}
+                diconario = {'1':'Janeiro','2':'February','3':'Marco','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
                 diconario_mes_int_str = {'1':'01','2':'02','3':'03','4':'04','5':'05','6':'06','7':'07','8':'08','9':'09','10':'10','11':'11','12':'12'}
                 todays_date = date.today()
 
@@ -2006,7 +2006,7 @@ class funcoes_cartao(Ui_MainWindow):
         id_bank = EXTRATO_ATUAL
         mes = self.label_3.text()
         ano = self.label_2.text()
-        valores = {'Janeiro':'01','Fevereiro':'02','Marco':'03','Abril':'04','Maio':'05','Junho':'06','Julho':'07','Agosto':'08','Setembro':'09','Outubro':'10','Novembro':'11','Dezembro':'12'}
+        valores = {'Janeiro':'01','February':'02','Marco':'03','April':'04','May':'05','June':'06','July':'07','August':'08','September':'09','October':'10','November':'11','December':'12'}
         captura_int_mes = valores[mes]
         extrato = captura_int_mes+ano
         verifi_if_pago = card_db_test.Return_Values_Calcs._status_fatura(id_bank,captura_int_mes,ano)
@@ -2079,7 +2079,7 @@ class funcoes_cartao(Ui_MainWindow):
         id = EXTRATO_ATUAL
         mes = self.label_3.text()
         ano = self.label_2.text()
-        valores = {'Janeiro':'01','Fevereiro':'02','Marco':'03','Abril':'04','Maio':'05','Junho':'06','Julho':'07','Agosto':'08','Setembro':'09','Outubro':'10','Novembro':'11','Dezembro':'12'}
+        valores = {'Janeiro':'01','February':'02','Marco':'03','April':'04','May':'05','June':'06','July':'07','August':'08','September':'09','October':'10','November':'11','December':'12'}
         captura_int_mes = valores[mes]
         extrato = captura_int_mes+ano
 
@@ -2148,7 +2148,7 @@ class funcoes_cartao(Ui_MainWindow):
     def _mes_str_to_int(mes):
         mes = mes
 
-        valores = {'Janeiro':'01','Fevereiro':'02','Marco':'03','Abril':'04','Maio':'05','Junho':'06','Julho':'07','Agosto':'08','Setembro':'09','Outubro':'10','Novembro':'11','Dezembro':'12'}
+        valores = {'Janeiro':'01','February':'02','Marco':'03','April':'04','May':'05','June':'06','July':'07','August':'08','September':'09','October':'10','November':'11','December':'12'}
         captura_int_mes = valores[mes]
         return captura_int_mes
 
@@ -2193,7 +2193,7 @@ class Chart_one(Ui_MainWindow):
         id = EXTRATO_ATUAL
         mes = self.label_3.text()
         ano = self.label_2.text()
-        valores = {'Janeiro':'01','Fevereiro':'02','Marco':'03','Abril':'04','Maio':'05','Junho':'06','Julho':'07','Agosto':'08','Setembro':'09','Outubro':'10','Novembro':'11','Dezembro':'12'}
+        valores = {'Janeiro':'01','February':'02','Marco':'03','April':'04','May':'05','June':'06','July':'07','August':'08','September':'09','October':'10','November':'11','December':'12'}
         captura_int_mes = valores[mes]
         dados = card_db_test.Charts_values._gastos_categoria(id,captura_int_mes,ano)
         #ATT GRAFICO
@@ -2235,7 +2235,7 @@ class Chart_one(Ui_MainWindow):
             id = EXTRATO_ATUAL
             mes = self.label_3.text()
             ano = self.label_2.text()
-            valores = {'Janeiro':'01','Fevereiro':'02','Marco':'03','Abril':'04','Maio':'05','Junho':'06','Julho':'07','Agosto':'08','Setembro':'09','Outubro':'10','Novembro':'11','Dezembro':'12'}
+            valores = {'Janeiro':'01','February':'02','Marco':'03','April':'04','May':'05','June':'06','July':'07','August':'08','September':'09','October':'10','November':'11','December':'12'}
             captura_int_mes = valores[mes]
 
             font3 = QFont()
@@ -2468,7 +2468,7 @@ class Chart_one(Ui_MainWindow):
             #VALORES
             ano = self.label_2.text()
             mes = self.label_3.text()
-            valores = {'Janeiro':1,'Fevereiro':2,'Marco':3,'Abril':4,'Maio':5,'Junho':6,'Julho':7,'Agosto':8,'Setembro':9,'Outubro':10,'Novembro':11,'Dezembro':12}
+            valores = {'Janeiro':1,'February':2,'Marco':3,'April':4,'May':5,'June':6,'July':7,'August':8,'September':9,'October':10,'November':11,'December':12}
             captura_int_mes = valores[mes]
             dias_mes = calendar.monthrange(int(ano),captura_int_mes)
             qt_dias =dias_mes[1]
@@ -2482,7 +2482,7 @@ class Chart_one(Ui_MainWindow):
                     id = EXTRATO_ATUAL
                     mes = self.label_3.text()
                     ano = self.label_2.text()
-                    valores = {'Janeiro':'01','Fevereiro':'02','Marco':'03','Abril':'04','Maio':'05','Junho':'06','Julho':'07','Agosto':'08','Setembro':'09','Outubro':'10','Novembro':'11','Dezembro':'12'}
+                    valores = {'Janeiro':'01','February':'02','Marco':'03','April':'04','May':'05','June':'06','July':'07','August':'08','September':'09','October':'10','November':'11','December':'12'}
                     captura_int_mes = valores[mes]
 
                     valores = card_db_test.Charts_values._gastos_por_dia(id,data[count],captura_int_mes,ano,categoria)

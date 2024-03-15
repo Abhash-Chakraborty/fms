@@ -200,7 +200,7 @@ class Chart_1_Dashboard_Main(QtCharts.QChartView): #GRAFICO BAR GASTOS ANUAIS PA
         self.series1.setLabelsPosition(QtCharts.QAbstractBarSeries.LabelsOutsideEnd)
         
         
-        mes = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
+        mes = ('Janeiro', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
         axis = QtCharts.QBarCategoryAxis()
         axis.append(mes)
         axis.setGridLineVisible(False)

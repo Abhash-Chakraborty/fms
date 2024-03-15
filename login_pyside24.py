@@ -11797,9 +11797,9 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Status", None));
         ___qtablewidgetitem11 = self.tableWidget.horizontalHeaderItem(11)
         ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Balance", None));
-        self.text_page_notfound_2.setText(QCoreApplication.translate("MainWindow", u"Localized \u00e3 purchase", None))
-        self.txt_pag_emdia_2.setText(QCoreApplication.translate("MainWindow", u"No\u00e3 \u00e1 expenses this month!", None))
-        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Description\u00e7\u00e3:", None))
+        self.text_page_notfound_2.setText(QCoreApplication.translate("MainWindow", u"Localized  purchase", None))
+        self.txt_pag_emdia_2.setText(QCoreApplication.translate("MainWindow", u"No \u00e1 expenses this month!", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Description:", None))
         self.textEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -11813,7 +11813,7 @@ class Ui_MainWindow(object):
         self.delet_pdf.setText(QCoreApplication.translate("MainWindow", u"Delete attachment", None))
         self.download_pdf.setText(QCoreApplication.translate("MainWindow", u"Download", None))
         self.paga_fatura_3.setText(QCoreApplication.translate("MainWindow", u"Pay", None))
-        self.edit_compra_3.setText(QCoreApplication.translate("MainWindow", u"Edit Launch\u00e7", None))
+        self.edit_compra_3.setText(QCoreApplication.translate("MainWindow", u"Edit Launch", None))
         self.parcela_fatura_3.setText(QCoreApplication.translate("MainWindow", u"Payment details", None))
         self.apaga_compra_3.setText(QCoreApplication.translate("MainWindow", u"Delete", None))
         self.filter_dates_btn_3.setText(QCoreApplication.translate("MainWindow", u"Filter by Date  ", None))
@@ -11823,33 +11823,33 @@ class Ui_MainWindow(object):
         self.label_108.setText(QCoreApplication.translate("MainWindow", u"Due date:", None))
         self.paga_fatura_4.setText(QCoreApplication.translate("MainWindow", u"Back", None))
         self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main1), QCoreApplication.translate("MainWindow", u"Cash flow", None))
-        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Launch\u00e7", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Launch", None))
         self.label_85.setText(QCoreApplication.translate("MainWindow", u"Account", None))
-        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Operation\u00e7\u00e3", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Operation", None))
         self.comboBox_25.setItemText(0, "")
         self.comboBox_25.setItemText(1, QCoreApplication.translate("MainWindow", u"Entry", None))
         self.comboBox_25.setItemText(2, QCoreApplication.translate("MainWindow", u"Exit", None))
 
         self.label_90.setText(QCoreApplication.translate("MainWindow", u"Payment", None))
         self.label_82.setText(QCoreApplication.translate("MainWindow", u"Select Category", None))
-        self.label_79.setText(QCoreApplication.translate("MainWindow", u"Description\u00e7\u00e3", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"Description", None))
         self.lineEdit_11.setText("")
         self.lineEdit_11.setPlaceholderText("")
-        self.label_80.setText(QCoreApplication.translate("MainWindow", u"Date of Transaction\u00e7\u00e3", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"Date of Transaction", None))
         self.pushButton_25.setText(QCoreApplication.translate("MainWindow", u"Today", None))
-        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Launch value\u00e7", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Launch value", None))
         self.lineEdit_13.setText("")
         self.label_83.setText(QCoreApplication.translate("MainWindow", u"\u00e1 Paid/received?", None))
         self.comboBox_22.setItemText(0, "")
         self.comboBox_22.setItemText(1, QCoreApplication.translate("MainWindow", u"Yes", None))
-        self.comboBox_22.setItemText(2, QCoreApplication.translate("MainWindow", u"No\u00e3", None))
+        self.comboBox_22.setItemText(2, QCoreApplication.translate("MainWindow", u"No", None))
 
-        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Configure Launch\u00e7", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Configure Launch", None))
         self.label_101.setText(QCoreApplication.translate("MainWindow", u"Schedule date", None))
         self.label_86.setText(QCoreApplication.translate("MainWindow", u"Recurring?", None))
         self.comboBox_23.setItemText(0, "")
         self.comboBox_23.setItemText(1, QCoreApplication.translate("MainWindow", u"Yes", None))
-        self.comboBox_23.setItemText(2, QCoreApplication.translate("MainWindow", u"No\u00e3", None))
+        self.comboBox_23.setItemText(2, QCoreApplication.translate("MainWindow", u"No", None))
 
         self.label_89.setText(QCoreApplication.translate("MainWindow", u"Configure recurrence", None))
         self.comboBox_26.setItemText(0, "")
@@ -11862,9 +11862,9 @@ class Ui_MainWindow(object):
         self.label_87.setText(QCoreApplication.translate("MainWindow", u"Attachments:", None))
         self.download_pdf_2.setText(QCoreApplication.translate("MainWindow", u"Select", None))
         self.label_61.setText(QCoreApplication.translate("MainWindow", u"Attachments", None))
-        self.add_lancamento_btn.setText(QCoreApplication.translate("MainWindow", u"Launch\u00e7", None))
+        self.add_lancamento_btn.setText(QCoreApplication.translate("MainWindow", u"Launch", None))
         self.update_bank_2.setText(QCoreApplication.translate("MainWindow", u"Cancel", None))
-        self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main2), QCoreApplication.translate("MainWindow", u"New Launch\u00e7", None))
+        self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main2), QCoreApplication.translate("MainWindow", u"New Launch", None))
         self.label_65.setText(QCoreApplication.translate("MainWindow", u"Add new", None))
         self.select_conta_bancaria.setItemText(0, QCoreApplication.translate("MainWindow", u"C6", None))
         self.select_conta_bancaria.setItemText(1, QCoreApplication.translate("MainWindow", u"NUBANK", None))
@@ -11877,7 +11877,7 @@ class Ui_MainWindow(object):
         self.label_102.setText(QCoreApplication.translate("MainWindow", u"Set as default?", None))
         self.combo_bank_padrao.setItemText(0, "")
         self.combo_bank_padrao.setItemText(1, QCoreApplication.translate("MainWindow", u"Yes", None))
-        self.combo_bank_padrao.setItemText(2, QCoreApplication.translate("MainWindow", u"No\u00e3", None))
+        self.combo_bank_padrao.setItemText(2, QCoreApplication.translate("MainWindow", u"No", None))
 
         self.adcagencia_conta.setPlaceholderText(QCoreApplication.translate("MainWindow", u"XXXX", None))
         self.adctitular_conta.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Name", None))
@@ -11890,8 +11890,8 @@ class Ui_MainWindow(object):
         self.config_crdit_c.setText("")
         self.label_105.setText(QCoreApplication.translate("MainWindow", u"Configure Account", None))
         self.config_ccoun.setText("")
-        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Credit Card\u00e3", None))
-        self.textcard_8.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">End of Card\u00e3</span></p></body></html>", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Credit Card", None))
+        self.textcard_8.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">End of Card</span></p></body></html>", None))
         self.adclimite_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Rs.", None))
         self.adcfechamento_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"01", None))
         self.label_66.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Invoice closing:</span></p></body></html>", None))
@@ -11908,7 +11908,7 @@ class Ui_MainWindow(object):
         self.label_97.setText(QCoreApplication.translate("MainWindow", u"Has credit card?", None))
         self.comboBox_24.setItemText(0, "")
         self.comboBox_24.setItemText(1, QCoreApplication.translate("MainWindow", u"Yes", None))
-        self.comboBox_24.setItemText(2, QCoreApplication.translate("MainWindow", u"No\u00e3", None))
+        self.comboBox_24.setItemText(2, QCoreApplication.translate("MainWindow", u"No", None))
 
         self.add_bank.setText(QCoreApplication.translate("MainWindow", u"Add", None))
         self.label_63.setText(QCoreApplication.translate("MainWindow", u"Change", None))
@@ -11996,11 +11996,11 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem20 = self.extrato_cartao_0.horizontalHeaderItem(1)
         ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Category", None));
         ___qtablewidgetitem21 = self.extrato_cartao_0.horizontalHeaderItem(2)
-        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Transaction\u00e7\u00e3", None));
+        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Transaction", None));
         ___qtablewidgetitem22 = self.extrato_cartao_0.horizontalHeaderItem(3)
         ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Date", None));
         ___qtablewidgetitem23 = self.extrato_cartao_0.horizontalHeaderItem(4)
-        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Operation\u00e7\u00e3", None));
+        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Operation", None));
         ___qtablewidgetitem24 = self.extrato_cartao_0.horizontalHeaderItem(5)
         ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Portion", None));
         ___qtablewidgetitem25 = self.extrato_cartao_0.horizontalHeaderItem(6)
@@ -12022,8 +12022,8 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(whatsthis)
         self.extrato_cartao_0.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">ads</span></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
-        self.text_page_notfound.setText(QCoreApplication.translate("MainWindow", u"Localized purchase\u00e3", None))
-        self.txt_pag_emdia.setText(QCoreApplication.translate("MainWindow", u"\u00e3\u00e1No expenses this month!", None))
+        self.text_page_notfound.setText(QCoreApplication.translate("MainWindow", u"Localized purchase", None))
+        self.txt_pag_emdia.setText(QCoreApplication.translate("MainWindow", u"\u00e1No expenses this month!", None))
         self.apaga_compra.setText(QCoreApplication.translate("MainWindow", u"Delete", None))
         self.edit_compra.setText(QCoreApplication.translate("MainWindow", u"Edit Purchase", None))
         self.paga_fatura.setText(QCoreApplication.translate("MainWindow", u"Pay Invoice", None))
@@ -12041,7 +12041,7 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem33 = self.table_faturas_ind.horizontalHeaderItem(0)
         ___qtablewidgetitem33.setText(QCoreApplication.translate("MainWindow", u"M\u00eas", None));
         ___qtablewidgetitem34 = self.table_faturas_ind.horizontalHeaderItem(1)
-        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"Invoice status\u00e7\u00e3", None));
+        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"Invoice status", None));
         ___qtablewidgetitem35 = self.table_faturas_ind.horizontalHeaderItem(2)
         ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"Invoice amount", None));
         ___qtablewidgetitem36 = self.table_faturas_ind.horizontalHeaderItem(3)
@@ -12057,7 +12057,7 @@ class Ui_MainWindow(object):
         self.comboBox_2.setItemText(5, QCoreApplication.translate("MainWindow", u"Entertainment", None))
         self.comboBox_2.setItemText(6, QCoreApplication.translate("MainWindow", u"Home", None))
         self.comboBox_2.setItemText(7, QCoreApplication.translate("MainWindow", u"Useless things", None))
-        self.comboBox_2.setItemText(8, QCoreApplication.translate("MainWindow", u"Services\u00e7", None))
+        self.comboBox_2.setItemText(8, QCoreApplication.translate("MainWindow", u"Services", None))
         self.comboBox_2.setItemText(9, QCoreApplication.translate("MainWindow", u"Streaming", None))
         self.comboBox_2.setItemText(10, QCoreApplication.translate("MainWindow", u"Urgency", None))
         self.comboBox_2.setItemText(11, QCoreApplication.translate("MainWindow", u"Cats", None))
@@ -12067,16 +12067,16 @@ class Ui_MainWindow(object):
         self.comboBox_2.setItemText(15, QCoreApplication.translate("MainWindow", u"Electronics", None))
         self.comboBox_2.setItemText(16, QCoreApplication.translate("MainWindow", u"Households", None))
 
-        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Name of this transaction\u00e7\u00e3", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Name of this transaction", None))
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText("")
-        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Date of Transaction\u00e7\u00e3", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Date of Transaction", None))
         self.lineEdit_2.setText("")
         self.lineEdit_2.setPlaceholderText("")
         self.pushButton_17.setText(QCoreApplication.translate("MainWindow", u"Today", None))
-        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Launch Value\u00e7", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Launch Value", None))
         self.lineEdit_3.setText("")
-        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Operation\u00e7\u00e3", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Operation", None))
         self.comboBox_4.setItemText(0, QCoreApplication.translate("MainWindow", u"Credit", None))
         self.comboBox_4.setItemText(1, QCoreApplication.translate("MainWindow", u"Debit", None))
 
@@ -12097,9 +12097,9 @@ class Ui_MainWindow(object):
 
         self.lanca.setText(QCoreApplication.translate("MainWindow", u"OK", None))
         self.cancela_lanca.setText(QCoreApplication.translate("MainWindow", u"Cancel", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), QCoreApplication.translate("MainWindow", u"Graph of card spending by Category\u00e3", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), QCoreApplication.translate("MainWindow", u"Evolution of invoices\u00e7\u00e3", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_9), QCoreApplication.translate("MainWindow", u"Graph of card spending by date\u00e3", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), QCoreApplication.translate("MainWindow", u"Graph of card spending by Category", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), QCoreApplication.translate("MainWindow", u"Evolution of invoices", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_9), QCoreApplication.translate("MainWindow", u"Graph of card spending by date", None))
         self.label_43.setText(QCoreApplication.translate("MainWindow", u"Open Spreadsheet", None))
         self.id_card_xlsx_cliked.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_51.setText("")
@@ -12126,7 +12126,7 @@ class Ui_MainWindow(object):
         self.labelTitle_12.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Limits used:</span></p><p><span style=\" font-size:18pt; color:#ffffff;\">Rs.0,00</span></p></body></html>", None))
         self.label_39.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Invoices for: </span></p><p align=\"center\"><span style=\" font-size:20pt; color:#ffffff;\">Rs.0,00</span></p></body></html>", None))
         self.labelTitle_13.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Available Limits</span></p><p><span style=\" font-size:20pt; color:#ffffff;\">Rs.0,00</span></p></body></html>", None))
-        self.name_bank_4.setText(QCoreApplication.translate("MainWindow", u"Select a Card\u00e3", None))
+        self.name_bank_4.setText(QCoreApplication.translate("MainWindow", u"Select a Card", None))
         self.label_49.setText(QCoreApplication.translate("MainWindow", u"Limit", None))
         self.label_50.setText("")
         self.label_53.setText(QCoreApplication.translate("MainWindow", u"Closure", None))
@@ -12136,14 +12136,14 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem44 = self.table_faturas_ind_3.horizontalHeaderItem(0)
         ___qtablewidgetitem44.setText(QCoreApplication.translate("MainWindow", u"Card", None));
         ___qtablewidgetitem45 = self.table_faturas_ind_3.horizontalHeaderItem(1)
-        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"Invoice status\u00e7\u00e3", None));
+        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"Invoice status", None));
         ___qtablewidgetitem46 = self.table_faturas_ind_3.horizontalHeaderItem(2)
         ___qtablewidgetitem46.setText(QCoreApplication.translate("MainWindow", u"Invoice amount", None));
         ___qtablewidgetitem47 = self.table_faturas_ind_3.horizontalHeaderItem(3)
         ___qtablewidgetitem47.setText(QCoreApplication.translate("MainWindow", u"Go to", None));
-        self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab_14), QCoreApplication.translate("MainWindow", u"Invoice evolution\u00e7\u00e3", None))
+        self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab_14), QCoreApplication.translate("MainWindow", u"Invoice evolution", None))
         self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab_15), QCoreApplication.translate("MainWindow", u"Biggest expenses", None))
-        self.label_40.setText(QCoreApplication.translate("MainWindow", u"Function under development\u00e7\u00e3", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"Function under development", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Spending limit on:", None))
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"0,00", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"of", None))
@@ -12176,7 +12176,7 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem53.setText(QCoreApplication.translate("MainWindow", u"Closure", None));
         ___qtablewidgetitem54 = self.table_active_cards.horizontalHeaderItem(6)
         ___qtablewidgetitem54.setText(QCoreApplication.translate("MainWindow", u"id", None));
-        self.label_112.setText(QCoreApplication.translate("MainWindow", u"Bank selection\u00e7\u00e3", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"Bank selection", None))
         self.select_card.setItemText(0, QCoreApplication.translate("MainWindow", u"C6", None))
         self.select_card.setItemText(1, QCoreApplication.translate("MainWindow", u"NUBANK", None))
         self.select_card.setItemText(2, QCoreApplication.translate("MainWindow", u"BTG", None))
@@ -12188,7 +12188,7 @@ class Ui_MainWindow(object):
         self.label_37.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Invoice closing:</span></p></body></html>", None))
         self.adclimite.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Rs.", None))
         self.adctitular.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Name", None))
-        self.textcard_3.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">End of card\u00e3</span></p></body></html>", None))
+        self.textcard_3.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">End of card</span></p></body></html>", None))
         self.adcfechamento.setPlaceholderText(QCoreApplication.translate("MainWindow", u"01", None))
         self.textcard_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Holder</span></p></body></html>", None))
         self.textcard.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Total Card Limit</span></p></body></html>", None))
@@ -12200,7 +12200,7 @@ class Ui_MainWindow(object):
         self.pushButton_23.setText(QCoreApplication.translate("MainWindow", u"Update", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"PAGE3", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"PAGE4", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Settings\u00e7\u00f5 for Posting Extract Table\u00e7</span></p></body></html>", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Settings\u00f5 for Posting Extract Table</span></p></body></html>", None))
         self.label_76.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Hide invoices with zero values:</span></p></body></html>", None))
         self.hidden_saldo_fat0_true.setText(QCoreApplication.translate("MainWindow", u"Yes", None))
         self.hidden_saldo_fat0_false.setText(QCoreApplication.translate("MainWindow", u"No", None))
@@ -12208,12 +12208,12 @@ class Ui_MainWindow(object):
         self.label_110.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Shadow effects</span></p><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">(Depending on the Hardware, it may cause\u00e3slowdowns and\u00e1require a restart! )</span></p></body></html>", None))
         self.shadow_true.setText(QCoreApplication.translate("MainWindow", u"Yes", None))
         self.shadow_false.setText(QCoreApplication.translate("MainWindow", u"No", None))
-        self.label_113.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Create Spreadsheet Import\u00e7\u00e3Template (Card)</span></p></body></html>", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Create Spreadsheet Import\u00e3Template (Card)</span></p></body></html>", None))
         self.label_52.setText(QCoreApplication.translate("MainWindow", u"Click to Create", None))
         self.create_xlsx_file.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Developed by Saksham Chauhan", None))
         self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"Artificial Intelligence student", None))
         self.pushButton_6.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
-        self.label_17.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">My first little Finance\u00e7 project, initially with just one page</p><p align=\"center\">In order to organize\u00e7\u00e3 and control Credit Cards</p><p align=\"center\">Other options\u00e7 still to be implemented</p><p align=\"center\">Thank you :)</p><p align=\"center\"><br/></p><p align=\"justify\"><br/></p></body></html>", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">My first little Finance project, initially with just one page</p><p align=\"center\">In order to organize and control Credit Cards</p><p align=\"center\">Other options still to be implemented</p><p align=\"center\">Thank you :)</p><p align=\"center\"><br/></p><p align=\"justify\"><br/></p></body></html>", None))
     # retranslateUi
 

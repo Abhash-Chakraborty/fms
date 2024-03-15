@@ -4261,7 +4261,7 @@ QPushButton:pressed{
                                         <string notr="true">background-color: rgba(255, 255, 255, 0); </string>
                                        </property>
                                        <property name="text">
-                                        <string>Novembro</string>
+                                        <string>November</string>
                                        </property>
                                       </widget>
                                      </item>
@@ -16216,7 +16216,7 @@ color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0); </string>
                                           </property>
                                           <property name="text">
-                                           <string>Novembro</string>
+                                           <string>November</string>
                                           </property>
                                          </widget>
                                         </item>
