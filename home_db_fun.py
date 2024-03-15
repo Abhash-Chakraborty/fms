@@ -1006,7 +1006,7 @@ class Dates_end_times(Ui_MainWindow):
             new_date = format_date + relativedelta(months=+1)
             self.label_67.setText(Dates_end_times.convert_date_string(self,new_date.month))
             self.label_72.setText(str(new_date.year))
-        elif action == 'Previus':
+        elif action == 'previous':
             new_date = format_date + relativedelta(months=-1)
             self.label_67.setText(Dates_end_times.convert_date_string(self,new_date.month))
             self.label_72.setText(str(new_date.year))
@@ -2815,7 +2815,7 @@ class Charts_Main(Ui_MainWindow):
             ano = int(labe_y.text()) + 1
             labe_y.setText(str(ano))
             Charts_Main.Update_Chart_E_S_GERAL(self)
-        elif action == "previus":
+        elif action == "previous":
             ano = int(labe_y.text()) - 1
             labe_y.setText(str(ano))
             Charts_Main.Update_Chart_E_S_GERAL(self)

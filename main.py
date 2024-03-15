@@ -223,7 +223,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
         self.pushButton_15.installEventFilter(self)
         self.pushButton_16.installEventFilter(self)
         self.pushButton_18.installEventFilter(self)
-        self.previus_month.installEventFilter(self)
+        self.previous_month.installEventFilter(self)
         self.next_month.installEventFilter(self)
         self.filter_dates_btn.installEventFilter(self) 
         self.pushButton_3.installEventFilter(self)
@@ -233,7 +233,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
         self.paga_fatura.installEventFilter(self)
         self.lanca.installEventFilter(self)
         self.next_month_3.installEventFilter(self)
-        self.previus_month_3.installEventFilter(self)
+        self.previous_month_3.installEventFilter(self)
         self.pushButton_14.installEventFilter(self)
         self.back_main_dash.installEventFilter(self)
         self.pushButton_20.installEventFilter(self)
@@ -248,7 +248,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
         self.table.installEventFilter(self)
         self.add_bank.installEventFilter(self)
         self.add_lancamento_btn.installEventFilter(self)
-        self.previus_month_2.installEventFilter(self)
+        self.previous_month_2.installEventFilter(self)
         self.next_month_2.installEventFilter(self)
         self.paga_fatura_3.installEventFilter(self)
         self.download_pdf_2.installEventFilter(self)
@@ -269,7 +269,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
         self.show_cards_main_2.installEventFilter(self)
         self.hide_cards_main_3.installEventFilter(self)
         self.next_month_4.installEventFilter(self)
-        self.previus_month_4.installEventFilter(self)
+        self.previous_month_4.installEventFilter(self)
         #EVENTS APP 
         self.bar_window.installEventFilter(self)
         
@@ -302,8 +302,8 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
                 action = 'next'
                 return home_db_fun.Charts_Main.Update_Year_Filter(self,action)
             
-            if obj == self.previus_month_4 and event.type() == QtCore.QEvent.MouseButtonPress:
-                action = 'previus'
+            if obj == self.previous_month_4 and event.type() == QtCore.QEvent.MouseButtonPress:
+                action = 'previous'
                 return home_db_fun.Charts_Main.Update_Year_Filter(self,action)
             
             #btn dashboard main
@@ -339,8 +339,8 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
                 btn = "config"
                 return effects.Effetc_slides.grid_lateral_menu(self,btn)
 
-            if obj == self.previus_month and event.type() == QtCore.QEvent.MouseButtonPress:
-                acao = "Previus"
+            if obj == self.previous_month and event.type() == QtCore.QEvent.MouseButtonPress:
+                acao = "previous"
                 objects = self.page_2
                 effects.Effetc_slides.grid_filter(self,acao,objects)
                 card_db_fun.funcoes_cartao._current_date(self,acao)
@@ -394,7 +394,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
             
 
 
-            if obj == self.previus_month_3 and event.type() == QtCore.QEvent.MouseButtonPress:
+            if obj == self.previous_month_3 and event.type() == QtCore.QEvent.MouseButtonPress:
                 #TODO  SHOPPING RIGHT MENU
                 objects = self.page_8
                 acao = "Previous"
@@ -533,8 +533,8 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
             # TODO EXTRACT MAIN MENU
             
             
-            if obj == self.previus_month_2 and event.type() == QtCore.QEvent.MouseButtonPress:
-                action = "Previus"
+            if obj == self.previous_month_2 and event.type() == QtCore.QEvent.MouseButtonPress:
+                action = "previous"
                 home_db_fun.Dates_end_times.methodo_date_extrato(self,action)
                 home_db_fun.mainpage.load_extrato_filter(self)
                 return home_db_fun.Charts_Main.Update_Chart_E_S(self)

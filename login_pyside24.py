@@ -1768,13 +1768,13 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_108.addItem(self.horizontalSpacer_27)
 
-        self.previus_month_2 = QPushButton(self.page_11)
-        self.previus_month_2.setObjectName(u"previous_month_2")
-        self.previus_month_2.setMinimumSize(QSize(80, 0))
-        self.previus_month_2.setMaximumSize(QSize(120, 50))
-        self.previus_month_2.setTabletTracking(False)
-        self.previus_month_2.setFocusPolicy(Qt.NoFocus)
-        self.previus_month_2.setStyleSheet(u"\n"
+        self.previous_month_2 = QPushButton(self.page_11)
+        self.previous_month_2.setObjectName(u"previous_month_2")
+        self.previous_month_2.setMinimumSize(QSize(80, 0))
+        self.previous_month_2.setMaximumSize(QSize(120, 50))
+        self.previous_month_2.setTabletTracking(False)
+        self.previous_month_2.setFocusPolicy(Qt.NoFocus)
+        self.previous_month_2.setStyleSheet(u"\n"
 "\n"
 "QPushButton{\n"
 "	\n"
@@ -1793,10 +1793,10 @@ class Ui_MainWindow(object):
 "	border: 1px solid  rgb(255, 255, 255);\n"
 "	border-radius:5px;\n"
 "}")
-        self.previus_month_2.setIcon(icon12)
-        self.previus_month_2.setIconSize(QSize(20, 20))
+        self.previous_month_2.setIcon(icon12)
+        self.previous_month_2.setIconSize(QSize(20, 20))
 
-        self.horizontalLayout_108.addWidget(self.previus_month_2)
+        self.horizontalLayout_108.addWidget(self.previous_month_2)
 
         self.label_67 = QLabel(self.page_11)
         self.label_67.setObjectName(u"label_67")
@@ -1856,12 +1856,12 @@ class Ui_MainWindow(object):
         self.page_12.setObjectName(u"page_12")
         self.horizontalLayout_109 = QHBoxLayout(self.page_12)
         self.horizontalLayout_109.setObjectName(u"horizontalLayout_109")
-        self.previus_month_4 = QPushButton(self.page_12)
-        self.previus_month_4.setObjectName(u"previous_month_4")
-        self.previus_month_4.setMinimumSize(QSize(80, 0))
-        self.previus_month_4.setMaximumSize(QSize(120, 50))
-        self.previus_month_4.setTabletTracking(False)
-        self.previus_month_4.setStyleSheet(u"\n"
+        self.previous_month_4 = QPushButton(self.page_12)
+        self.previous_month_4.setObjectName(u"previous_month_4")
+        self.previous_month_4.setMinimumSize(QSize(80, 0))
+        self.previous_month_4.setMaximumSize(QSize(120, 50))
+        self.previous_month_4.setTabletTracking(False)
+        self.previous_month_4.setStyleSheet(u"\n"
 "\n"
 "QPushButton{\n"
 "	\n"
@@ -1881,10 +1881,10 @@ class Ui_MainWindow(object):
 "	border: 1px solid  rgb(255, 255, 255);\n"
 "	border-radius:5px;\n"
 "}")
-        self.previus_month_4.setIcon(icon12)
-        self.previus_month_4.setIconSize(QSize(20, 20))
+        self.previous_month_4.setIcon(icon12)
+        self.previous_month_4.setIconSize(QSize(20, 20))
 
-        self.horizontalLayout_109.addWidget(self.previus_month_4)
+        self.horizontalLayout_109.addWidget(self.previous_month_4)
 
         self.horizontalSpacer_29 = QSpacerItem(339, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
@@ -7471,12 +7471,12 @@ class Ui_MainWindow(object):
         self.page_2.setObjectName(u"page_2")
         self.horizontalLayout_33 = QHBoxLayout(self.page_2)
         self.horizontalLayout_33.setObjectName(u"horizontalLayout_33")
-        self.previus_month = QPushButton(self.page_2)
-        self.previus_month.setObjectName(u"previous_month")
-        self.previus_month.setMinimumSize(QSize(80, 0))
-        self.previus_month.setMaximumSize(QSize(120, 50))
-        self.previus_month.setTabletTracking(False)
-        self.previus_month.setStyleSheet(u"\n"
+        self.previous_month = QPushButton(self.page_2)
+        self.previous_month.setObjectName(u"previous_month")
+        self.previous_month.setMinimumSize(QSize(80, 0))
+        self.previous_month.setMaximumSize(QSize(120, 50))
+        self.previous_month.setTabletTracking(False)
+        self.previous_month.setStyleSheet(u"\n"
 "\n"
 "QPushButton{\n"
 "	\n"
@@ -7496,10 +7496,10 @@ class Ui_MainWindow(object):
 "	border: 1px solid  rgb(255, 255, 255);\n"
 "	border-radius:5px;\n"
 "}")
-        self.previus_month.setIcon(icon12)
-        self.previus_month.setIconSize(QSize(20, 20))
+        self.previous_month.setIcon(icon12)
+        self.previous_month.setIconSize(QSize(20, 20))
 
-        self.horizontalLayout_33.addWidget(self.previus_month)
+        self.horizontalLayout_33.addWidget(self.previous_month)
 
         self.horizontalSpacer_7 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
@@ -7568,12 +7568,12 @@ class Ui_MainWindow(object):
         self.page_8.setObjectName(u"page_8")
         self.horizontalLayout_39 = QHBoxLayout(self.page_8)
         self.horizontalLayout_39.setObjectName(u"horizontalLayout_39")
-        self.previus_month_3 = QPushButton(self.page_8)
-        self.previus_month_3.setObjectName(u"previous_month_3")
-        self.previus_month_3.setMinimumSize(QSize(80, 0))
-        self.previus_month_3.setMaximumSize(QSize(120, 50))
-        self.previus_month_3.setTabletTracking(False)
-        self.previus_month_3.setStyleSheet(u"\n"
+        self.previous_month_3 = QPushButton(self.page_8)
+        self.previous_month_3.setObjectName(u"previous_month_3")
+        self.previous_month_3.setMinimumSize(QSize(80, 0))
+        self.previous_month_3.setMaximumSize(QSize(120, 50))
+        self.previous_month_3.setTabletTracking(False)
+        self.previous_month_3.setStyleSheet(u"\n"
 "\n"
 "QPushButton{\n"
 "	\n"
@@ -7593,10 +7593,10 @@ class Ui_MainWindow(object):
 "	border: 1px solid  rgb(255, 255, 255);\n"
 "	border-radius:5px;\n"
 "}")
-        self.previus_month_3.setIcon(icon12)
-        self.previus_month_3.setIconSize(QSize(20, 20))
+        self.previous_month_3.setIcon(icon12)
+        self.previous_month_3.setIconSize(QSize(20, 20))
 
-        self.horizontalLayout_39.addWidget(self.previus_month_3)
+        self.horizontalLayout_39.addWidget(self.previous_month_3)
 
         self.horizontalSpacer_15 = QSpacerItem(339, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
@@ -11758,9 +11758,9 @@ class Ui_MainWindow(object):
         self.line_y_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"  Year", None))
         self.pushButton_27.setText(QCoreApplication.translate("MainWindow", u"Search  ", None))
         self.pushButton_28.setText(QCoreApplication.translate("MainWindow", u"Back", None))
-        self.previus_month_2.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
+        self.previous_month_2.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
 #if QT_CONFIG(shortcut)
-        self.previus_month_2.setShortcut(QCoreApplication.translate("MainWindow", u"Left", None))
+        self.previous_month_2.setShortcut(QCoreApplication.translate("MainWindow", u"Left", None))
 #endif // QT_CONFIG(shortcut)
         self.label_67.setText(QCoreApplication.translate("MainWindow", u"November", None))
         self.label_71.setText(QCoreApplication.translate("MainWindow", u"of", None))
@@ -11769,7 +11769,7 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(shortcut)
         self.next_month_2.setShortcut(QCoreApplication.translate("MainWindow", u"Right", None))
 #endif // QT_CONFIG(shortcut)
-        self.previus_month_4.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
+        self.previous_month_4.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
         self.label_73.setText(QCoreApplication.translate("MainWindow", u"Year", None))
         self.label_74.setText(QCoreApplication.translate("MainWindow", u"2022", None))
         self.next_month_4.setText(QCoreApplication.translate("MainWindow", u" Next", None))
@@ -11976,9 +11976,9 @@ class Ui_MainWindow(object):
         self.line_y.setPlaceholderText(QCoreApplication.translate("MainWindow", u"  Year", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Search  ", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Back", None))
-        self.previus_month.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
+        self.previous_month.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
 #if QT_CONFIG(shortcut)
-        self.previus_month.setShortcut(QCoreApplication.translate("MainWindow", u"Left", None))
+        self.previous_month.setShortcut(QCoreApplication.translate("MainWindow", u"Left", None))
 #endif // QT_CONFIG(shortcut)
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"November", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"of", None))
@@ -11987,7 +11987,7 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(shortcut)
         self.next_month.setShortcut(QCoreApplication.translate("MainWindow", u"Right", None))
 #endif // QT_CONFIG(shortcut)
-        self.previus_month_3.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
+        self.previous_month_3.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
         self.label_35.setText(QCoreApplication.translate("MainWindow", u"Year", None))
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"2022", None))
         self.next_month_3.setText(QCoreApplication.translate("MainWindow", u" Next", None))

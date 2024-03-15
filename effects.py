@@ -377,7 +377,7 @@ class Effetc_slides(Ui_MainWindow):
             self.animation.start()
             
   
-        if btn == "Previus":
+        if btn == "previous":
             self.animation = QPropertyAnimation(object, b"maximumWidth")
             self.animation.setDuration(duration)
             self.animation.setStartValue(0)

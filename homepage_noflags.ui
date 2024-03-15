@@ -4188,7 +4188,7 @@ QPushButton:pressed{
                                       </spacer>
                                      </item>
                                      <item>
-                                      <widget class="QPushButton" name="previus_month_2">
+                                      <widget class="QPushButton" name="previous_month_2">
                                        <property name="minimumSize">
                                         <size>
                                          <width>80</width>
@@ -4226,7 +4226,7 @@ QPushButton:pressed{
 }</string>
                                        </property>
                                        <property name="text">
-                                        <string> Previus </string>
+                                        <string> previous </string>
                                        </property>
                                        <property name="icon">
                                         <iconset resource="src/src.qrc">
@@ -4354,7 +4354,7 @@ QPushButton:pressed{
                                    <widget class="QWidget" name="page_12">
                                     <layout class="QHBoxLayout" name="horizontalLayout_109">
                                      <item>
-                                      <widget class="QPushButton" name="previus_month_4">
+                                      <widget class="QPushButton" name="previous_month_4">
                                        <property name="minimumSize">
                                         <size>
                                          <width>80</width>
@@ -4393,7 +4393,7 @@ QPushButton:pressed{
 }</string>
                                        </property>
                                        <property name="text">
-                                        <string> Previus </string>
+                                        <string> previous </string>
                                        </property>
                                        <property name="icon">
                                         <iconset resource="src/src.qrc">
@@ -16124,7 +16124,7 @@ QPushButton:pressed{
                                       <widget class="QWidget" name="page_2">
                                        <layout class="QHBoxLayout" name="horizontalLayout_33">
                                         <item>
-                                         <widget class="QPushButton" name="previus_month">
+                                         <widget class="QPushButton" name="previous_month">
                                           <property name="minimumSize">
                                            <size>
                                             <width>80</width>
@@ -16163,7 +16163,7 @@ QPushButton:pressed{
 }</string>
                                           </property>
                                           <property name="text">
-                                           <string> Previus </string>
+                                           <string> previous </string>
                                           </property>
                                           <property name="icon">
                                            <iconset resource="src/src.qrc">
@@ -16313,7 +16313,7 @@ QPushButton:pressed{
                                       <widget class="QWidget" name="page_8">
                                        <layout class="QHBoxLayout" name="horizontalLayout_39">
                                         <item>
-                                         <widget class="QPushButton" name="previus_month_3">
+                                         <widget class="QPushButton" name="previous_month_3">
                                           <property name="minimumSize">
                                            <size>
                                             <width>80</width>
@@ -16352,7 +16352,7 @@ QPushButton:pressed{
 }</string>
                                           </property>
                                           <property name="text">
-                                           <string> Previus </string>
+                                           <string> previous </string>
                                           </property>
                                           <property name="icon">
                                            <iconset resource="src/src.qrc">
