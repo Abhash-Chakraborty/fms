@@ -514,9 +514,9 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
                     home_db_fun.Pdf_funtion.search_pdf(self,id,id_bank)
                     
                     if tipo == True:
-                        home_db_fun.Descricao_lancamento.set_detalhes_lancamneto_menu(self,id,id_bank,"fatura")
+                        home_db_fun.Descricao_lancamento.set_detalhes_lancamneto_menu(self,id,id_bank,"invoice")
                     else:
-                        home_db_fun.Descricao_lancamento.set_detalhes_lancamneto_menu(self,id,id_bank,"lancamento")
+                        home_db_fun.Descricao_lancamento.set_detalhes_lancamneto_menu(self,id,id_bank,"launch")
                 except:
                     pass
 
