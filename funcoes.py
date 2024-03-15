@@ -1,4 +1,3 @@
-
 from PySide2.QtCore import *
 from PySide2 import QtWidgets
 from PySide2.QtGui import *
@@ -11,14 +10,14 @@ import effects
 from datetime import date
 
 
-class funcoes_geral():
-    def parcelado(self):
+class GeneralFunctions():
+    def installment(self):
         
-        if self.tablejaneiro_4.item(0,4).text() == 'PARCELADO':
-            pyautogui.alert('DESEJA PARCELAR EM QUANTAS VEZES?')
+        if self.table_january_4.item(0, 4).text() == 'INSTALLMENT':
+            pyautogui.alert('WOULD YOU LIKE TO PAY IN INSTALLMENTS?')
 
     
-    def data_e_hora(self):
+    def date_and_time(self):
         
-        data_atual = date.today()
-        data_em_texto = data_atual.strftime('%m/%Y')
+        current_date = date.today()
+        date_in_text = current_date.strftime('%m/%Y')

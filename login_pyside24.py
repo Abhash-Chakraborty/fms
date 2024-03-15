@@ -26,19 +26,19 @@ class Ui_MainWindow(object):
         MainWindow.setToolButtonStyle(Qt.ToolButtonIconOnly)
         MainWindow.setDockNestingEnabled(False)
         self.actionSalvar_automaticamente = QAction(MainWindow)
-        self.actionSalvar_automaticamente.setObjectName(u"actionSalvar_automaticamente")
+        self.actionSalvar_automaticamente.setObjectName(u"actionSave_automatically")
         self.actionSalvar_automaticamente.setCheckable(True)
         self.actionAtualizar_automaticamente = QAction(MainWindow)
-        self.actionAtualizar_automaticamente.setObjectName(u"actionAtualizar_automaticamente")
+        self.actionAtualizar_automaticamente.setObjectName(u"actionUpdate_automatically")
         self.actionAtualizar_automaticamente.setCheckable(True)
         self.actionAbrir_DB = QAction(MainWindow)
-        self.actionAbrir_DB.setObjectName(u"actionAbrir_DB")
+        self.actionAbrir_DB.setObjectName(u"actionOpen_DB")
         self.actionSalvar_Relatorio = QAction(MainWindow)
-        self.actionSalvar_Relatorio.setObjectName(u"actionSalvar_Relatorio")
+        self.actionSalvar_Relatorio.setObjectName(u"actionSave_Report")
         self.actionAbrir_xlsx = QAction(MainWindow)
-        self.actionAbrir_xlsx.setObjectName(u"actionAbrir_xlsx")
+        self.actionAbrir_xlsx.setObjectName(u"actionOpen_xlsx")
         self.actionImportar_xlsx = QAction(MainWindow)
-        self.actionImportar_xlsx.setObjectName(u"actionImportar_xlsx")
+        self.actionImportar_xlsx.setObjectName(u"actionImport_xlsx")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setMinimumSize(QSize(0, 0))
@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
         self.verticalLayout = QVBoxLayout(self.login)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.conteudo = QFrame(self.login)
-        self.conteudo.setObjectName(u"conteudo")
+        self.conteudo.setObjectName(u"content")
         self.conteudo.setStyleSheet(u"background-image: url();\n"
 "background-color: rgba(255, 255, 255, 0); \n"
 "border-top-left-radius:0px;\n"
@@ -140,7 +140,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
         self.horizontalLayout_8.setContentsMargins(10, 3, 10, 3)
         self.texto_error = QLabel(self.pop_error)
-        self.texto_error.setObjectName(u"texto_error")
+        self.texto_error.setObjectName(u"error_text")
         font = QFont()
         font.setFamily(u"Bahnschrift Light Condensed")
         font.setPointSize(14)
@@ -317,7 +317,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.addWidget(self.checkBox)
 
         self.buton_login = QPushButton(self.login_area)
-        self.buton_login.setObjectName(u"buton_login")
+        self.buton_login.setObjectName(u"button_login")
         self.buton_login.setMinimumSize(QSize(100, 60))
         self.buton_login.setMaximumSize(QSize(16777215, 16777215))
         self.buton_login.setFont(font)
@@ -360,7 +360,7 @@ class Ui_MainWindow(object):
 
         self.stackedWidget.addWidget(self.login)
         self.inicio = QWidget()
-        self.inicio.setObjectName(u"inicio")
+        self.inicio.setObjectName(u"start")
         self.inicio.setStyleSheet(u"")
         self.verticalLayout_7 = QVBoxLayout(self.inicio)
         self.verticalLayout_7.setSpacing(0)
@@ -423,7 +423,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addWidget(self.minimize)
 
         self.maxmize = QPushButton(self.bar_window)
-        self.maxmize.setObjectName(u"maxmize")
+        self.maxmize.setObjectName(u"maximize")
         self.maxmize.setMinimumSize(QSize(40, 20))
         self.maxmize.setStyleSheet(u"\n"
 "\n"
@@ -542,7 +542,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_26.addWidget(self.mainlogo)
 
         self.categorias = QFrame(self.menu)
-        self.categorias.setObjectName(u"categorias")
+        self.categorias.setObjectName(u"categories")
         self.categorias.setStyleSheet(u"background-color: rgba(0, 0, 0, 70);\n"
 "border-top-left-radius:0px;\n"
 "")
@@ -553,14 +553,14 @@ class Ui_MainWindow(object):
         self.horizontalLayout_28.setObjectName(u"horizontalLayout_28")
         self.horizontalLayout_28.setContentsMargins(0, 0, 0, 0)
         self.scrolbar = QFrame(self.categorias)
-        self.scrolbar.setObjectName(u"scrolbar")
+        self.scrolbar.setObjectName(u"scrollbar")
         self.scrolbar.setMinimumSize(QSize(5, 0))
         self.scrolbar.setMaximumSize(QSize(5, 16777215))
         self.scrolbar.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);")
         self.scrolbar.setFrameShape(QFrame.StyledPanel)
         self.scrolbar.setFrameShadow(QFrame.Raised)
         self.animcurretnpage = QFrame(self.scrolbar)
-        self.animcurretnpage.setObjectName(u"animcurretnpage")
+        self.animcurretnpage.setObjectName(u"animatecurrentpage")
         self.animcurretnpage.setGeometry(QRect(0, 60, 4, 60))
         self.animcurretnpage.setMinimumSize(QSize(0, 0))
         self.animcurretnpage.setMaximumSize(QSize(4, 60))
@@ -881,7 +881,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_27.addItem(self.verticalSpacer_2)
 
         self.salvar_6 = QPushButton(self.topmenu)
-        self.salvar_6.setObjectName(u"salvar_6")
+        self.salvar_6.setObjectName(u"save_6")
         self.salvar_6.setMinimumSize(QSize(0, 0))
         self.salvar_6.setMaximumSize(QSize(16777215, 16777215))
         self.salvar_6.setFont(font)
@@ -923,7 +923,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_27.addWidget(self.salvar_6)
 
         self.salvar_5 = QPushButton(self.topmenu)
-        self.salvar_5.setObjectName(u"salvar_5")
+        self.salvar_5.setObjectName(u"save_5")
         self.salvar_5.setMinimumSize(QSize(0, 0))
         self.salvar_5.setMaximumSize(QSize(16777215, 16777215))
         self.salvar_5.setFont(font)
@@ -961,7 +961,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_27.addWidget(self.salvar_5)
 
         self.salvar_4 = QPushButton(self.topmenu)
-        self.salvar_4.setObjectName(u"salvar_4")
+        self.salvar_4.setObjectName(u"save_4")
         self.salvar_4.setMinimumSize(QSize(0, 0))
         self.salvar_4.setMaximumSize(QSize(16777215, 16777215))
         self.salvar_4.setFont(font)
@@ -1187,7 +1187,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_51.setObjectName(u"horizontalLayout_51")
         self.horizontalLayout_51.setContentsMargins(0, 0, 0, 0)
         self.content_cartao_2 = QFrame(self.scrollAreaWidgetContents_6)
-        self.content_cartao_2.setObjectName(u"content_cartao_2")
+        self.content_cartao_2.setObjectName(u"content_card_2")
         self.content_cartao_2.setMinimumSize(QSize(0, 0))
         self.content_cartao_2.setMaximumSize(QSize(440, 16777215))
         self.content_cartao_2.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); ")
@@ -1201,7 +1201,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_51.addWidget(self.content_cartao_2)
 
         self.detalhes_cartao_2 = QStackedWidget(self.scrollAreaWidgetContents_6)
-        self.detalhes_cartao_2.setObjectName(u"detalhes_cartao_2")
+        self.detalhes_cartao_2.setObjectName(u"details_card_2")
         self.detalhes_cartao_2.setFont(font)
         self.detalhes_cartao_2.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); ")
         self.detalhes_cartao_2.setFrameShape(QFrame.StyledPanel)
@@ -1534,7 +1534,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_120.setObjectName(u"verticalLayout_120")
         self.verticalLayout_120.setContentsMargins(0, 0, 0, 0)
         self.entrada_saida_frame = QFrame(self.frame_52)
-        self.entrada_saida_frame.setObjectName(u"entrada_saida_frame")
+        self.entrada_saida_frame.setObjectName(u"entrance_out_frame")
         self.entrada_saida_frame.setMinimumSize(QSize(0, 20))
         self.entrada_saida_frame.setMaximumSize(QSize(16777215, 400))
         self.entrada_saida_frame.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); \n"
@@ -1572,7 +1572,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_108.addWidget(self.main_dasht_top_2)
 
         self.extrat_meses_2 = QStackedWidget(self.scrollAreaWidgetContents_9)
-        self.extrat_meses_2.setObjectName(u"extrat_meses_2")
+        self.extrat_meses_2.setObjectName(u"extract_months_2")
         self.extrat_meses_2.setMaximumSize(QSize(16777215, 60))
         self.extrat_meses_2.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); \n"
 "border-radius:7px;\n"
@@ -1580,7 +1580,7 @@ class Ui_MainWindow(object):
         self.extrat_meses_2.setFrameShape(QFrame.StyledPanel)
         self.extrat_meses_2.setFrameShadow(QFrame.Raised)
         self.extrat_mesesPage1_2 = QWidget()
-        self.extrat_mesesPage1_2.setObjectName(u"extrat_mesesPage1_2")
+        self.extrat_mesesPage1_2.setObjectName(u"extract_monthsPage1_2")
         self.extrat_mesesPage1_2.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); ")
         self.verticalLayout_35 = QVBoxLayout(self.extrat_mesesPage1_2)
         self.verticalLayout_35.setSpacing(0)
@@ -1769,7 +1769,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_108.addItem(self.horizontalSpacer_27)
 
         self.previus_month_2 = QPushButton(self.page_11)
-        self.previus_month_2.setObjectName(u"previus_month_2")
+        self.previus_month_2.setObjectName(u"previous_month_2")
         self.previus_month_2.setMinimumSize(QSize(80, 0))
         self.previus_month_2.setMaximumSize(QSize(120, 50))
         self.previus_month_2.setTabletTracking(False)
@@ -1857,7 +1857,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_109 = QHBoxLayout(self.page_12)
         self.horizontalLayout_109.setObjectName(u"horizontalLayout_109")
         self.previus_month_4 = QPushButton(self.page_12)
-        self.previus_month_4.setObjectName(u"previus_month_4")
+        self.previus_month_4.setObjectName(u"previous_month_4")
         self.previus_month_4.setMinimumSize(QSize(80, 0))
         self.previus_month_4.setMaximumSize(QSize(120, 50))
         self.previus_month_4.setTabletTracking(False)
@@ -1955,7 +1955,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_56.setObjectName(u"verticalLayout_56")
         self.verticalLayout_56.setContentsMargins(0, 0, 0, 0)
         self.chart_gastos_all_2 = QTabWidget(self.main_dash_bottom_2Page1)
-        self.chart_gastos_all_2.setObjectName(u"chart_gastos_all_2")
+        self.chart_gastos_all_2.setObjectName(u"chart_bills_all_2")
         self.chart_gastos_all_2.setMinimumSize(QSize(0, 0))
         self.chart_gastos_all_2.setMaximumSize(QSize(16777215, 16777215))
         self.chart_gastos_all_2.setFont(font)
@@ -1992,7 +1992,7 @@ class Ui_MainWindow(object):
         self.chart_gastos_all_2.setMovable(True)
         self.chart_gastos_all_2.setTabBarAutoHide(True)
         self.page_Tabe_main1 = QWidget()
-        self.page_Tabe_main1.setObjectName(u"page_Tabe_main1")
+        self.page_Tabe_main1.setObjectName(u"page_subject_main1")
         self.page_Tabe_main1.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); ")
         self.verticalLayout_140 = QVBoxLayout(self.page_Tabe_main1)
         self.verticalLayout_140.setSpacing(0)
@@ -2060,7 +2060,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_62.setObjectName(u"verticalLayout_62")
         self.verticalLayout_62.setContentsMargins(0, 0, 0, 0)
         self.stacked_configcartao0_2 = QFrame(self.frame_57)
-        self.stacked_configcartao0_2.setObjectName(u"stacked_configcartao0_2")
+        self.stacked_configcartao0_2.setObjectName(u"stacked_configcard0_2")
         self.stacked_configcartao0_2.setMinimumSize(QSize(0, 90))
         self.stacked_configcartao0_2.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); \n"
 "")
@@ -2071,13 +2071,13 @@ class Ui_MainWindow(object):
         self.horizontalLayout_53.setObjectName(u"horizontalLayout_53")
         self.horizontalLayout_53.setContentsMargins(0, 0, 0, 0)
         self.stack_extrato_pages_2 = QStackedWidget(self.stacked_configcartao0_2)
-        self.stack_extrato_pages_2.setObjectName(u"stack_extrato_pages_2")
+        self.stack_extrato_pages_2.setObjectName(u"stack_extract_pages_2")
         self.stack_extrato_pages_2.setMinimumSize(QSize(0, 0))
         self.stack_extrato_pages_2.setMaximumSize(QSize(16777215, 16777215))
         self.stack_extrato_pages_2.setFrameShape(QFrame.StyledPanel)
         self.stack_extrato_pages_2.setFrameShadow(QFrame.Raised)
         self.extrato_cards_dbs_2 = QWidget()
-        self.extrato_cards_dbs_2.setObjectName(u"extrato_cards_dbs_2")
+        self.extrato_cards_dbs_2.setObjectName(u"extract_cards_dbs_2")
         self.horizontalLayout_54 = QHBoxLayout(self.extrato_cards_dbs_2)
         self.horizontalLayout_54.setSpacing(0)
         self.horizontalLayout_54.setObjectName(u"horizontalLayout_54")
@@ -2260,7 +2260,7 @@ class Ui_MainWindow(object):
 
         self.stack_extrato_pages_2.addWidget(self.page_not_found_2)
         self.page_emdia_2 = QWidget()
-        self.page_emdia_2.setObjectName(u"page_emdia_2")
+        self.page_emdia_2.setObjectName(u"page_in_day_2")
         self.verticalLayout_65 = QVBoxLayout(self.page_emdia_2)
         self.verticalLayout_65.setObjectName(u"verticalLayout_65")
         self.verticalSpacer_12 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
@@ -2268,7 +2268,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_65.addItem(self.verticalSpacer_12)
 
         self.image_emdia_2 = QFrame(self.page_emdia_2)
-        self.image_emdia_2.setObjectName(u"image_emdia_2")
+        self.image_emdia_2.setObjectName(u"image_in_day_2")
         self.image_emdia_2.setMinimumSize(QSize(0, 300))
         self.image_emdia_2.setStyleSheet(u"background-image: url(:/backgroud/src-page-cartoes/payout.png);\n"
 "background-position: center;\n"
@@ -2280,7 +2280,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_65.addWidget(self.image_emdia_2)
 
         self.txt_pag_emdia_2 = QLabel(self.page_emdia_2)
-        self.txt_pag_emdia_2.setObjectName(u"txt_pag_emdia_2")
+        self.txt_pag_emdia_2.setObjectName(u"txt_when_in_day_2")
         self.txt_pag_emdia_2.setStyleSheet(u"border: 0px;\n"
 "\n"
 "color: rgb(255, 255, 255);\n"
@@ -2298,7 +2298,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_53.addWidget(self.stack_extrato_pages_2)
 
         self.main_menu_extrato_page = QFrame(self.stacked_configcartao0_2)
-        self.main_menu_extrato_page.setObjectName(u"main_menu_extrato_page")
+        self.main_menu_extrato_page.setObjectName(u"main_menu_extract_page")
         self.main_menu_extrato_page.setMinimumSize(QSize(0, 0))
         self.main_menu_extrato_page.setMaximumSize(QSize(300, 16777215))
         self.main_menu_extrato_page.setStyleSheet(u"background-color:rgba(255,255,255,0);")
@@ -2319,7 +2319,7 @@ class Ui_MainWindow(object):
         self.stackedWidget_58.setFrameShape(QFrame.StyledPanel)
         self.stackedWidget_58.setFrameShadow(QFrame.Raised)
         self.stackedWidget_resumo_extrato = QWidget()
-        self.stackedWidget_resumo_extrato.setObjectName(u"stackedWidget_resumo_extrato")
+        self.stackedWidget_resumo_extrato.setObjectName(u"stackedWidget_summary_extract")
         self.verticalLayout_67 = QVBoxLayout(self.stackedWidget_resumo_extrato)
         self.verticalLayout_67.setObjectName(u"verticalLayout_67")
         self.scrollArea_10 = QScrollArea(self.stackedWidget_resumo_extrato)
@@ -2391,7 +2391,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_55 = QHBoxLayout(self.frame_if_card_main)
         self.horizontalLayout_55.setObjectName(u"horizontalLayout_55")
         self.lauy_3 = QHBoxLayout()
-        self.lauy_3.setObjectName(u"lauy_3")
+        self.lauy_3.setObjectName(u"lay_3")
         self.frame_59 = QFrame(self.frame_if_card_main)
         self.frame_59.setObjectName(u"frame_59")
         self.frame_59.setMaximumSize(QSize(157, 16777215))
@@ -2465,7 +2465,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_93.addWidget(self.frame_if_card_main)
 
         self.frame_tools_nexo = QFrame(self.scrollAreaWidgetContents_10)
-        self.frame_tools_nexo.setObjectName(u"frame_tools_nexo")
+        self.frame_tools_nexo.setObjectName(u"frame_tools_link")
         self.frame_tools_nexo.setMinimumSize(QSize(0, 50))
         self.frame_tools_nexo.setFrameShape(QFrame.StyledPanel)
         self.frame_tools_nexo.setFrameShadow(QFrame.Raised)
@@ -2537,7 +2537,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_56.setObjectName(u"horizontalLayout_56")
         self.horizontalLayout_56.setContentsMargins(0, 0, 0, 0)
         self.delet_pdf = QPushButton(self.frame_options_pdf)
-        self.delet_pdf.setObjectName(u"delet_pdf")
+        self.delet_pdf.setObjectName(u"delete_pdf")
         self.delet_pdf.setMinimumSize(QSize(0, 30))
         self.delet_pdf.setMaximumSize(QSize(113, 30))
         self.delet_pdf.setFont(font)
@@ -2624,7 +2624,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_93.addWidget(self.frame_options_pdf)
 
         self.paga_fatura_3 = QPushButton(self.scrollAreaWidgetContents_10)
-        self.paga_fatura_3.setObjectName(u"paga_fatura_3")
+        self.paga_fatura_3.setObjectName(u"pay_invoice_3")
         self.paga_fatura_3.setMinimumSize(QSize(0, 30))
         self.paga_fatura_3.setMaximumSize(QSize(16777215, 30))
         self.paga_fatura_3.setFont(font)
@@ -2666,7 +2666,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_93.addWidget(self.paga_fatura_3)
 
         self.edit_compra_3 = QPushButton(self.scrollAreaWidgetContents_10)
-        self.edit_compra_3.setObjectName(u"edit_compra_3")
+        self.edit_compra_3.setObjectName(u"edit_purchase_3")
         self.edit_compra_3.setMinimumSize(QSize(0, 30))
         self.edit_compra_3.setMaximumSize(QSize(16777215, 30))
         self.edit_compra_3.setFont(font)
@@ -2708,7 +2708,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_93.addWidget(self.edit_compra_3)
 
         self.parcela_fatura_3 = QPushButton(self.scrollAreaWidgetContents_10)
-        self.parcela_fatura_3.setObjectName(u"parcela_fatura_3")
+        self.parcela_fatura_3.setObjectName(u"installment_invoice_3")
         self.parcela_fatura_3.setMinimumSize(QSize(0, 30))
         self.parcela_fatura_3.setMaximumSize(QSize(16777215, 30))
         self.parcela_fatura_3.setFont(font)
@@ -2750,7 +2750,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_93.addWidget(self.parcela_fatura_3)
 
         self.apaga_compra_3 = QPushButton(self.scrollAreaWidgetContents_10)
-        self.apaga_compra_3.setObjectName(u"apaga_compra_3")
+        self.apaga_compra_3.setObjectName(u"erase_purchase_3")
         self.apaga_compra_3.setMinimumSize(QSize(0, 30))
         self.apaga_compra_3.setMaximumSize(QSize(16777215, 30))
         self.apaga_compra_3.setFont(font)
@@ -2842,7 +2842,7 @@ class Ui_MainWindow(object):
 
         self.stackedWidget_58.addWidget(self.stackedWidget_resumo_extrato)
         self.stackedWidget_detalhes_lancamento = QWidget()
-        self.stackedWidget_detalhes_lancamento.setObjectName(u"stackedWidget_detalhes_lancamento")
+        self.stackedWidget_detalhes_lancamento.setObjectName(u"stackedWidget_details_launch")
         self.verticalLayout_116 = QVBoxLayout(self.stackedWidget_detalhes_lancamento)
         self.verticalLayout_116.setObjectName(u"verticalLayout_116")
         self.scrollArea_14 = QScrollArea(self.stackedWidget_detalhes_lancamento)
@@ -2886,7 +2886,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_112 = QHBoxLayout(self.frame_if_card_main_2)
         self.horizontalLayout_112.setObjectName(u"horizontalLayout_112")
         self.lauy_4 = QHBoxLayout()
-        self.lauy_4.setObjectName(u"lauy_4")
+        self.lauy_4.setObjectName(u"lay_4")
         self.frame_101 = QFrame(self.frame_if_card_main_2)
         self.frame_101.setObjectName(u"frame_101")
         self.frame_101.setMaximumSize(QSize(157, 16777215))
@@ -2907,7 +2907,7 @@ class Ui_MainWindow(object):
         self.lauy_4.addWidget(self.frame_101)
 
         self.icon_payout_com = QFrame(self.frame_if_card_main_2)
-        self.icon_payout_com.setObjectName(u"icon_payout_com")
+        self.icon_payout_com.setObjectName(u"icon_payout_with")
         self.icon_payout_com.setMinimumSize(QSize(40, 40))
         self.icon_payout_com.setMaximumSize(QSize(40, 40))
         self.icon_payout_com.setStyleSheet(u"background-color: rgb(255, 85, 255);\n"
@@ -2924,7 +2924,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_114.addWidget(self.frame_if_card_main_2)
 
         self.frame_tools_nexo_2 = QFrame(self.scrollAreaWidgetContents_14)
-        self.frame_tools_nexo_2.setObjectName(u"frame_tools_nexo_2")
+        self.frame_tools_nexo_2.setObjectName(u"frame_tools_link_2")
         self.frame_tools_nexo_2.setMinimumSize(QSize(0, 50))
         self.frame_tools_nexo_2.setFrameShape(QFrame.StyledPanel)
         self.frame_tools_nexo_2.setFrameShadow(QFrame.Raised)
@@ -2966,7 +2966,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_114.addWidget(self.frame_options_pdf_2)
 
         self.frame_tools_nexo_3 = QFrame(self.scrollAreaWidgetContents_14)
-        self.frame_tools_nexo_3.setObjectName(u"frame_tools_nexo_3")
+        self.frame_tools_nexo_3.setObjectName(u"frame_tools_link_3")
         self.frame_tools_nexo_3.setMinimumSize(QSize(0, 50))
         self.frame_tools_nexo_3.setFrameShape(QFrame.StyledPanel)
         self.frame_tools_nexo_3.setFrameShadow(QFrame.Raised)
@@ -2996,7 +2996,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_117.setObjectName(u"horizontalLayout_117")
         self.horizontalLayout_117.setContentsMargins(0, 0, 0, 0)
         self.set_vencimento_lan = QDateEdit(self.frame_options_pdf_3)
-        self.set_vencimento_lan.setObjectName(u"set_vencimento_lan")
+        self.set_vencimento_lan.setObjectName(u"set_expiration_lan")
         self.set_vencimento_lan.setStyleSheet(u"border:none;")
         self.set_vencimento_lan.setAlignment(Qt.AlignCenter)
         self.set_vencimento_lan.setReadOnly(True)
@@ -3008,7 +3008,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_114.addWidget(self.frame_options_pdf_3)
 
         self.paga_fatura_4 = QPushButton(self.scrollAreaWidgetContents_14)
-        self.paga_fatura_4.setObjectName(u"paga_fatura_4")
+        self.paga_fatura_4.setObjectName(u"pay_invoice_4")
         self.paga_fatura_4.setMinimumSize(QSize(0, 30))
         self.paga_fatura_4.setMaximumSize(QSize(16777215, 30))
         self.paga_fatura_4.setFont(font)
@@ -3086,7 +3086,7 @@ class Ui_MainWindow(object):
         icon26.addFile(u":/icons-cards/src-page-cartoes/null.png", QSize(), QIcon.Normal, QIcon.Off)
         self.chart_gastos_all_2.addTab(self.page_Tabe_main1, icon26, "")
         self.page_Tabe_main2 = QWidget()
-        self.page_Tabe_main2.setObjectName(u"page_Tabe_main2")
+        self.page_Tabe_main2.setObjectName(u"page_Tab_main2")
         self.page_Tabe_main2.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); ")
         self.verticalLayout_142 = QVBoxLayout(self.page_Tabe_main2)
         self.verticalLayout_142.setSpacing(0)
@@ -3644,7 +3644,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_48 = QHBoxLayout(self.frame_192)
         self.horizontalLayout_48.setObjectName(u"horizontalLayout_48")
         self.lancamento_programado_2 = QDateEdit(self.frame_192)
-        self.lancamento_programado_2.setObjectName(u"lancamento_programado_2")
+        self.lancamento_programado_2.setObjectName(u"scheduled_launch_2")
         self.lancamento_programado_2.setStyleSheet(u"QDateEdit{\n"
 "	border:none;\n"
 "	border-radius:0px;}\n"
@@ -3953,7 +3953,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_97.addWidget(self.label_48)
 
         self.frame_programar_data = QFrame(self.config_new_lan_3)
-        self.frame_programar_data.setObjectName(u"frame_programar_data")
+        self.frame_programar_data.setObjectName(u"frame_schedule_data")
         self.frame_programar_data.setMinimumSize(QSize(120, 67))
         self.frame_programar_data.setMaximumSize(QSize(16777215, 67))
         self.frame_programar_data.setStyleSheet(u"background-color:rgba(255,255,255,10);\n"
@@ -4017,7 +4017,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_176 = QVBoxLayout(self.frame_276)
         self.verticalLayout_176.setObjectName(u"verticalLayout_176")
         self.lancamento_programado = QDateEdit(self.frame_276)
-        self.lancamento_programado.setObjectName(u"lancamento_programado")
+        self.lancamento_programado.setObjectName(u"scheduled_launch")
         self.lancamento_programado.setStyleSheet(u"QSpinBox,\n"
 "QDoubleSpinBox,\n"
 "QAbstractSpinBox,\n"
@@ -4042,7 +4042,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_97.addWidget(self.frame_programar_data)
 
         self.frame_recorrente = QFrame(self.config_new_lan_3)
-        self.frame_recorrente.setObjectName(u"frame_recorrente")
+        self.frame_recorrente.setObjectName(u"recurring_frame")
         self.frame_recorrente.setMinimumSize(QSize(120, 67))
         self.frame_recorrente.setMaximumSize(QSize(16777215, 67))
         self.frame_recorrente.setStyleSheet(u"background-color:rgba(255,255,255,10);\n"
@@ -4131,7 +4131,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_97.addWidget(self.frame_recorrente)
 
         self.frame_recorrente_config = QFrame(self.config_new_lan_3)
-        self.frame_recorrente_config.setObjectName(u"frame_recorrente_config")
+        self.frame_recorrente_config.setObjectName(u"recurring_frame_config")
         self.frame_recorrente_config.setMinimumSize(QSize(120, 67))
         self.frame_recorrente_config.setMaximumSize(QSize(16777215, 67))
         self.frame_recorrente_config.setStyleSheet(u"background-color:rgba(255,255,255,10);\n"
@@ -4220,7 +4220,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_97.addWidget(self.frame_recorrente_config)
 
         self.frame_recorrente_config_date = QFrame(self.config_new_lan_3)
-        self.frame_recorrente_config_date.setObjectName(u"frame_recorrente_config_date")
+        self.frame_recorrente_config_date.setObjectName(u"recurring_frame_config_date")
         self.frame_recorrente_config_date.setMinimumSize(QSize(120, 67))
         self.frame_recorrente_config_date.setMaximumSize(QSize(16777215, 67))
         self.frame_recorrente_config_date.setStyleSheet(u"background-color:rgba(255,255,255,10);\n"
@@ -4506,7 +4506,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_106 = QHBoxLayout(self.frame_95)
         self.horizontalLayout_106.setObjectName(u"horizontalLayout_106")
         self.add_lancamento_btn = QPushButton(self.frame_95)
-        self.add_lancamento_btn.setObjectName(u"add_lancamento_btn")
+        self.add_lancamento_btn.setObjectName(u"add_launch_btn")
         self.add_lancamento_btn.setMinimumSize(QSize(110, 30))
         self.add_lancamento_btn.setMaximumSize(QSize(16777215, 25))
         self.add_lancamento_btn.setFont(font)
@@ -4594,7 +4594,7 @@ class Ui_MainWindow(object):
 
         self.chart_gastos_all_2.addTab(self.page_Tabe_main2, icon25, "")
         self.page_Tabe_main3 = QWidget()
-        self.page_Tabe_main3.setObjectName(u"page_Tabe_main3")
+        self.page_Tabe_main3.setObjectName(u"page_Tab_main3")
         self.page_Tabe_main3.setEnabled(True)
         self.page_Tabe_main3.setMaximumSize(QSize(16777215, 16777215))
         self.page_Tabe_main3.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); \n"
@@ -4630,7 +4630,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_112.setObjectName(u"verticalLayout_112")
         self.verticalLayout_112.setContentsMargins(0, 0, 0, 0)
         self.botto_1 = QFrame(self.scrollAreaWidgetContents_12)
-        self.botto_1.setObjectName(u"botto_1")
+        self.botto_1.setObjectName(u"bottom_1")
         self.botto_1.setMinimumSize(QSize(0, 320))
         self.botto_1.setMaximumSize(QSize(16777215, 16777215))
         self.botto_1.setFrameShape(QFrame.StyledPanel)
@@ -4668,7 +4668,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_112.addWidget(self.botto_1)
 
         self.botto_2 = QFrame(self.scrollAreaWidgetContents_12)
-        self.botto_2.setObjectName(u"botto_2")
+        self.botto_2.setObjectName(u"bottom_2")
         self.botto_2.setMinimumSize(QSize(0, 0))
         self.botto_2.setMaximumSize(QSize(16777215, 600))
         self.botto_2.setFrameShape(QFrame.StyledPanel)
@@ -4709,7 +4709,7 @@ class Ui_MainWindow(object):
         self.select_conta_bancaria.addItem("")
         self.select_conta_bancaria.addItem("")
         self.select_conta_bancaria.addItem("")
-        self.select_conta_bancaria.setObjectName(u"select_conta_bancaria")
+        self.select_conta_bancaria.setObjectName(u"select_bank_account")
         self.select_conta_bancaria.setMinimumSize(QSize(0, 30))
         font7 = QFont()
         font7.setFamily(u"Bahnschrift Light Condensed")
@@ -4736,7 +4736,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_101.addWidget(self.select_conta_bancaria)
 
         self.frame_bank_padrao = QFrame(self.frame_89)
-        self.frame_bank_padrao.setObjectName(u"frame_bank_padrao")
+        self.frame_bank_padrao.setObjectName(u"frame_bank_standard")
         self.frame_bank_padrao.setMinimumSize(QSize(120, 67))
         self.frame_bank_padrao.setMaximumSize(QSize(16777215, 67))
         self.frame_bank_padrao.setStyleSheet(u"background-color: rgba(255, 255, 255,20);\n"
@@ -4802,7 +4802,7 @@ class Ui_MainWindow(object):
         self.combo_bank_padrao.addItem("")
         self.combo_bank_padrao.addItem("")
         self.combo_bank_padrao.addItem("")
-        self.combo_bank_padrao.setObjectName(u"combo_bank_padrao")
+        self.combo_bank_padrao.setObjectName(u"combo_bank_standard")
         self.combo_bank_padrao.setMaximumSize(QSize(16777215, 90))
         self.combo_bank_padrao.setStyleSheet(u"QSpinBox,\n"
 "QDoubleSpinBox,\n"
@@ -4835,7 +4835,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_84.setObjectName(u"horizontalLayout_84")
         self.horizontalLayout_84.setContentsMargins(0, 0, 0, 0)
         self.stackedWidgetadc_2 = QStackedWidget(self.frame_90)
-        self.stackedWidgetadc_2.setObjectName(u"stackedWidgetadc_2")
+        self.stackedWidgetadc_2.setObjectName(u"stackedWidgetadd_2")
         sizePolicy4 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
         sizePolicy4.setHorizontalStretch(65)
         sizePolicy4.setVerticalStretch(0)
@@ -4863,7 +4863,7 @@ class Ui_MainWindow(object):
         self.gridLayout_3 = QGridLayout(self.frame_91)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.adcagencia_conta = QLineEdit(self.frame_91)
-        self.adcagencia_conta.setObjectName(u"adcagencia_conta")
+        self.adcagencia_conta.setObjectName(u"add_agency_account")
         self.adcagencia_conta.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -4873,7 +4873,7 @@ class Ui_MainWindow(object):
         self.gridLayout_3.addWidget(self.adcagencia_conta, 2, 1, 1, 1)
 
         self.adctitular_conta = QLineEdit(self.frame_91)
-        self.adctitular_conta.setObjectName(u"adctitular_conta")
+        self.adctitular_conta.setObjectName(u"account_holder")
         self.adctitular_conta.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -4883,7 +4883,7 @@ class Ui_MainWindow(object):
         self.gridLayout_3.addWidget(self.adctitular_conta, 0, 1, 1, 1)
 
         self.adc_saldo_conta = QLineEdit(self.frame_91)
-        self.adc_saldo_conta.setObjectName(u"adc_saldo_conta")
+        self.adc_saldo_conta.setObjectName(u"add_account_balance")
         self.adc_saldo_conta.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -4923,7 +4923,7 @@ class Ui_MainWindow(object):
         self.gridLayout_3.addWidget(self.textcard_6, 2, 0, 1, 1)
 
         self.adc_conta_conta = QLineEdit(self.frame_91)
-        self.adc_conta_conta.setObjectName(u"adc_conta_conta")
+        self.adc_conta_conta.setObjectName(u"add_account_account")
         self.adc_conta_conta.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -4944,7 +4944,7 @@ class Ui_MainWindow(object):
         self.gridLayout_3.addWidget(self.textcard_7, 3, 0, 1, 1)
 
         self.config_crdit_c = QPushButton(self.page_config_counts1)
-        self.config_crdit_c.setObjectName(u"config_crdit_c")
+        self.config_crdit_c.setObjectName(u"config_credit_c")
         self.config_crdit_c.setGeometry(QRect(364, 9, 46, 53))
         self.config_crdit_c.setMinimumSize(QSize(40, 53))
         self.config_crdit_c.setMaximumSize(QSize(16777215, 16777215))
@@ -4987,11 +4987,11 @@ class Ui_MainWindow(object):
         self.label_105.setAlignment(Qt.AlignCenter)
         self.stackedWidgetadc_2.addWidget(self.page_config_counts1)
         self.page_config_creduts = QWidget()
-        self.page_config_creduts.setObjectName(u"page_config_creduts")
+        self.page_config_creduts.setObjectName(u"page_config_credits")
         self.gridLayout_7 = QGridLayout(self.page_config_creduts)
         self.gridLayout_7.setObjectName(u"gridLayout_7")
         self.config_ccoun = QPushButton(self.page_config_creduts)
-        self.config_ccoun.setObjectName(u"config_ccoun")
+        self.config_ccoun.setObjectName(u"config_ccount")
         self.config_ccoun.setMinimumSize(QSize(40, 53))
         self.config_ccoun.setMaximumSize(QSize(46, 16777215))
         self.config_ccoun.setStyleSheet(u"\n"
@@ -5059,7 +5059,7 @@ class Ui_MainWindow(object):
         self.gridLayout_5.addWidget(self.textcard_8, 3, 0, 1, 1)
 
         self.adclimite_2 = QLineEdit(self.frame_94)
-        self.adclimite_2.setObjectName(u"adclimite_2")
+        self.adclimite_2.setObjectName(u"addlimit_2")
         self.adclimite_2.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -5069,7 +5069,7 @@ class Ui_MainWindow(object):
         self.gridLayout_5.addWidget(self.adclimite_2, 0, 1, 1, 1)
 
         self.adcfechamento_2 = QLineEdit(self.frame_94)
-        self.adcfechamento_2.setObjectName(u"adcfechamento_2")
+        self.adcfechamento_2.setObjectName(u"addclosure_2")
         self.adcfechamento_2.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -5086,7 +5086,7 @@ class Ui_MainWindow(object):
         self.gridLayout_5.addWidget(self.label_66, 6, 0, 1, 1)
 
         self.adcvencimento_2 = QLineEdit(self.frame_94)
-        self.adcvencimento_2.setObjectName(u"adcvencimento_2")
+        self.adcvencimento_2.setObjectName(u"addmaturity_2")
         self.adcvencimento_2.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -5128,7 +5128,7 @@ class Ui_MainWindow(object):
         self.gridLayout_5.addWidget(self.textcard_10, 0, 0, 1, 1)
 
         self.adcfinal_2 = QLineEdit(self.frame_94)
-        self.adcfinal_2.setObjectName(u"adcfinal_2")
+        self.adcfinal_2.setObjectName(u"addfinal_2")
         self.adcfinal_2.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -5138,7 +5138,7 @@ class Ui_MainWindow(object):
         self.gridLayout_5.addWidget(self.adcfinal_2, 3, 1, 1, 1)
 
         self.adctitular_2 = QLineEdit(self.frame_94)
-        self.adctitular_2.setObjectName(u"adctitular_2")
+        self.adctitular_2.setObjectName(u"addholder_2")
         self.adctitular_2.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -6310,7 +6310,7 @@ class Ui_MainWindow(object):
 
         self.chart_gastos_all_2.addTab(self.page_Tabe_main3, icon22, "")
         self.page_Tabe_main4 = QWidget()
-        self.page_Tabe_main4.setObjectName(u"page_Tabe_main4")
+        self.page_Tabe_main4.setObjectName(u"page_Tab_main4")
         self.page_Tabe_main4.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); ")
         icon31 = QIcon()
         icon31.addFile(u":/icons-cards/src-page-cartoes/urgencia.png", QSize(), QIcon.Normal, QIcon.Off)
@@ -6396,7 +6396,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_38 = QVBoxLayout(self.frame_106)
         self.verticalLayout_38.setObjectName(u"verticalLayout_38")
         self.cht_gastos_anual_lay = QVBoxLayout()
-        self.cht_gastos_anual_lay.setObjectName(u"cht_gastos_anual_lay")
+        self.cht_gastos_anual_lay.setObjectName(u"cht_expenses_annual_layout")
 
         self.verticalLayout_38.addLayout(self.cht_gastos_anual_lay)
 
@@ -6413,7 +6413,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_71 = QHBoxLayout(self.frame_107)
         self.horizontalLayout_71.setObjectName(u"horizontalLayout_71")
         self.cht_gastos_mes_lay = QVBoxLayout()
-        self.cht_gastos_mes_lay.setObjectName(u"cht_gastos_mes_lay")
+        self.cht_gastos_mes_lay.setObjectName(u"cht_expenses_month_layout")
 
         self.horizontalLayout_71.addLayout(self.cht_gastos_mes_lay)
 
@@ -6472,14 +6472,14 @@ class Ui_MainWindow(object):
         self.verticalLayout_39.setObjectName(u"verticalLayout_39")
         self.verticalLayout_39.setContentsMargins(0, 0, 0, 0)
         self.pop_error_cartao = QFrame(self.backgroud_cartao)
-        self.pop_error_cartao.setObjectName(u"pop_error_cartao")
+        self.pop_error_cartao.setObjectName(u"pop_error_card")
         self.pop_error_cartao.setFrameShape(QFrame.StyledPanel)
         self.pop_error_cartao.setFrameShadow(QFrame.Raised)
 
         self.verticalLayout_39.addWidget(self.pop_error_cartao)
 
         self.cartao_options = QFrame(self.backgroud_cartao)
-        self.cartao_options.setObjectName(u"cartao_options")
+        self.cartao_options.setObjectName(u"card_options")
         self.cartao_options.setMinimumSize(QSize(0, 70))
         self.cartao_options.setMaximumSize(QSize(16777215, 16777215))
         self.cartao_options.setStyleSheet(u"background-color:rgba(255,255,255,0);\n"
@@ -6691,7 +6691,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
         self.horizontalLayout_15.setContentsMargins(0, 0, 0, 0)
         self.content_cartao = QFrame(self.scrollAreaWidgetContents_2)
-        self.content_cartao.setObjectName(u"content_cartao")
+        self.content_cartao.setObjectName(u"content_card")
         self.content_cartao.setMinimumSize(QSize(0, 0))
         self.content_cartao.setMaximumSize(QSize(440, 16777215))
         self.content_cartao.setStyleSheet(u"background-color:rgba(255,255,255,0);")
@@ -6721,7 +6721,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_15.addWidget(self.content_cartao)
 
         self.detalhes_cartao = QStackedWidget(self.scrollAreaWidgetContents_2)
-        self.detalhes_cartao.setObjectName(u"detalhes_cartao")
+        self.detalhes_cartao.setObjectName(u"card_details")
         self.detalhes_cartao.setStyleSheet(u"QFrame{\n"
 "	background-color: rgba(255, 255, 255, 0); \n"
 "	border-radius: 10px;\n"
@@ -6731,14 +6731,14 @@ class Ui_MainWindow(object):
         self.detalhes_cartao.setFrameShape(QFrame.StyledPanel)
         self.detalhes_cartao.setFrameShadow(QFrame.Raised)
         self.detalhes_cartaoPage1 = QWidget()
-        self.detalhes_cartaoPage1.setObjectName(u"detalhes_cartaoPage1")
+        self.detalhes_cartaoPage1.setObjectName(u"card_detailsPage1")
         self.detalhes_cartaoPage1.setStyleSheet(u"background-color:rgba(255,255,255,0);")
         self.verticalLayout_40 = QVBoxLayout(self.detalhes_cartaoPage1)
         self.verticalLayout_40.setSpacing(30)
         self.verticalLayout_40.setObjectName(u"verticalLayout_40")
         self.verticalLayout_40.setContentsMargins(0, 10, 0, 0)
         self.CONTAINER_geral = QFrame(self.detalhes_cartaoPage1)
-        self.CONTAINER_geral.setObjectName(u"CONTAINER_geral")
+        self.CONTAINER_geral.setObjectName(u"CONTAINER_general")
         self.CONTAINER_geral.setMinimumSize(QSize(0, 0))
         self.CONTAINER_geral.setStyleSheet(u"QFrame{\n"
 "	background-color:rgba(255,255,255,0);\n"
@@ -6792,7 +6792,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_17 = QVBoxLayout(self.frame_15)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
         self.hide_cards_det = QPushButton(self.frame_15)
-        self.hide_cards_det.setObjectName(u"hide_cards_det")
+        self.hide_cards_det.setObjectName(u"hide_cards_details")
         self.hide_cards_det.setMinimumSize(QSize(40, 53))
         self.hide_cards_det.setMaximumSize(QSize(16777215, 16777215))
         self.hide_cards_det.setStyleSheet(u"\n"
@@ -6828,7 +6828,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_17.addWidget(self.hide_cards_det)
 
         self.show_cards_det = QPushButton(self.frame_15)
-        self.show_cards_det.setObjectName(u"show_cards_det")
+        self.show_cards_det.setObjectName(u"show_cards_details")
         self.show_cards_det.setMinimumSize(QSize(40, 53))
         self.show_cards_det.setMaximumSize(QSize(16777215, 16777215))
         self.show_cards_det.setStyleSheet(u"\n"
@@ -7111,7 +7111,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
         self.horizontalLayout_17.setContentsMargins(10, 6, 10, 6)
         self.compras = QPushButton(self.frame_60)
-        self.compras.setObjectName(u"compras")
+        self.compras.setObjectName(u"purchases")
         self.compras.setMinimumSize(QSize(0, 50))
         self.compras.setMaximumSize(QSize(16777215, 16777215))
         self.compras.setTabletTracking(False)
@@ -7151,7 +7151,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_17.addWidget(self.compras)
 
         self.nova_despesa = QPushButton(self.frame_60)
-        self.nova_despesa.setObjectName(u"nova_despesa")
+        self.nova_despesa.setObjectName(u"new_expense")
         self.nova_despesa.setMinimumSize(QSize(0, 0))
         self.nova_despesa.setMaximumSize(QSize(16777215, 50))
         self.nova_despesa.setStyleSheet(u"\n"
@@ -7219,7 +7219,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_17.addWidget(self.pushButton_14)
 
         self.faturas = QPushButton(self.frame_60)
-        self.faturas.setObjectName(u"faturas")
+        self.faturas.setObjectName(u"invoices")
         self.faturas.setMinimumSize(QSize(0, 0))
         self.faturas.setMaximumSize(QSize(16777215, 50))
         self.faturas.setStyleSheet(u"\n"
@@ -7295,7 +7295,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_46.addWidget(self.frame_60)
 
         self.extrat_meses = QStackedWidget(self.frame_29)
-        self.extrat_meses.setObjectName(u"extrat_meses")
+        self.extrat_meses.setObjectName(u"extract_months")
         self.extrat_meses.setMaximumSize(QSize(16777215, 60))
         self.extrat_meses.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); \n"
 "border-radius:7px;\n"
@@ -7303,7 +7303,7 @@ class Ui_MainWindow(object):
         self.extrat_meses.setFrameShape(QFrame.StyledPanel)
         self.extrat_meses.setFrameShadow(QFrame.Raised)
         self.extrat_mesesPage1 = QWidget()
-        self.extrat_mesesPage1.setObjectName(u"extrat_mesesPage1")
+        self.extrat_mesesPage1.setObjectName(u"extract_monthsPage1")
         self.verticalLayout_28 = QVBoxLayout(self.extrat_mesesPage1)
         self.verticalLayout_28.setSpacing(0)
         self.verticalLayout_28.setObjectName(u"verticalLayout_28")
@@ -7472,7 +7472,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_33 = QHBoxLayout(self.page_2)
         self.horizontalLayout_33.setObjectName(u"horizontalLayout_33")
         self.previus_month = QPushButton(self.page_2)
-        self.previus_month.setObjectName(u"previus_month")
+        self.previus_month.setObjectName(u"previous_month")
         self.previus_month.setMinimumSize(QSize(80, 0))
         self.previus_month.setMaximumSize(QSize(120, 50))
         self.previus_month.setTabletTracking(False)
@@ -7569,7 +7569,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_39 = QHBoxLayout(self.page_8)
         self.horizontalLayout_39.setObjectName(u"horizontalLayout_39")
         self.previus_month_3 = QPushButton(self.page_8)
-        self.previus_month_3.setObjectName(u"previus_month_3")
+        self.previus_month_3.setObjectName(u"previous_month_3")
         self.previus_month_3.setMinimumSize(QSize(80, 0))
         self.previus_month_3.setMaximumSize(QSize(120, 50))
         self.previus_month_3.setTabletTracking(False)
@@ -7698,26 +7698,26 @@ class Ui_MainWindow(object):
         self.verticalLayout_44.setObjectName(u"verticalLayout_44")
         self.verticalLayout_44.setContentsMargins(0, 0, 0, 0)
         self.stacked_configcartao0 = QStackedWidget(self.frame_32)
-        self.stacked_configcartao0.setObjectName(u"stacked_configcartao0")
+        self.stacked_configcartao0.setObjectName(u"stacked_configcard0")
         self.stacked_configcartao0.setMinimumSize(QSize(0, 0))
         self.stacked_configcartao0.setStyleSheet(u"background-color: rgba(255, 255, 255, 0); \n"
 "")
         self.stacked_configcartao0.setFrameShape(QFrame.StyledPanel)
         self.stacked_configcartao0.setFrameShadow(QFrame.Raised)
         self.page_extrato = QWidget()
-        self.page_extrato.setObjectName(u"page_extrato")
+        self.page_extrato.setObjectName(u"page_extract")
         self.horizontalLayout_27 = QHBoxLayout(self.page_extrato)
         self.horizontalLayout_27.setSpacing(0)
         self.horizontalLayout_27.setObjectName(u"horizontalLayout_27")
         self.horizontalLayout_27.setContentsMargins(0, 0, 0, 0)
         self.stack_extrato_pages = QStackedWidget(self.page_extrato)
-        self.stack_extrato_pages.setObjectName(u"stack_extrato_pages")
+        self.stack_extrato_pages.setObjectName(u"stack_extract_pages")
         self.stack_extrato_pages.setMinimumSize(QSize(0, 0))
         self.stack_extrato_pages.setMaximumSize(QSize(16777215, 16777215))
         self.stack_extrato_pages.setFrameShape(QFrame.StyledPanel)
         self.stack_extrato_pages.setFrameShadow(QFrame.Raised)
         self.extrato_cards_dbs = QWidget()
-        self.extrato_cards_dbs.setObjectName(u"extrato_cards_dbs")
+        self.extrato_cards_dbs.setObjectName(u"extract_cards_dbs")
         self.horizontalLayout_34 = QHBoxLayout(self.extrato_cards_dbs)
         self.horizontalLayout_34.setSpacing(0)
         self.horizontalLayout_34.setObjectName(u"horizontalLayout_34")
@@ -7755,7 +7755,7 @@ class Ui_MainWindow(object):
         self.extrato_cartao_0.setVerticalHeaderItem(2, __qtablewidgetitem31)
         __qtablewidgetitem32 = QTableWidgetItem()
         self.extrato_cartao_0.setVerticalHeaderItem(3, __qtablewidgetitem32)
-        self.extrato_cartao_0.setObjectName(u"extrato_cartao_0")
+        self.extrato_cartao_0.setObjectName(u"extract_card_0")
         self.extrato_cartao_0.setMaximumSize(QSize(16777215, 16777215))
         self.extrato_cartao_0.setFont(font)
         self.extrato_cartao_0.setFocusPolicy(Qt.NoFocus)
@@ -7833,7 +7833,7 @@ class Ui_MainWindow(object):
 
         self.stack_extrato_pages.addWidget(self.page_not_found)
         self.page_emdia = QWidget()
-        self.page_emdia.setObjectName(u"page_emdia")
+        self.page_emdia.setObjectName(u"page_in_day")
         self.verticalLayout_31 = QVBoxLayout(self.page_emdia)
         self.verticalLayout_31.setObjectName(u"verticalLayout_31")
         self.verticalSpacer_6 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
@@ -7841,7 +7841,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_31.addItem(self.verticalSpacer_6)
 
         self.image_emdia = QFrame(self.page_emdia)
-        self.image_emdia.setObjectName(u"image_emdia")
+        self.image_emdia.setObjectName(u"image_in_day")
         self.image_emdia.setMinimumSize(QSize(0, 300))
         self.image_emdia.setStyleSheet(u"background-image: url(:/backgroud/src-page-cartoes/payout.png);\n"
 "background-position: center;\n"
@@ -7853,7 +7853,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_31.addWidget(self.image_emdia)
 
         self.txt_pag_emdia = QLabel(self.page_emdia)
-        self.txt_pag_emdia.setObjectName(u"txt_pag_emdia")
+        self.txt_pag_emdia.setObjectName(u"txt_page_in_day")
         self.txt_pag_emdia.setStyleSheet(u"border: 0px;\n"
 "border-radius:3px;")
         self.txt_pag_emdia.setAlignment(Qt.AlignCenter)
@@ -7909,7 +7909,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_25 = QVBoxLayout(self.frame_21)
         self.verticalLayout_25.setObjectName(u"verticalLayout_25")
         self.apaga_compra = QPushButton(self.frame_21)
-        self.apaga_compra.setObjectName(u"apaga_compra")
+        self.apaga_compra.setObjectName(u"delete_purchase")
         self.apaga_compra.setMinimumSize(QSize(0, 30))
         self.apaga_compra.setMaximumSize(QSize(16777215, 30))
         self.apaga_compra.setLayoutDirection(Qt.LeftToRight)
@@ -7947,7 +7947,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_25.addWidget(self.apaga_compra)
 
         self.edit_compra = QPushButton(self.frame_21)
-        self.edit_compra.setObjectName(u"edit_compra")
+        self.edit_compra.setObjectName(u"edit_purchase")
         self.edit_compra.setEnabled(True)
         self.edit_compra.setMinimumSize(QSize(0, 30))
         self.edit_compra.setMaximumSize(QSize(16777215, 30))
@@ -7986,7 +7986,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_25.addWidget(self.edit_compra)
 
         self.paga_fatura = QPushButton(self.frame_21)
-        self.paga_fatura.setObjectName(u"paga_fatura")
+        self.paga_fatura.setObjectName(u"pay_invoice")
         self.paga_fatura.setMinimumSize(QSize(0, 30))
         self.paga_fatura.setMaximumSize(QSize(16777215, 30))
         self.paga_fatura.setLayoutDirection(Qt.LeftToRight)
@@ -8024,7 +8024,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_25.addWidget(self.paga_fatura)
 
         self.parcela_fatura = QPushButton(self.frame_21)
-        self.parcela_fatura.setObjectName(u"parcela_fatura")
+        self.parcela_fatura.setObjectName(u"installment_invoice")
         self.parcela_fatura.setEnabled(True)
         self.parcela_fatura.setMinimumSize(QSize(0, 30))
         self.parcela_fatura.setMaximumSize(QSize(16777215, 30))
@@ -8111,7 +8111,7 @@ class Ui_MainWindow(object):
 
         self.stacked_configcartao0.addWidget(self.page_extrato)
         self.page_Faturas = QWidget()
-        self.page_Faturas.setObjectName(u"page_Faturas")
+        self.page_Faturas.setObjectName(u"page_Invoices")
         self.horizontalLayout_41 = QHBoxLayout(self.page_Faturas)
         self.horizontalLayout_41.setSpacing(0)
         self.horizontalLayout_41.setObjectName(u"horizontalLayout_41")
@@ -8128,7 +8128,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_45.setObjectName(u"verticalLayout_45")
         self.verticalLayout_45.setContentsMargins(0, 0, 0, 0)
         self.date_filters_fatura_2 = QFrame(self.central_cards_main_2)
-        self.date_filters_fatura_2.setObjectName(u"date_filters_fatura_2")
+        self.date_filters_fatura_2.setObjectName(u"date_filters_invoice_2")
         self.date_filters_fatura_2.setMaximumSize(QSize(16777215, 50))
         self.date_filters_fatura_2.setStyleSheet(u"border-radius: 0px;\n"
 "border-bottom: 0px;\n"
@@ -8143,7 +8143,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_45.addWidget(self.date_filters_fatura_2)
 
         self.datails_fatura_card_2 = QFrame(self.central_cards_main_2)
-        self.datails_fatura_card_2.setObjectName(u"datails_fatura_card_2")
+        self.datails_fatura_card_2.setObjectName(u"details_invoice_card_2")
         self.datails_fatura_card_2.setMaximumSize(QSize(16777215, 80))
         self.datails_fatura_card_2.setStyleSheet(u"\n"
 "background-color: rgba(255, 255, 255, 30); \n"
@@ -8175,7 +8175,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_40.addWidget(self.name_bank_2)
 
         self.set_limite_card_2 = QFrame(self.datails_fatura_card_2)
-        self.set_limite_card_2.setObjectName(u"set_limite_card_2")
+        self.set_limite_card_2.setObjectName(u"set_limit_card_2")
         self.set_limite_card_2.setStyleSheet(u"border-radius: 0px;\n"
 "border-bottom: 0px solid rgb(45, 45, 68);\n"
 "border-right: 1px solid rgb(45, 45, 68);\n"
@@ -8214,7 +8214,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_40.addWidget(self.set_limite_card_2)
 
         self.set_disponivel_cars_2 = QFrame(self.datails_fatura_card_2)
-        self.set_disponivel_cars_2.setObjectName(u"set_disponivel_cars_2")
+        self.set_disponivel_cars_2.setObjectName(u"set_available_cars_2")
         self.set_disponivel_cars_2.setStyleSheet(u"border-radius: 0px;\n"
 "border-bottom: 0px solid rgb(45, 45, 68);\n"
 "border-right: 1px solid rgb(45, 45, 68);\n"
@@ -8252,7 +8252,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_40.addWidget(self.set_disponivel_cars_2)
 
         self.set_fechamento_2 = QFrame(self.datails_fatura_card_2)
-        self.set_fechamento_2.setObjectName(u"set_fechamento_2")
+        self.set_fechamento_2.setObjectName(u"set_closure_2")
         self.set_fechamento_2.setStyleSheet(u"border-radius: 0px;\n"
 "border-bottom: 0px solid rgb(45, 45, 68);\n"
 "border-right: 1px solid rgb(45, 45, 68);\n"
@@ -8290,7 +8290,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_40.addWidget(self.set_fechamento_2)
 
         self.set_vencimento_2 = QFrame(self.datails_fatura_card_2)
-        self.set_vencimento_2.setObjectName(u"set_vencimento_2")
+        self.set_vencimento_2.setObjectName(u"set_maturity_2")
         self.set_vencimento_2.setStyleSheet(u"border-radius: 0px;\n"
 "border-bottom: 0px solid rgb(45, 45, 68);\n"
 "border-right: 0px solid rgb(45, 45, 68);\n"
@@ -8330,7 +8330,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_45.addWidget(self.datails_fatura_card_2)
 
         self.datalhed_fatura_mother_2 = QFrame(self.central_cards_main_2)
-        self.datalhed_fatura_mother_2.setObjectName(u"datalhed_fatura_mother_2")
+        self.datalhed_fatura_mother_2.setObjectName(u"datahed_invoice_mother_2")
         self.datalhed_fatura_mother_2.setStyleSheet(u"border-bottom: 0px;\n"
 "border-right: 0px;\n"
 "border-radius:15px;")
@@ -8358,7 +8358,7 @@ class Ui_MainWindow(object):
         __qtablewidgetitem37 = QTableWidgetItem()
         __qtablewidgetitem37.setTextAlignment(Qt.AlignCenter);
         self.table_faturas_ind.setHorizontalHeaderItem(4, __qtablewidgetitem37)
-        self.table_faturas_ind.setObjectName(u"table_faturas_ind")
+        self.table_faturas_ind.setObjectName(u"table_invoice_ind")
         font9 = QFont()
         font9.setFamily(u"Bahnschrift Light Condensed")
         font9.setPointSize(11)
@@ -8437,7 +8437,7 @@ class Ui_MainWindow(object):
 
         self.stacked_configcartao0.addWidget(self.page_Faturas)
         self.page_new_lancamento = QWidget()
-        self.page_new_lancamento.setObjectName(u"page_new_lancamento")
+        self.page_new_lancamento.setObjectName(u"page_new_launch")
         self.horizontalLayout_18 = QHBoxLayout(self.page_new_lancamento)
         self.horizontalLayout_18.setSpacing(0)
         self.horizontalLayout_18.setObjectName(u"horizontalLayout_18")
@@ -8990,7 +8990,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_13.addItem(self.horizontalSpacer)
 
         self.lanca = QPushButton(self.frame_18)
-        self.lanca.setObjectName(u"lanca")
+        self.lanca.setObjectName(u"lance")
         self.lanca.setMinimumSize(QSize(70, 0))
         self.lanca.setStyleSheet(u"\n"
 "\n"
@@ -9027,7 +9027,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_13.addItem(self.horizontalSpacer_2)
 
         self.cancela_lanca = QPushButton(self.frame_18)
-        self.cancela_lanca.setObjectName(u"cancela_lanca")
+        self.cancela_lanca.setObjectName(u"cancel_lance")
         self.cancela_lanca.setStyleSheet(u"\n"
 "\n"
 "QPushButton{\n"
@@ -9071,7 +9071,7 @@ class Ui_MainWindow(object):
 
         self.stacked_configcartao0.addWidget(self.page_new_lancamento)
         self.charts_indvidual = QWidget()
-        self.charts_indvidual.setObjectName(u"charts_indvidual")
+        self.charts_indvidual.setObjectName(u"charts_individual")
         self.horizontalLayout_24 = QHBoxLayout(self.charts_indvidual)
         self.horizontalLayout_24.setObjectName(u"horizontalLayout_24")
         self.tabWidget = QTabWidget(self.charts_indvidual)
@@ -9256,7 +9256,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_125.addItem(self.horizontalSpacer_43)
 
         self.id_card_xlsx_cliked = QLabel(self.options_top_xls)
-        self.id_card_xlsx_cliked.setObjectName(u"id_card_xlsx_cliked")
+        self.id_card_xlsx_cliked.setObjectName(u"id_card_xlsx_clicked")
         self.id_card_xlsx_cliked.setMaximumSize(QSize(0, 0))
 
         self.horizontalLayout_125.addWidget(self.id_card_xlsx_cliked)
@@ -9397,7 +9397,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_130.addWidget(self.frame_table_xls)
 
         self.botton_options_xls = QFrame(self.main_frame_xls)
-        self.botton_options_xls.setObjectName(u"botton_options_xls")
+        self.botton_options_xls.setObjectName(u"button_options_xls")
         self.botton_options_xls.setMinimumSize(QSize(0, 70))
         self.botton_options_xls.setMaximumSize(QSize(16777215, 70))
         self.botton_options_xls.setFrameShape(QFrame.StyledPanel)
@@ -9842,7 +9842,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_14.addWidget(self.main_dasht_top)
 
         self.main_dash_midle = QFrame(self.scrollAreaWidgetContents_8)
-        self.main_dash_midle.setObjectName(u"main_dash_midle")
+        self.main_dash_midle.setObjectName(u"main_dash_middle")
         sizePolicy6 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
         sizePolicy6.setHorizontalStretch(0)
         sizePolicy6.setVerticalStretch(0)
@@ -9861,7 +9861,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_122.setObjectName(u"verticalLayout_122")
         self.verticalLayout_122.setContentsMargins(0, 0, 0, 0)
         self.date_filters_fatura_4 = QFrame(self.main_dash_midle)
-        self.date_filters_fatura_4.setObjectName(u"date_filters_fatura_4")
+        self.date_filters_fatura_4.setObjectName(u"date_filters_invoice_4")
         self.date_filters_fatura_4.setMaximumSize(QSize(16777215, 50))
         self.date_filters_fatura_4.setStyleSheet(u"border-radius: 0px;\n"
 "border-bottom: 0px;\n"
@@ -9876,7 +9876,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_122.addWidget(self.date_filters_fatura_4)
 
         self.datails_fatura_card_4 = QFrame(self.main_dash_midle)
-        self.datails_fatura_card_4.setObjectName(u"datails_fatura_card_4")
+        self.datails_fatura_card_4.setObjectName(u"details_invoice_card_4")
         self.datails_fatura_card_4.setMaximumSize(QSize(16777215, 80))
         self.datails_fatura_card_4.setStyleSheet(u"border-radius:5px;\n"
 " border-bottom-right-radius:0px;\n"
@@ -9911,7 +9911,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_68.addWidget(self.name_bank_4)
 
         self.set_limite_card_4 = QFrame(self.datails_fatura_card_4)
-        self.set_limite_card_4.setObjectName(u"set_limite_card_4")
+        self.set_limite_card_4.setObjectName(u"set_limit_card_4")
         self.set_limite_card_4.setStyleSheet(u"border-radius: 0px;\n"
 "border-bottom: 0px solid rgb(45, 45, 68);\n"
 "border-right: 1px solid rgb(45, 45, 68);\n"
@@ -9950,7 +9950,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_68.addWidget(self.set_limite_card_4)
 
         self.set_fechamento_4 = QFrame(self.datails_fatura_card_4)
-        self.set_fechamento_4.setObjectName(u"set_fechamento_4")
+        self.set_fechamento_4.setObjectName(u"set_closure_4")
         self.set_fechamento_4.setStyleSheet(u"border-radius: 0px;\n"
 "border-bottom: 0px solid rgb(45, 45, 68);\n"
 "border-right: 1px solid rgb(45, 45, 68);\n"
@@ -9988,7 +9988,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_68.addWidget(self.set_fechamento_4)
 
         self.set_vencimento_4 = QFrame(self.datails_fatura_card_4)
-        self.set_vencimento_4.setObjectName(u"set_vencimento_4")
+        self.set_vencimento_4.setObjectName(u"set_maturity_4")
         self.set_vencimento_4.setStyleSheet(u"border-radius: 0px;\n"
 "border-bottom: 0px solid rgb(45, 45, 68);\n"
 "border-right: 0px solid rgb(45, 45, 68);\n"
@@ -10028,7 +10028,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_122.addWidget(self.datails_fatura_card_4)
 
         self.datalhed_fatura_mother_4 = QFrame(self.main_dash_midle)
-        self.datalhed_fatura_mother_4.setObjectName(u"datalhed_fatura_mother_4")
+        self.datalhed_fatura_mother_4.setObjectName(u"datahed_invoice_mother_4")
         self.datalhed_fatura_mother_4.setStyleSheet(u"border-bottom: 0px;\n"
 "border-right: 0px;\n"
 "")
@@ -10053,7 +10053,7 @@ class Ui_MainWindow(object):
         __qtablewidgetitem47 = QTableWidgetItem()
         __qtablewidgetitem47.setTextAlignment(Qt.AlignCenter);
         self.table_faturas_ind_3.setHorizontalHeaderItem(3, __qtablewidgetitem47)
-        self.table_faturas_ind_3.setObjectName(u"table_faturas_ind_3")
+        self.table_faturas_ind_3.setObjectName(u"table_invoices_ind_3")
         self.table_faturas_ind_3.setFont(font9)
         self.table_faturas_ind_3.setStyleSheet(u"QWidget {\n"
 "    color: #fffff8;\n"
@@ -10141,7 +10141,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
         self.chart_gastos_all = QTabWidget(self.main_dash_bottom)
-        self.chart_gastos_all.setObjectName(u"chart_gastos_all")
+        self.chart_gastos_all.setObjectName(u"chart_bills_all")
         self.chart_gastos_all.setMinimumSize(QSize(0, 0))
         self.chart_gastos_all.setMaximumSize(QSize(16777215, 16777215))
         self.chart_gastos_all.setFont(font)
@@ -10291,7 +10291,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_35.addWidget(self.listWidget)
 
         self.limit_dash_gastos = QFrame(self.frame_47)
-        self.limit_dash_gastos.setObjectName(u"limit_dash_gastos")
+        self.limit_dash_gastos.setObjectName(u"limit_dash_bills")
         self.limit_dash_gastos.setMinimumSize(QSize(200, 0))
         self.limit_dash_gastos.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
 "")
@@ -10903,7 +10903,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_49.addItem(self.horizontalSpacer_19)
 
         self.frameadc = QFrame(self.frame_39)
-        self.frameadc.setObjectName(u"frameadc")
+        self.frameadc.setObjectName(u"frameadd")
         sizePolicy4.setHeightForWidth(self.frameadc.sizePolicy().hasHeightForWidth())
         self.frameadc.setSizePolicy(sizePolicy4)
         self.frameadc.setMinimumSize(QSize(0, 0))
@@ -10924,7 +10924,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_11 = QVBoxLayout(self.frameadc)
         self.verticalLayout_11.setObjectName(u"verticalLayout_11")
         self.logoadc = QFrame(self.frameadc)
-        self.logoadc.setObjectName(u"logoadc")
+        self.logoadc.setObjectName(u"logoadd")
         self.logoadc.setMinimumSize(QSize(0, 40))
         self.logoadc.setMaximumSize(QSize(40, 40))
         self.logoadc.setStyleSheet(u"border: 0px;\n"
@@ -10951,7 +10951,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.label_37, 6, 0, 1, 1)
 
         self.adclimite = QLineEdit(self.frame_10)
-        self.adclimite.setObjectName(u"adclimite")
+        self.adclimite.setObjectName(u"addlimit")
         self.adclimite.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -10961,7 +10961,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.adclimite, 0, 1, 1, 1)
 
         self.adctitular = QLineEdit(self.frame_10)
-        self.adctitular.setObjectName(u"adctitular")
+        self.adctitular.setObjectName(u"addholder")
         self.adctitular.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -10982,7 +10982,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.textcard_3, 3, 0, 1, 1)
 
         self.adcfechamento = QLineEdit(self.frame_10)
-        self.adcfechamento.setObjectName(u"adcfechamento")
+        self.adcfechamento.setObjectName(u"addclosure")
         self.adcfechamento.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -11026,7 +11026,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.textcard_4, 4, 0, 1, 1)
 
         self.adcfinal = QLineEdit(self.frame_10)
-        self.adcfinal.setObjectName(u"adcfinal")
+        self.adcfinal.setObjectName(u"addfinal")
         self.adcfinal.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -11036,7 +11036,7 @@ class Ui_MainWindow(object):
         self.gridLayout.addWidget(self.adcfinal, 3, 1, 1, 1)
 
         self.adcvencimento = QLineEdit(self.frame_10)
-        self.adcvencimento.setObjectName(u"adcvencimento")
+        self.adcvencimento.setObjectName(u"addmaturity")
         self.adcvencimento.setStyleSheet(u"border-radius: 0px;\n"
 "background-color:rgba(255,255,255,0);\n"
 "color:rgb(255, 255, 255);\n"
@@ -11270,7 +11270,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_110.addItem(self.horizontalSpacer_32)
 
         self.hidden_saldo_fat0_true = QRadioButton(self.frame_99)
-        self.hidden_saldo_fat0_true.setObjectName(u"hidden_saldo_fat0_true")
+        self.hidden_saldo_fat0_true.setObjectName(u"hidden_fat_balance0_true")
         font10 = QFont()
         font10.setFamily(u"Bahnschrift Light Condensed")
         font10.setPointSize(14)
@@ -11291,7 +11291,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_110.addItem(self.horizontalSpacer_31)
 
         self.hidden_saldo_fat0_false = QRadioButton(self.frame_99)
-        self.hidden_saldo_fat0_false.setObjectName(u"hidden_saldo_fat0_false")
+        self.hidden_saldo_fat0_false.setObjectName(u"hidden_fat_balance0_false")
         self.hidden_saldo_fat0_false.setStyleSheet(u"background-color:rgba(255,255,255,30);\n"
 "color: rgb(255, 255, 255);")
         self.hidden_saldo_fat0_false.setChecked(True)
@@ -11709,302 +11709,302 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Home Application", None))
-        self.actionSalvar_automaticamente.setText(QCoreApplication.translate("MainWindow", u"Salvar automaticamente", None))
-        self.actionAtualizar_automaticamente.setText(QCoreApplication.translate("MainWindow", u"Atualizar automaticamente", None))
-        self.actionAbrir_DB.setText(QCoreApplication.translate("MainWindow", u"Abrir DB", None))
-        self.actionSalvar_Relatorio.setText(QCoreApplication.translate("MainWindow", u"Salvar Relatorio", None))
-        self.actionAbrir_xlsx.setText(QCoreApplication.translate("MainWindow", u"Abrir xlsx", None))
-        self.actionImportar_xlsx.setText(QCoreApplication.translate("MainWindow", u"Importar xlsx", None))
+        self.actionSalvar_automaticamente.setText(QCoreApplication.translate("MainWindow", u"Autosave", None))
+        self.actionAtualizar_automaticamente.setText(QCoreApplication.translate("MainWindow", u"Update automatically", None))
+        self.actionAbrir_DB.setText(QCoreApplication.translate("MainWindow", u"Open DB", None))
+        self.actionSalvar_Relatorio.setText(QCoreApplication.translate("MainWindow", u"Save Report", None))
+        self.actionAbrir_xlsx.setText(QCoreApplication.translate("MainWindow", u"Open xlsx", None))
+        self.actionImportar_xlsx.setText(QCoreApplication.translate("MainWindow", u"Import xlsx", None))
         self.texto_error.setText(QCoreApplication.translate("MainWindow", u"Error", None))
         self.pushButton_7.setText("")
-        self.enter_user.setPlaceholderText(QCoreApplication.translate("MainWindow", u"   Usuario", None))
-        self.enter_pass.setPlaceholderText(QCoreApplication.translate("MainWindow", u"   Senha", None))
-        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"Lembrar senha", None))
-        self.buton_login.setText(QCoreApplication.translate("MainWindow", u"Entrar", None))
+        self.enter_user.setPlaceholderText(QCoreApplication.translate("MainWindow", u"   User", None))
+        self.enter_pass.setPlaceholderText(QCoreApplication.translate("MainWindow", u"   Password", None))
+        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"Remember password", None))
+        self.buton_login.setText(QCoreApplication.translate("MainWindow", u"Login", None))
         self.credits.setText(QCoreApplication.translate("MainWindow", u"   Home Application Ver: 1.23", None))
         self.minimize.setText("")
         self.maxmize.setText("")
         self.exit.setText("")
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"    Home APP", None))
-        self.pushButton_8.setText(QCoreApplication.translate("MainWindow", u"     Inicio", None))
-        self.pushButton_10.setText(QCoreApplication.translate("MainWindow", u"     Cartoes", None))
-        self.pushButton_9.setText(QCoreApplication.translate("MainWindow", u"     Investimentos", None))
-        self.pushButton_11.setText(QCoreApplication.translate("MainWindow", u"     Transferencias", None))
-        self.pushButton_15.setText(QCoreApplication.translate("MainWindow", u"     Estoque", None))
-        self.pushButton_16.setText(QCoreApplication.translate("MainWindow", u"     Preferencias", None))
-        self.salvar_6.setText(QCoreApplication.translate("MainWindow", u"    Cria banco de Dados", None))
-        self.salvar_5.setText(QCoreApplication.translate("MainWindow", u"    Trocar Usuario", None))
-        self.salvar_4.setText(QCoreApplication.translate("MainWindow", u"    Sair", None))
-        self.pushButton_18.setText(QCoreApplication.translate("MainWindow", u"    Desenvolvedor", None))
+        self.pushButton_8.setText(QCoreApplication.translate("MainWindow", u"     Home", None))
+        self.pushButton_10.setText(QCoreApplication.translate("MainWindow", u"     Cards", None))
+        self.pushButton_9.setText(QCoreApplication.translate("MainWindow", u"     Investments", None))
+        self.pushButton_11.setText(QCoreApplication.translate("MainWindow", u"     Transfers", None))
+        self.pushButton_15.setText(QCoreApplication.translate("MainWindow", u"     Stock", None))
+        self.pushButton_16.setText(QCoreApplication.translate("MainWindow", u"     Preferences", None))
+        self.salvar_6.setText(QCoreApplication.translate("MainWindow", u"    Create database", None))
+        self.salvar_5.setText(QCoreApplication.translate("MainWindow", u"    Change User", None))
+        self.salvar_4.setText(QCoreApplication.translate("MainWindow", u"    Log out", None))
+        self.pushButton_18.setText(QCoreApplication.translate("MainWindow", u"    Developer", None))
         self.hide_cards_main_2.setText("")
         self.show_cards_main_2.setText("")
         self.pushButton_24.setText("")
-        self.label_41.setText(QCoreApplication.translate("MainWindow", u"Ol\u00e1, Boa Tarde.", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"Ol\u00e1, Good afternoon.", None))
         self.label_42.setText(QCoreApplication.translate("MainWindow", u"15:23", None))
 #if QT_CONFIG(whatsthis)
         self.frame_97.setWhatsThis("")
 #endif // QT_CONFIG(whatsthis)
-        self.label_68.setText(QCoreApplication.translate("MainWindow", u"Titular", None))
-        self.label_69.setText(QCoreApplication.translate("MainWindow", u"Saldo em Reais", None))
-        self.label_70.setText(QCoreApplication.translate("MainWindow", u"R$ 0,00", None))
-        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Agencia:", None))
-        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Conta:", None))
+        self.label_68.setText(QCoreApplication.translate("MainWindow", u"Holder", None))
+        self.label_69.setText(QCoreApplication.translate("MainWindow", u"Balance in Rupees", None))
+        self.label_70.setText(QCoreApplication.translate("MainWindow", u"Rs. 0,00", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Agency:", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Account:", None))
         self.line_d_2.setInputMask("")
         self.line_d_2.setText("")
-        self.line_d_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Dia", None))
+        self.line_d_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Date", None))
         self.line_m_2.setText("")
         self.line_m_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"M\u00eas", None))
         self.line_y_2.setText("")
-        self.line_y_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"  Ano", None))
-        self.pushButton_27.setText(QCoreApplication.translate("MainWindow", u"Procurar  ", None))
-        self.pushButton_28.setText(QCoreApplication.translate("MainWindow", u"Voltar", None))
-        self.previus_month_2.setText(QCoreApplication.translate("MainWindow", u" Previus ", None))
+        self.line_y_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"  Year", None))
+        self.pushButton_27.setText(QCoreApplication.translate("MainWindow", u"Search  ", None))
+        self.pushButton_28.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.previus_month_2.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
 #if QT_CONFIG(shortcut)
         self.previus_month_2.setShortcut(QCoreApplication.translate("MainWindow", u"Left", None))
 #endif // QT_CONFIG(shortcut)
-        self.label_67.setText(QCoreApplication.translate("MainWindow", u"Novembro", None))
-        self.label_71.setText(QCoreApplication.translate("MainWindow", u"de", None))
+        self.label_67.setText(QCoreApplication.translate("MainWindow", u"November", None))
+        self.label_71.setText(QCoreApplication.translate("MainWindow", u"of", None))
         self.label_72.setText(QCoreApplication.translate("MainWindow", u"2022", None))
         self.next_month_2.setText(QCoreApplication.translate("MainWindow", u" Next", None))
 #if QT_CONFIG(shortcut)
         self.next_month_2.setShortcut(QCoreApplication.translate("MainWindow", u"Right", None))
 #endif // QT_CONFIG(shortcut)
-        self.previus_month_4.setText(QCoreApplication.translate("MainWindow", u" Previus ", None))
-        self.label_73.setText(QCoreApplication.translate("MainWindow", u"Ano", None))
+        self.previus_month_4.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
+        self.label_73.setText(QCoreApplication.translate("MainWindow", u"Year", None))
         self.label_74.setText(QCoreApplication.translate("MainWindow", u"2022", None))
         self.next_month_4.setText(QCoreApplication.translate("MainWindow", u" Next", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Chk", None));
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Check", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"id_compra", None));
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"id_purchase", None));
         ___qtablewidgetitem2 = self.tableWidget.horizontalHeaderItem(2)
         ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"id_bank", None));
         ___qtablewidgetitem3 = self.tableWidget.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Banco", None));
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Bank", None));
         ___qtablewidgetitem4 = self.tableWidget.horizontalHeaderItem(4)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"tipo_e_s", None));
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"types", None));
         ___qtablewidgetitem5 = self.tableWidget.horizontalHeaderItem(5)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Data", None));
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Date", None));
         ___qtablewidgetitem6 = self.tableWidget.horizontalHeaderItem(6)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Prioridade", None));
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"Priority", None));
         ___qtablewidgetitem7 = self.tableWidget.horizontalHeaderItem(7)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Categoria", None));
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"Category", None));
         ___qtablewidgetitem8 = self.tableWidget.horizontalHeaderItem(8)
-        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Pagamento", None));
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"Payment", None));
         ___qtablewidgetitem9 = self.tableWidget.horizontalHeaderItem(9)
-        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Valor", None));
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"Value", None));
         ___qtablewidgetitem10 = self.tableWidget.horizontalHeaderItem(10)
         ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"Status", None));
         ___qtablewidgetitem11 = self.tableWidget.horizontalHeaderItem(11)
-        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Saldo", None));
-        self.text_page_notfound_2.setText(QCoreApplication.translate("MainWindow", u"Compra n\u00e3o localizada", None))
-        self.txt_pag_emdia_2.setText(QCoreApplication.translate("MainWindow", u"N\u00e3o h\u00e1 despesas este mes!", None))
-        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Descri\u00e7\u00e3o:", None))
+        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"Balance", None));
+        self.text_page_notfound_2.setText(QCoreApplication.translate("MainWindow", u"Localized \u00e3 purchase", None))
+        self.txt_pag_emdia_2.setText(QCoreApplication.translate("MainWindow", u"No\u00e3 \u00e1 expenses this month!", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Description\u00e7\u00e3:", None))
         self.textEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bahnschrift Light Condensed'; font-size:14pt; font-weight:24; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
-        self.label_if_card.setText(QCoreApplication.translate("MainWindow", u"Cartao:", None))
-        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Fatura de ", None))
-        self.btn_if_card_2.setText(QCoreApplication.translate("MainWindow", u"Ver cartao", None))
-        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Anexos:", None))
+        self.label_if_card.setText(QCoreApplication.translate("MainWindow", u"Card:", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Invoice ", None))
+        self.btn_if_card_2.setText(QCoreApplication.translate("MainWindow", u"View card", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Attachments:", None))
         self.toolButton_pdf_opt.setText(QCoreApplication.translate("MainWindow", u"...", None))
-        self.delet_pdf.setText(QCoreApplication.translate("MainWindow", u"Apagar Anexo", None))
+        self.delet_pdf.setText(QCoreApplication.translate("MainWindow", u"Delete attachment", None))
         self.download_pdf.setText(QCoreApplication.translate("MainWindow", u"Download", None))
-        self.paga_fatura_3.setText(QCoreApplication.translate("MainWindow", u"Pagar", None))
-        self.edit_compra_3.setText(QCoreApplication.translate("MainWindow", u"Editar Lan\u00e7amento", None))
-        self.parcela_fatura_3.setText(QCoreApplication.translate("MainWindow", u"Detalhes do Pagamento", None))
-        self.apaga_compra_3.setText(QCoreApplication.translate("MainWindow", u"Apagar", None))
-        self.filter_dates_btn_3.setText(QCoreApplication.translate("MainWindow", u"Filtrar por Data  ", None))
-        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Detalhes do Pagamento:", None))
-        self.label_106.setText(QCoreApplication.translate("MainWindow", u"Pago com saldo de", None))
-        self.label_107.setText(QCoreApplication.translate("MainWindow", u"Data de pagamento:", None))
-        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Vencimento:", None))
-        self.paga_fatura_4.setText(QCoreApplication.translate("MainWindow", u"Voltar", None))
-        self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main1), QCoreApplication.translate("MainWindow", u"Fluxo de Caixa", None))
-        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Lan\u00e7amento", None))
-        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Conta", None))
-        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Opera\u00e7\u00e3o", None))
+        self.paga_fatura_3.setText(QCoreApplication.translate("MainWindow", u"Pay", None))
+        self.edit_compra_3.setText(QCoreApplication.translate("MainWindow", u"Edit Launch\u00e7", None))
+        self.parcela_fatura_3.setText(QCoreApplication.translate("MainWindow", u"Payment details", None))
+        self.apaga_compra_3.setText(QCoreApplication.translate("MainWindow", u"Delete", None))
+        self.filter_dates_btn_3.setText(QCoreApplication.translate("MainWindow", u"Filter by Date  ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Payment details:", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"Paid with balance", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"Payment date:", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Due date:", None))
+        self.paga_fatura_4.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main1), QCoreApplication.translate("MainWindow", u"Cash flow", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Launch\u00e7", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Account", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Operation\u00e7\u00e3", None))
         self.comboBox_25.setItemText(0, "")
-        self.comboBox_25.setItemText(1, QCoreApplication.translate("MainWindow", u"Entrada", None))
-        self.comboBox_25.setItemText(2, QCoreApplication.translate("MainWindow", u"Saida", None))
+        self.comboBox_25.setItemText(1, QCoreApplication.translate("MainWindow", u"Entry", None))
+        self.comboBox_25.setItemText(2, QCoreApplication.translate("MainWindow", u"Exit", None))
 
-        self.label_90.setText(QCoreApplication.translate("MainWindow", u"Pagamento", None))
-        self.label_82.setText(QCoreApplication.translate("MainWindow", u"Selecione a Categoria", None))
-        self.label_79.setText(QCoreApplication.translate("MainWindow", u"Descri\u00e7\u00e3o", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"Payment", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"Select Category", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"Description\u00e7\u00e3", None))
         self.lineEdit_11.setText("")
         self.lineEdit_11.setPlaceholderText("")
-        self.label_80.setText(QCoreApplication.translate("MainWindow", u"Data da Transa\u00e7\u00e3o", None))
-        self.pushButton_25.setText(QCoreApplication.translate("MainWindow", u"Hoje", None))
-        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Valor do Lan\u00e7amento", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"Date of Transaction\u00e7\u00e3", None))
+        self.pushButton_25.setText(QCoreApplication.translate("MainWindow", u"Today", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Launch value\u00e7", None))
         self.lineEdit_13.setText("")
-        self.label_83.setText(QCoreApplication.translate("MainWindow", u"J\u00e1 pago/recebido?", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"\u00e1 Paid/received?", None))
         self.comboBox_22.setItemText(0, "")
-        self.comboBox_22.setItemText(1, QCoreApplication.translate("MainWindow", u"Sim", None))
-        self.comboBox_22.setItemText(2, QCoreApplication.translate("MainWindow", u"N\u00e3o", None))
+        self.comboBox_22.setItemText(1, QCoreApplication.translate("MainWindow", u"Yes", None))
+        self.comboBox_22.setItemText(2, QCoreApplication.translate("MainWindow", u"No\u00e3", None))
 
-        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Configurar Lan\u00e7amento", None))
-        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Programar data", None))
-        self.label_86.setText(QCoreApplication.translate("MainWindow", u"Recorrente?", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Configure Launch\u00e7", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Schedule date", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"Recurring?", None))
         self.comboBox_23.setItemText(0, "")
-        self.comboBox_23.setItemText(1, QCoreApplication.translate("MainWindow", u"Sim", None))
-        self.comboBox_23.setItemText(2, QCoreApplication.translate("MainWindow", u"N\u00e3o", None))
+        self.comboBox_23.setItemText(1, QCoreApplication.translate("MainWindow", u"Yes", None))
+        self.comboBox_23.setItemText(2, QCoreApplication.translate("MainWindow", u"No\u00e3", None))
 
-        self.label_89.setText(QCoreApplication.translate("MainWindow", u"Configurar recorrencia", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"Configure recurrence", None))
         self.comboBox_26.setItemText(0, "")
-        self.comboBox_26.setItemText(1, QCoreApplication.translate("MainWindow", u"Mes", None))
+        self.comboBox_26.setItemText(1, QCoreApplication.translate("MainWindow", u"Month", None))
 
-        self.label_88.setText(QCoreApplication.translate("MainWindow", u"Data todo dia", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"Data all day", None))
         self.lineEdit_14.setText("")
-        self.lineEdit_14.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Exemplo: 09", None))
-        self.pushButton_26.setText(QCoreApplication.translate("MainWindow", u"Hoje", None))
-        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Anexos:", None))
-        self.download_pdf_2.setText(QCoreApplication.translate("MainWindow", u"Selecionar", None))
-        self.label_61.setText(QCoreApplication.translate("MainWindow", u"Anexos", None))
-        self.add_lancamento_btn.setText(QCoreApplication.translate("MainWindow", u"Lan\u00e7ar", None))
-        self.update_bank_2.setText(QCoreApplication.translate("MainWindow", u"Cancelar", None))
-        self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main2), QCoreApplication.translate("MainWindow", u"Novo Lan\u00e7amento", None))
-        self.label_65.setText(QCoreApplication.translate("MainWindow", u"Adicionar novo", None))
+        self.lineEdit_14.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Example: 09", None))
+        self.pushButton_26.setText(QCoreApplication.translate("MainWindow", u"Today", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Attachments:", None))
+        self.download_pdf_2.setText(QCoreApplication.translate("MainWindow", u"Select", None))
+        self.label_61.setText(QCoreApplication.translate("MainWindow", u"Attachments", None))
+        self.add_lancamento_btn.setText(QCoreApplication.translate("MainWindow", u"Launch\u00e7", None))
+        self.update_bank_2.setText(QCoreApplication.translate("MainWindow", u"Cancel", None))
+        self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main2), QCoreApplication.translate("MainWindow", u"New Launch\u00e7", None))
+        self.label_65.setText(QCoreApplication.translate("MainWindow", u"Add new", None))
         self.select_conta_bancaria.setItemText(0, QCoreApplication.translate("MainWindow", u"C6", None))
         self.select_conta_bancaria.setItemText(1, QCoreApplication.translate("MainWindow", u"NUBANK", None))
         self.select_conta_bancaria.setItemText(2, QCoreApplication.translate("MainWindow", u"BTG", None))
         self.select_conta_bancaria.setItemText(3, QCoreApplication.translate("MainWindow", u"SANTANDER", None))
         self.select_conta_bancaria.setItemText(4, QCoreApplication.translate("MainWindow", u"ITAU", None))
         self.select_conta_bancaria.setItemText(5, QCoreApplication.translate("MainWindow", u"BRADESCO", None))
-        self.select_conta_bancaria.setItemText(6, QCoreApplication.translate("MainWindow", u"CAIXA ECONOMICA", None))
+        self.select_conta_bancaria.setItemText(6, QCoreApplication.translate("MainWindow", u"SAVINGS BANK", None))
 
-        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Definir como padrao?", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Set as default?", None))
         self.combo_bank_padrao.setItemText(0, "")
-        self.combo_bank_padrao.setItemText(1, QCoreApplication.translate("MainWindow", u"Sim", None))
-        self.combo_bank_padrao.setItemText(2, QCoreApplication.translate("MainWindow", u"N\u00e3o", None))
+        self.combo_bank_padrao.setItemText(1, QCoreApplication.translate("MainWindow", u"Yes", None))
+        self.combo_bank_padrao.setItemText(2, QCoreApplication.translate("MainWindow", u"No\u00e3", None))
 
         self.adcagencia_conta.setPlaceholderText(QCoreApplication.translate("MainWindow", u"XXXX", None))
-        self.adctitular_conta.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nome", None))
+        self.adctitular_conta.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Name", None))
         self.adc_saldo_conta.setPlaceholderText(QCoreApplication.translate("MainWindow", u"01", None))
-        self.label_62.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Saldo Inicial</span></p></body></html>", None))
-        self.textcard_5.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Titular</span></p></body></html>", None))
-        self.textcard_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Agencia</span></p></body></html>", None))
+        self.label_62.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Opening Balance</span></p></body></html>", None))
+        self.textcard_5.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Holder</span></p></body></html>", None))
+        self.textcard_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Agency</span></p></body></html>", None))
         self.adc_conta_conta.setPlaceholderText(QCoreApplication.translate("MainWindow", u"01", None))
-        self.textcard_7.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Conta</span></p></body></html>", None))
+        self.textcard_7.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Account</span></p></body></html>", None))
         self.config_crdit_c.setText("")
-        self.label_105.setText(QCoreApplication.translate("MainWindow", u"Configurar Conta", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"Configure Account", None))
         self.config_ccoun.setText("")
-        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Cart\u00e3o de Credito", None))
-        self.textcard_8.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Final do Cart\u00e3o</span></p></body></html>", None))
-        self.adclimite_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"R$", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Credit Card\u00e3", None))
+        self.textcard_8.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">End of Card\u00e3</span></p></body></html>", None))
+        self.adclimite_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Rs.", None))
         self.adcfechamento_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"01", None))
-        self.label_66.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Fechamento da Fatura:</span></p></body></html>", None))
+        self.label_66.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Invoice closing:</span></p></body></html>", None))
         self.adcvencimento_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"01", None))
-        self.textcard_9.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Titular</span></p></body></html>", None))
+        self.textcard_9.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Holder</span></p></body></html>", None))
         self.textcard_10.setText(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'Bahnschrift Light Condensed'; font-size:10pt; font-weight:24; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Limite Total do Cartao</span></p></body></html>", None))
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Total Card Limit</span></p></body></html>", None))
         self.adcfinal_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"XXXX", None))
-        self.adctitular_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nome", None))
-        self.textcard_11.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Vencimento</span></p></body></html>", None))
-        self.label_97.setText(QCoreApplication.translate("MainWindow", u"Possui carao de credito?", None))
+        self.adctitular_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.textcard_11.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Due date</span></p></body></html>", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"Has credit card?", None))
         self.comboBox_24.setItemText(0, "")
-        self.comboBox_24.setItemText(1, QCoreApplication.translate("MainWindow", u"Sim", None))
-        self.comboBox_24.setItemText(2, QCoreApplication.translate("MainWindow", u"N\u00e3o", None))
+        self.comboBox_24.setItemText(1, QCoreApplication.translate("MainWindow", u"Yes", None))
+        self.comboBox_24.setItemText(2, QCoreApplication.translate("MainWindow", u"No\u00e3", None))
 
-        self.add_bank.setText(QCoreApplication.translate("MainWindow", u"Adicionar", None))
-        self.label_63.setText(QCoreApplication.translate("MainWindow", u"Alterar", None))
-        self.label_91.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:14pt;\">Banco</span></p></body></html>", None))
+        self.add_bank.setText(QCoreApplication.translate("MainWindow", u"Add", None))
+        self.label_63.setText(QCoreApplication.translate("MainWindow", u"Change", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:14pt;\">Bank</span></p></body></html>", None))
         self.plainTextEdit.setPlainText("")
-        self.label_84.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Agencia</p></body></html>", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Agency</p></body></html>", None))
         self.plainTextEdit_2.setPlainText("")
-        self.label_92.setText(QCoreApplication.translate("MainWindow", u"Conta", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"Account", None))
         self.plainTextEdit_3.setPlainText("")
-        self.label_93.setText(QCoreApplication.translate("MainWindow", u"Saldo", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"Balance", None))
         self.plainTextEdit_4.setPlainText("")
-        self.label_64.setText(QCoreApplication.translate("MainWindow", u"Cartao de credito", None))
-        self.label_94.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Limite</p></body></html>", None))
+        self.label_64.setText(QCoreApplication.translate("MainWindow", u"Credit card", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Limit</p></body></html>", None))
         self.plainTextEdit_5.setPlainText("")
-        self.label_99.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Final do cartao</p></body></html>", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>End of card</p></body></html>", None))
         self.plainTextEdit_9.setPlainText("")
-        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Titular", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Holder", None))
         self.plainTextEdit_6.setPlainText("")
-        self.label_98.setText(QCoreApplication.translate("MainWindow", u"Vencimento", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"Due date", None))
         self.plainTextEdit_8.setPlainText("")
-        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Fechamento", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Closure", None))
         self.plainTextEdit_7.setPlainText("")
-        self.update_bank.setText(QCoreApplication.translate("MainWindow", u"Atualizar", None))
+        self.update_bank.setText(QCoreApplication.translate("MainWindow", u"Update", None))
         self.remover_bank.setText(QCoreApplication.translate("MainWindow", u"Remover", None))
-        self.label_111.setText(QCoreApplication.translate("MainWindow", u"Lista Bancos ativos", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"List of active banks", None))
         ___qtablewidgetitem12 = self.table_active_banks.horizontalHeaderItem(0)
         ___qtablewidgetitem12.setText(QCoreApplication.translate("MainWindow", u"id", None));
         ___qtablewidgetitem13 = self.table_active_banks.horizontalHeaderItem(1)
-        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"saldo_inicial", None));
+        ___qtablewidgetitem13.setText(QCoreApplication.translate("MainWindow", u"initial_balance", None));
         ___qtablewidgetitem14 = self.table_active_banks.horizontalHeaderItem(2)
-        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"Banco", None));
+        ___qtablewidgetitem14.setText(QCoreApplication.translate("MainWindow", u"Bank", None));
         ___qtablewidgetitem15 = self.table_active_banks.horizontalHeaderItem(3)
-        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"Agencia", None));
+        ___qtablewidgetitem15.setText(QCoreApplication.translate("MainWindow", u"Agency", None));
         ___qtablewidgetitem16 = self.table_active_banks.horizontalHeaderItem(4)
-        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Conta", None));
+        ___qtablewidgetitem16.setText(QCoreApplication.translate("MainWindow", u"Account", None));
         ___qtablewidgetitem17 = self.table_active_banks.horizontalHeaderItem(5)
-        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"Titular", None));
+        ___qtablewidgetitem17.setText(QCoreApplication.translate("MainWindow", u"Holder", None));
         ___qtablewidgetitem18 = self.table_active_banks.horizontalHeaderItem(6)
         ___qtablewidgetitem18.setText(QCoreApplication.translate("MainWindow", u"id_credit_Card", None));
-        self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main3), QCoreApplication.translate("MainWindow", u"Contas Bancarias", None))
-        self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main4), QCoreApplication.translate("MainWindow", u"Alertas", None))
+        self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main3), QCoreApplication.translate("MainWindow", u"Bank accounts", None))
+        self.chart_gastos_all_2.setTabText(self.chart_gastos_all_2.indexOf(self.page_Tabe_main4), QCoreApplication.translate("MainWindow", u"Alerts", None))
         self.hide_cards_main_3.setText("")
-        self.grid.setText(QCoreApplication.translate("MainWindow", u"    Meus Cart\u00f5es", None))
-        self.grid_2.setText(QCoreApplication.translate("MainWindow", u"   Configurar Cart\u00f5es", None))
+        self.grid.setText(QCoreApplication.translate("MainWindow", u"    My Cards\u00f5", None))
+        self.grid_2.setText(QCoreApplication.translate("MainWindow", u"   Configure Cards\u00f5", None))
         self.hide_cards_det.setText("")
         self.show_cards_det.setText("")
         self.back_main_dash.setText("")
-        self.labelCredits_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Uso de limte</span></p></body></html>", None))
+        self.labelCredits_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Limit use</span></p></body></html>", None))
         self.labelTitle_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:16pt; font-weight:600; color:#ffffff;\"></span></p></body></html>", None))
         self.labelPercentage_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:20pt;\">0</span><span style=\" font-size:20pt; vertical-align:super;\">%</span></p></body></html>", None))
         self.frame_50.setStyleSheet(QCoreApplication.translate("MainWindow", u"background-color: rgba(255, 255, 255, 0);", None))
-        self.labelTitle_8.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Limite Utilizado:</span></p><p><span style=\" font-size:20pt; color:#ffffff;\">R$0,00</span></p></body></html>", None))
-        self.labelTitle_10.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Limite Disponivel</span></p><p><span style=\" font-size:20pt; color:#ffffff;\">R$0,00</span></p></body></html>", None))
-        self.compras.setText(QCoreApplication.translate("MainWindow", u"Compras", None))
-        self.nova_despesa.setText(QCoreApplication.translate("MainWindow", u"   Nova Despesa", None))
+        self.labelTitle_8.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Limite Utilizado:</span></p><p><span style=\" font-size:20pt; color:#ffffff;\">Rs.0,00</span></p></body></html>", None))
+        self.labelTitle_10.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Limite Disponivel</span></p><p><span style=\" font-size:20pt; color:#ffffff;\">Rs.0,00</span></p></body></html>", None))
+        self.compras.setText(QCoreApplication.translate("MainWindow", u"Shopping", None))
+        self.nova_despesa.setText(QCoreApplication.translate("MainWindow", u"   New Expense", None))
         self.pushButton_14.setText(QCoreApplication.translate("MainWindow", u"   DashBoard", None))
-        self.faturas.setText(QCoreApplication.translate("MainWindow", u"   Faturas", None))
-        self.pushButton_12.setText(QCoreApplication.translate("MainWindow", u"   Importar XLSX", None))
+        self.faturas.setText(QCoreApplication.translate("MainWindow", u"   Invoices", None))
+        self.pushButton_12.setText(QCoreApplication.translate("MainWindow", u"   Import XLSX", None))
         self.line_d.setInputMask("")
         self.line_d.setText("")
-        self.line_d.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Dia", None))
+        self.line_d.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Day", None))
         self.line_m.setText("")
-        self.line_m.setPlaceholderText(QCoreApplication.translate("MainWindow", u"M\u00eas", None))
+        self.line_m.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Months\u00ea", None))
         self.line_y.setText("")
-        self.line_y.setPlaceholderText(QCoreApplication.translate("MainWindow", u"  Ano", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Procurar  ", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Voltar", None))
-        self.previus_month.setText(QCoreApplication.translate("MainWindow", u" Previus ", None))
+        self.line_y.setPlaceholderText(QCoreApplication.translate("MainWindow", u"  Year", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Search  ", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.previus_month.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
 #if QT_CONFIG(shortcut)
         self.previus_month.setShortcut(QCoreApplication.translate("MainWindow", u"Left", None))
 #endif // QT_CONFIG(shortcut)
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Novembro", None))
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"de", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"November", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"of", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"2022", None))
         self.next_month.setText(QCoreApplication.translate("MainWindow", u" Next", None))
 #if QT_CONFIG(shortcut)
         self.next_month.setShortcut(QCoreApplication.translate("MainWindow", u"Right", None))
 #endif // QT_CONFIG(shortcut)
-        self.previus_month_3.setText(QCoreApplication.translate("MainWindow", u" Previus ", None))
-        self.label_35.setText(QCoreApplication.translate("MainWindow", u"Ano", None))
+        self.previus_month_3.setText(QCoreApplication.translate("MainWindow", u" Previous ", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"Year", None))
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"2022", None))
         self.next_month_3.setText(QCoreApplication.translate("MainWindow", u" Next", None))
         ___qtablewidgetitem19 = self.extrato_cartao_0.horizontalHeaderItem(0)
-        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"icon_cartegori", None));
+        ___qtablewidgetitem19.setText(QCoreApplication.translate("MainWindow", u"icon_category", None));
         ___qtablewidgetitem20 = self.extrato_cartao_0.horizontalHeaderItem(1)
-        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Categoria", None));
+        ___qtablewidgetitem20.setText(QCoreApplication.translate("MainWindow", u"Category", None));
         ___qtablewidgetitem21 = self.extrato_cartao_0.horizontalHeaderItem(2)
-        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Transa\u00e7\u00e3o", None));
+        ___qtablewidgetitem21.setText(QCoreApplication.translate("MainWindow", u"Transaction\u00e7\u00e3", None));
         ___qtablewidgetitem22 = self.extrato_cartao_0.horizontalHeaderItem(3)
-        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Data", None));
+        ___qtablewidgetitem22.setText(QCoreApplication.translate("MainWindow", u"Date", None));
         ___qtablewidgetitem23 = self.extrato_cartao_0.horizontalHeaderItem(4)
-        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Opera\u00e7\u00e3o", None));
+        ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Operation\u00e7\u00e3", None));
         ___qtablewidgetitem24 = self.extrato_cartao_0.horizontalHeaderItem(5)
-        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Parcela", None));
+        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"Portion", None));
         ___qtablewidgetitem25 = self.extrato_cartao_0.horizontalHeaderItem(6)
-        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"Valor", None));
+        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"Value", None));
         ___qtablewidgetitem26 = self.extrato_cartao_0.horizontalHeaderItem(7)
         ___qtablewidgetitem26.setText(QCoreApplication.translate("MainWindow", u"id", None));
         ___qtablewidgetitem27 = self.extrato_cartao_0.horizontalHeaderItem(8)
@@ -12020,68 +12020,68 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem32 = self.extrato_cartao_0.verticalHeaderItem(3)
         ___qtablewidgetitem32.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
 #if QT_CONFIG(whatsthis)
-        self.extrato_cartao_0.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">asdasdasdsad</span></p></body></html>", None))
+        self.extrato_cartao_0.setWhatsThis(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\">ads</span></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
-        self.text_page_notfound.setText(QCoreApplication.translate("MainWindow", u"Compra n\u00e3o localizada", None))
-        self.txt_pag_emdia.setText(QCoreApplication.translate("MainWindow", u"N\u00e3o h\u00e1 despesas este mes!", None))
-        self.apaga_compra.setText(QCoreApplication.translate("MainWindow", u"Apagar", None))
-        self.edit_compra.setText(QCoreApplication.translate("MainWindow", u"Editar Compra", None))
-        self.paga_fatura.setText(QCoreApplication.translate("MainWindow", u"Pagar Fatura", None))
-        self.parcela_fatura.setText(QCoreApplication.translate("MainWindow", u"Parcelar Fatura", None))
-        self.filter_dates_btn.setText(QCoreApplication.translate("MainWindow", u"Filtrar por Data  ", None))
+        self.text_page_notfound.setText(QCoreApplication.translate("MainWindow", u"Localized purchase\u00e3", None))
+        self.txt_pag_emdia.setText(QCoreApplication.translate("MainWindow", u"\u00e3\u00e1No expenses this month!", None))
+        self.apaga_compra.setText(QCoreApplication.translate("MainWindow", u"Delete", None))
+        self.edit_compra.setText(QCoreApplication.translate("MainWindow", u"Edit Purchase", None))
+        self.paga_fatura.setText(QCoreApplication.translate("MainWindow", u"Pay Invoice", None))
+        self.parcela_fatura.setText(QCoreApplication.translate("MainWindow", u"Split Invoice", None))
+        self.filter_dates_btn.setText(QCoreApplication.translate("MainWindow", u"Filter by date  ", None))
         self.name_bank_2.setText("")
-        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Limite", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Limit", None))
         self.label_28.setText(QCoreApplication.translate("MainWindow", u"5000", None))
-        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Disponivel", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Available", None))
         self.label_30.setText(QCoreApplication.translate("MainWindow", u"5000", None))
-        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Fechamento", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Closure", None))
         self.label_32.setText(QCoreApplication.translate("MainWindow", u"5000", None))
-        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Vencimento", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Due date", None))
         self.label_34.setText(QCoreApplication.translate("MainWindow", u"5000", None))
         ___qtablewidgetitem33 = self.table_faturas_ind.horizontalHeaderItem(0)
         ___qtablewidgetitem33.setText(QCoreApplication.translate("MainWindow", u"M\u00eas", None));
         ___qtablewidgetitem34 = self.table_faturas_ind.horizontalHeaderItem(1)
-        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"Situa\u00e7\u00e3o da fatura", None));
+        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"Invoice status\u00e7\u00e3", None));
         ___qtablewidgetitem35 = self.table_faturas_ind.horizontalHeaderItem(2)
-        ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"Valor da fatura", None));
+        ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"Invoice amount", None));
         ___qtablewidgetitem36 = self.table_faturas_ind.horizontalHeaderItem(3)
-        ___qtablewidgetitem36.setText(QCoreApplication.translate("MainWindow", u"Valor pago", None));
+        ___qtablewidgetitem36.setText(QCoreApplication.translate("MainWindow", u"Amount paid", None));
         ___qtablewidgetitem37 = self.table_faturas_ind.horizontalHeaderItem(4)
-        ___qtablewidgetitem37.setText(QCoreApplication.translate("MainWindow", u"Pagamento", None));
-        self.label_19.setText(QCoreApplication.translate("MainWindow", u"Selecione a Categoria", None))
+        ___qtablewidgetitem37.setText(QCoreApplication.translate("MainWindow", u"Payment", None));
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"Select Category", None))
         self.comboBox_2.setItemText(0, "")
         self.comboBox_2.setItemText(1, QCoreApplication.translate("MainWindow", u"Delivery", None))
-        self.comboBox_2.setItemText(2, QCoreApplication.translate("MainWindow", u"Apps Transporte", None))
-        self.comboBox_2.setItemText(3, QCoreApplication.translate("MainWindow", u"Comida", None))
-        self.comboBox_2.setItemText(4, QCoreApplication.translate("MainWindow", u"Mercado", None))
-        self.comboBox_2.setItemText(5, QCoreApplication.translate("MainWindow", u"Lazer", None))
-        self.comboBox_2.setItemText(6, QCoreApplication.translate("MainWindow", u"Casa", None))
-        self.comboBox_2.setItemText(7, QCoreApplication.translate("MainWindow", u"Coisas Inuteis", None))
-        self.comboBox_2.setItemText(8, QCoreApplication.translate("MainWindow", u"Servi\u00e7os", None))
+        self.comboBox_2.setItemText(2, QCoreApplication.translate("MainWindow", u"Transportation Apps", None))
+        self.comboBox_2.setItemText(3, QCoreApplication.translate("MainWindow", u"Food", None))
+        self.comboBox_2.setItemText(4, QCoreApplication.translate("MainWindow", u"Market", None))
+        self.comboBox_2.setItemText(5, QCoreApplication.translate("MainWindow", u"Entertainment", None))
+        self.comboBox_2.setItemText(6, QCoreApplication.translate("MainWindow", u"Home", None))
+        self.comboBox_2.setItemText(7, QCoreApplication.translate("MainWindow", u"Useless things", None))
+        self.comboBox_2.setItemText(8, QCoreApplication.translate("MainWindow", u"Services\u00e7", None))
         self.comboBox_2.setItemText(9, QCoreApplication.translate("MainWindow", u"Streaming", None))
-        self.comboBox_2.setItemText(10, QCoreApplication.translate("MainWindow", u"Urgencia", None))
-        self.comboBox_2.setItemText(11, QCoreApplication.translate("MainWindow", u"Gatos", None))
+        self.comboBox_2.setItemText(10, QCoreApplication.translate("MainWindow", u"Urgency", None))
+        self.comboBox_2.setItemText(11, QCoreApplication.translate("MainWindow", u"Cats", None))
         self.comboBox_2.setItemText(12, QCoreApplication.translate("MainWindow", u"Dogs", None))
-        self.comboBox_2.setItemText(13, QCoreApplication.translate("MainWindow", u"Medico", None))
-        self.comboBox_2.setItemText(14, QCoreApplication.translate("MainWindow", u"Viagem", None))
-        self.comboBox_2.setItemText(15, QCoreApplication.translate("MainWindow", u"Eletronicos", None))
-        self.comboBox_2.setItemText(16, QCoreApplication.translate("MainWindow", u"Domesticos", None))
+        self.comboBox_2.setItemText(13, QCoreApplication.translate("MainWindow", u"Doctor", None))
+        self.comboBox_2.setItemText(14, QCoreApplication.translate("MainWindow", u"Travel", None))
+        self.comboBox_2.setItemText(15, QCoreApplication.translate("MainWindow", u"Electronics", None))
+        self.comboBox_2.setItemText(16, QCoreApplication.translate("MainWindow", u"Households", None))
 
-        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Nome desta Transa\u00e7\u00e3o", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Name of this transaction\u00e7\u00e3", None))
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText("")
-        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Data da Transa\u00e7\u00e3o", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Date of Transaction\u00e7\u00e3", None))
         self.lineEdit_2.setText("")
         self.lineEdit_2.setPlaceholderText("")
-        self.pushButton_17.setText(QCoreApplication.translate("MainWindow", u"Hoje", None))
-        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Valor do Lan\u00e7amento", None))
+        self.pushButton_17.setText(QCoreApplication.translate("MainWindow", u"Today", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Launch Value\u00e7", None))
         self.lineEdit_3.setText("")
-        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Opera\u00e7\u00e3o", None))
-        self.comboBox_4.setItemText(0, QCoreApplication.translate("MainWindow", u"Credito", None))
-        self.comboBox_4.setItemText(1, QCoreApplication.translate("MainWindow", u"Debito", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Operation\u00e7\u00e3", None))
+        self.comboBox_4.setItemText(0, QCoreApplication.translate("MainWindow", u"Credit", None))
+        self.comboBox_4.setItemText(1, QCoreApplication.translate("MainWindow", u"Debit", None))
 
-        self.label_26.setText(QCoreApplication.translate("MainWindow", u"Parcelas", None))
-        self.comboBox_3.setItemText(0, QCoreApplication.translate("MainWindow", u"Avista", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"Installments", None))
+        self.comboBox_3.setItemText(0, QCoreApplication.translate("MainWindow", u"In cash", None))
         self.comboBox_3.setItemText(1, QCoreApplication.translate("MainWindow", u"1", None))
         self.comboBox_3.setItemText(2, QCoreApplication.translate("MainWindow", u"2", None))
         self.comboBox_3.setItemText(3, QCoreApplication.translate("MainWindow", u"3", None))
@@ -12096,126 +12096,124 @@ class Ui_MainWindow(object):
         self.comboBox_3.setItemText(12, QCoreApplication.translate("MainWindow", u"12", None))
 
         self.lanca.setText(QCoreApplication.translate("MainWindow", u"OK", None))
-        self.cancela_lanca.setText(QCoreApplication.translate("MainWindow", u"Cancelar", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), QCoreApplication.translate("MainWindow", u"Grafico de gastos neste cart\u00e3o por Categoria", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), QCoreApplication.translate("MainWindow", u"Evolu\u00e7\u00e3o de faturas", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_9), QCoreApplication.translate("MainWindow", u"Grafico de gastos neste cart\u00e3o por Data", None))
-        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Abrir Planilha", None))
+        self.cancela_lanca.setText(QCoreApplication.translate("MainWindow", u"Cancel", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), QCoreApplication.translate("MainWindow", u"Graph of card spending by Category\u00e3", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), QCoreApplication.translate("MainWindow", u"Evolution of invoices\u00e7\u00e3", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_9), QCoreApplication.translate("MainWindow", u"Graph of card spending by date\u00e3", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Open Spreadsheet", None))
         self.id_card_xlsx_cliked.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_51.setText("")
         self.pushButton_29.setText(QCoreApplication.translate("MainWindow", u" Open", None))
         ___qtablewidgetitem38 = self.tableWidget_2.horizontalHeaderItem(0)
-        ___qtablewidgetitem38.setText(QCoreApplication.translate("MainWindow", u"Categoria", None));
+        ___qtablewidgetitem38.setText(QCoreApplication.translate("MainWindow", u"Category", None));
         ___qtablewidgetitem39 = self.tableWidget_2.horizontalHeaderItem(1)
-        ___qtablewidgetitem39.setText(QCoreApplication.translate("MainWindow", u"Transacao", None));
+        ___qtablewidgetitem39.setText(QCoreApplication.translate("MainWindow", u"Transaction", None));
         ___qtablewidgetitem40 = self.tableWidget_2.horizontalHeaderItem(2)
-        ___qtablewidgetitem40.setText(QCoreApplication.translate("MainWindow", u"Data", None));
+        ___qtablewidgetitem40.setText(QCoreApplication.translate("MainWindow", u"Date", None));
         ___qtablewidgetitem41 = self.tableWidget_2.horizontalHeaderItem(3)
-        ___qtablewidgetitem41.setText(QCoreApplication.translate("MainWindow", u"Operacao", None));
+        ___qtablewidgetitem41.setText(QCoreApplication.translate("MainWindow", u"Operation", None));
         ___qtablewidgetitem42 = self.tableWidget_2.horizontalHeaderItem(4)
-        ___qtablewidgetitem42.setText(QCoreApplication.translate("MainWindow", u"Parcela", None));
+        ___qtablewidgetitem42.setText(QCoreApplication.translate("MainWindow", u"Portion", None));
         ___qtablewidgetitem43 = self.tableWidget_2.horizontalHeaderItem(5)
-        ___qtablewidgetitem43.setText(QCoreApplication.translate("MainWindow", u"Valor", None));
-        self.pushButton_31.setText(QCoreApplication.translate("MainWindow", u" Limpar", None))
-        self.pushButton_30.setText(QCoreApplication.translate("MainWindow", u"  Importar", None))
+        ___qtablewidgetitem43.setText(QCoreApplication.translate("MainWindow", u"Value", None));
+        self.pushButton_31.setText(QCoreApplication.translate("MainWindow", u" Clear", None))
+        self.pushButton_30.setText(QCoreApplication.translate("MainWindow", u"  Import", None))
         self.hide_cards_main.setText("")
         self.show_cards_main.setText("")
         self.pushButton_20.setText("")
-        self.label_36.setText(QCoreApplication.translate("MainWindow", u"Ol\u00e1, Boa Tarde.", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"Ol\u00e1, Good afternoon.", None))
         self.label_38.setText(QCoreApplication.translate("MainWindow", u"15:23", None))
-        self.labelTitle_12.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Limites Utilizados:</span></p><p><span style=\" font-size:18pt; color:#ffffff;\">R$0,00</span></p></body></html>", None))
-        self.label_39.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Faturas de: </span></p><p align=\"center\"><span style=\" font-size:20pt; color:#ffffff;\">R$0,00</span></p></body></html>", None))
-        self.labelTitle_13.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Limites Disponiveis</span></p><p><span style=\" font-size:20pt; color:#ffffff;\">R$0,00</span></p></body></html>", None))
-        self.name_bank_4.setText(QCoreApplication.translate("MainWindow", u"Selecione um Cart\u00e3o", None))
-        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Limite", None))
+        self.labelTitle_12.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Limits used:</span></p><p><span style=\" font-size:18pt; color:#ffffff;\">Rs.0,00</span></p></body></html>", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Invoices for: </span></p><p align=\"center\"><span style=\" font-size:20pt; color:#ffffff;\">Rs.0,00</span></p></body></html>", None))
+        self.labelTitle_13.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Available Limits</span></p><p><span style=\" font-size:20pt; color:#ffffff;\">Rs.0,00</span></p></body></html>", None))
+        self.name_bank_4.setText(QCoreApplication.translate("MainWindow", u"Select a Card\u00e3", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Limit", None))
         self.label_50.setText("")
-        self.label_53.setText(QCoreApplication.translate("MainWindow", u"Fechamento", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"Closure", None))
         self.label_54.setText("")
-        self.label_55.setText(QCoreApplication.translate("MainWindow", u"Vencimento", None))
+        self.label_55.setText(QCoreApplication.translate("MainWindow", u"Due date", None))
         self.label_56.setText("")
         ___qtablewidgetitem44 = self.table_faturas_ind_3.horizontalHeaderItem(0)
-        ___qtablewidgetitem44.setText(QCoreApplication.translate("MainWindow", u"Cartao", None));
+        ___qtablewidgetitem44.setText(QCoreApplication.translate("MainWindow", u"Card", None));
         ___qtablewidgetitem45 = self.table_faturas_ind_3.horizontalHeaderItem(1)
-        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"Situa\u00e7\u00e3o da fatura", None));
+        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"Invoice status\u00e7\u00e3", None));
         ___qtablewidgetitem46 = self.table_faturas_ind_3.horizontalHeaderItem(2)
-        ___qtablewidgetitem46.setText(QCoreApplication.translate("MainWindow", u"Valor da fatura", None));
+        ___qtablewidgetitem46.setText(QCoreApplication.translate("MainWindow", u"Invoice amount", None));
         ___qtablewidgetitem47 = self.table_faturas_ind_3.horizontalHeaderItem(3)
-        ___qtablewidgetitem47.setText(QCoreApplication.translate("MainWindow", u"Ir para", None));
-        self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab_14), QCoreApplication.translate("MainWindow", u"Evolu\u00e7\u00e3o de faturas", None))
-        self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab_15), QCoreApplication.translate("MainWindow", u"Maiores gastos", None))
-        self.label_40.setText(QCoreApplication.translate("MainWindow", u"Fun\u00e7\u00e3o em desenvolvimento", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Limite de gastos em:", None))
+        ___qtablewidgetitem47.setText(QCoreApplication.translate("MainWindow", u"Go to", None));
+        self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab_14), QCoreApplication.translate("MainWindow", u"Invoice evolution\u00e7\u00e3", None))
+        self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab_15), QCoreApplication.translate("MainWindow", u"Biggest expenses", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"Function under development\u00e7\u00e3", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Spending limit on:", None))
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"0,00", None))
-        self.label_11.setText(QCoreApplication.translate("MainWindow", u"de", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"of", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"700,00", None))
-        self.pushButton_21.setText(QCoreApplication.translate("MainWindow", u"Alterar", None))
-        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Limite:", None))
+        self.pushButton_21.setText(QCoreApplication.translate("MainWindow", u"Change", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Limit:", None))
         self.lineEdit_4.setText("")
-        self.lineEdit_4.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Inisira o limite desejavel", None))
-        self.pushButton_22.setText(QCoreApplication.translate("MainWindow", u"Salvar", None))
-        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Disponivel para gastar", None))
-        self.label_13.setText(QCoreApplication.translate("MainWindow", u"R$", None))
-        self.label_14.setText(QCoreApplication.translate("MainWindow", u"R$", None))
-        self.label_15.setText(QCoreApplication.translate("MainWindow", u"R$", None))
-        self.label_16.setText(QCoreApplication.translate("MainWindow", u"por dia", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"por semana", None))
+        self.lineEdit_4.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Enter the desired limit", None))
+        self.pushButton_22.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Available to spend", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Rs.", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Rs.", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Rs.", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"per day", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"per week", None))
         self.label_21.setText(QCoreApplication.translate("MainWindow", u"total", None))
-        self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab_13), QCoreApplication.translate("MainWindow", u"Limite de Gastos", None))
-        self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Alertas", None))
+        self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab_13), QCoreApplication.translate("MainWindow", u"Spending limit", None))
+        self.chart_gastos_all.setTabText(self.chart_gastos_all.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Alerts", None))
         ___qtablewidgetitem48 = self.table_active_cards.horizontalHeaderItem(0)
-        ___qtablewidgetitem48.setText(QCoreApplication.translate("MainWindow", u"Cartao", None));
+        ___qtablewidgetitem48.setText(QCoreApplication.translate("MainWindow", u"Card", None));
         ___qtablewidgetitem49 = self.table_active_cards.horizontalHeaderItem(1)
-        ___qtablewidgetitem49.setText(QCoreApplication.translate("MainWindow", u"Titular", None));
+        ___qtablewidgetitem49.setText(QCoreApplication.translate("MainWindow", u"Holder", None));
         ___qtablewidgetitem50 = self.table_active_cards.horizontalHeaderItem(2)
-        ___qtablewidgetitem50.setText(QCoreApplication.translate("MainWindow", u"Limite", None));
+        ___qtablewidgetitem50.setText(QCoreApplication.translate("MainWindow", u"Limit", None));
         ___qtablewidgetitem51 = self.table_active_cards.horizontalHeaderItem(3)
-        ___qtablewidgetitem51.setText(QCoreApplication.translate("MainWindow", u"Final do cartao", None));
+        ___qtablewidgetitem51.setText(QCoreApplication.translate("MainWindow", u"End of card", None));
         ___qtablewidgetitem52 = self.table_active_cards.horizontalHeaderItem(4)
-        ___qtablewidgetitem52.setText(QCoreApplication.translate("MainWindow", u"Vencimento", None));
+        ___qtablewidgetitem52.setText(QCoreApplication.translate("MainWindow", u"Due date", None));
         ___qtablewidgetitem53 = self.table_active_cards.horizontalHeaderItem(5)
-        ___qtablewidgetitem53.setText(QCoreApplication.translate("MainWindow", u"Fechamento", None));
+        ___qtablewidgetitem53.setText(QCoreApplication.translate("MainWindow", u"Closure", None));
         ___qtablewidgetitem54 = self.table_active_cards.horizontalHeaderItem(6)
         ___qtablewidgetitem54.setText(QCoreApplication.translate("MainWindow", u"id", None));
-        self.label_112.setText(QCoreApplication.translate("MainWindow", u"Sele\u00e7\u00e3o de Banco", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"Bank selection\u00e7\u00e3", None))
         self.select_card.setItemText(0, QCoreApplication.translate("MainWindow", u"C6", None))
         self.select_card.setItemText(1, QCoreApplication.translate("MainWindow", u"NUBANK", None))
         self.select_card.setItemText(2, QCoreApplication.translate("MainWindow", u"BTG", None))
         self.select_card.setItemText(3, QCoreApplication.translate("MainWindow", u"SANTANDER", None))
         self.select_card.setItemText(4, QCoreApplication.translate("MainWindow", u"ITAU", None))
         self.select_card.setItemText(5, QCoreApplication.translate("MainWindow", u"BRADESCO", None))
-        self.select_card.setItemText(6, QCoreApplication.translate("MainWindow", u"CAIXA ECONOMICA", None))
+        self.select_card.setItemText(6, QCoreApplication.translate("MainWindow", u"SAVINGS BANK", None))
 
-        self.label_37.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Fechamento da Fatura:</span></p></body></html>", None))
-        self.adclimite.setPlaceholderText(QCoreApplication.translate("MainWindow", u"R$", None))
-        self.adctitular.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Nome", None))
-        self.textcard_3.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Final do Cart\u00e3o</span></p></body></html>", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Invoice closing:</span></p></body></html>", None))
+        self.adclimite.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Rs.", None))
+        self.adctitular.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.textcard_3.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">End of card\u00e3</span></p></body></html>", None))
         self.adcfechamento.setPlaceholderText(QCoreApplication.translate("MainWindow", u"01", None))
-        self.textcard_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Titular</span></p></body></html>", None))
-        self.textcard.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Limite Total do Cartao</span></p></body></html>", None))
-        self.textcard_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Vencimento</span></p></body></html>", None))
+        self.textcard_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Holder</span></p></body></html>", None))
+        self.textcard.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Total Card Limit</span></p></body></html>", None))
+        self.textcard_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:0; color:#ffffff;\">Due date</span></p></body></html>", None))
         self.adcfinal.setPlaceholderText(QCoreApplication.translate("MainWindow", u"XXXX", None))
         self.adcvencimento.setPlaceholderText(QCoreApplication.translate("MainWindow", u"01", None))
-        self.add_card_3.setText(QCoreApplication.translate("MainWindow", u"Adicionar", None))
+        self.add_card_3.setText(QCoreApplication.translate("MainWindow", u"Add", None))
         self.remover_card_3.setText(QCoreApplication.translate("MainWindow", u"Remover", None))
-        self.pushButton_23.setText(QCoreApplication.translate("MainWindow", u"Atualizar", None))
+        self.pushButton_23.setText(QCoreApplication.translate("MainWindow", u"Update", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"PAGE3", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"PAGE4", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Configura\u00e7\u00f5es da Tabela de Extrato de Lan\u00e7amentos</span></p></body></html>", None))
-        self.label_76.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Ocultar Faturas com valores zerados:</span></p></body></html>", None))
-        self.hidden_saldo_fat0_true.setText(QCoreApplication.translate("MainWindow", u"Sim", None))
-        self.hidden_saldo_fat0_false.setText(QCoreApplication.translate("MainWindow", u"Nao", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Settings\u00e7\u00f5 for Posting Extract Table\u00e7</span></p></body></html>", None))
+        self.label_76.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Hide invoices with zero values:</span></p></body></html>", None))
+        self.hidden_saldo_fat0_true.setText(QCoreApplication.translate("MainWindow", u"Yes", None))
+        self.hidden_saldo_fat0_false.setText(QCoreApplication.translate("MainWindow", u"No", None))
         self.label_109.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Interface</span></p></body></html>", None))
-        self.label_110.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Efeitos de Sombras</span></p><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">(Dependendo do Hardware, pode causar lentid\u00e3o necess\u00e1rio reiniciar! )</span></p></body></html>", None))
-        self.shadow_true.setText(QCoreApplication.translate("MainWindow", u"Sim", None))
-        self.shadow_false.setText(QCoreApplication.translate("MainWindow", u"Nao", None))
-        self.label_113.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Criar Modelo de Importa\u00e7\u00e3o de planilhas (Cartao)</span></p></body></html>", None))
-        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Clique para Criar", None))
-        self.create_xlsx_file.setText(QCoreApplication.translate("MainWindow", u"Salvar", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Desenvolvido por Jhonatan Deni", None))
-        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"Estudante de Analise e desenvolvimento de Sistemas", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Shadow effects</span></p><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">(Depending on the Hardware, it may cause\u00e3slowdowns and\u00e1require a restart! )</span></p></body></html>", None))
+        self.shadow_true.setText(QCoreApplication.translate("MainWindow", u"Yes", None))
+        self.shadow_false.setText(QCoreApplication.translate("MainWindow", u"No", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">Create Spreadsheet Import\u00e7\u00e3Template (Card)</span></p></body></html>", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Click to Create", None))
+        self.create_xlsx_file.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Developed by Saksham Chauhan", None))
+        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"Artificial Intelligence student", None))
         self.pushButton_6.setText(QCoreApplication.translate("MainWindow", u"GitHub", None))
-        self.label_17.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">Meu primeiro projetinho de Finan\u00e7as, inicialmente apenas com uma pagina</p><p align=\"center\">Com intuito de organiza\u00e7\u00e3o e controle de Cartoes de Credito</p><p align=\"center\">Demais op\u00e7oes ainda serao implementadas</p><p align=\"center\">Obrigado :)</p><p align=\"center\"><br/></p><p align=\"justify\"><br/></p></body></html>", None))
-        self.pushButton_13.setText(QCoreApplication.translate("MainWindow", u"Doa\u00e7\u00e3o para pagar as parcelas da faculdade :)", None))
-        self.pushButton_19.setText(QCoreApplication.translate("MainWindow", u"PicPay: @jhonatan.deni", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">My first little Finance\u00e7 project, initially with just one page</p><p align=\"center\">In order to organize\u00e7\u00e3 and control Credit Cards</p><p align=\"center\">Other options\u00e7 still to be implemented</p><p align=\"center\">Thank you :)</p><p align=\"center\"><br/></p><p align=\"justify\"><br/></p></body></html>", None))
     # retranslateUi
 
