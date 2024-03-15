@@ -65,9 +65,9 @@ class mainpage(Ui_MainWindow):
     def _new_lancamento(self):
         #OBRIGATORIOS
         
-        validador_empty = Alerts._val_new_lan_pass_or_not(self)
-        print(validador_empty,"validador_empty")
-        if validador_empty == True:
+        validator_empty = Alerts._val_new_lan_pass_or_not(self)
+        print(validator_empty,"validator_empty")
+        if validator_empty == True:
         
             # TABLE new_lancamento
             id_lancamento = randint(0,99999999)
@@ -187,7 +187,7 @@ class mainpage(Ui_MainWindow):
         else:
             pass
         
-        print("VALIDO?",validador_empty)
+        print("VALIDO?",validator_empty)
         
 
     #EVENTS FOR BUTTONS
@@ -202,8 +202,8 @@ class mainpage(Ui_MainWindow):
     def _add_bank(self):
         
         
-        validador_empty = Alerts._validador_new_bank(self)
-        if validador_empty == True:
+        validator_empty = Alerts._validator_new_bank(self)
+        if validator_empty == True:
             
             
             # CONTA BANCARIA
@@ -374,7 +374,7 @@ class mainpage(Ui_MainWindow):
             ano = self.label_72.text()
             fomrmat = f"{ano}-{mes}"
             #SETTINGS CREDIT CARD ZEROS HIDDEN
-            validador = home_db_query.Return_values_configs._return_default_h_s_z()
+            validator = home_db_query.Return_values_configs._return_default_h_s_z()
             # LANCAMENTO DE FATURAS CARTOES:
             if not ids:
                 pass
@@ -383,10 +383,10 @@ class mainpage(Ui_MainWindow):
                     
                     #verifica se saldo é zero
                     fatura_zero = card_db_test.Return_Values_Calcs._valor_fatura(ids[i],mes,ano)
-                    if validador == 'True' and fatura_zero == '0':
+                    if validator == 'True' and fatura_zero == '0':
                         pass
                     else:
-                        print("VALIDADOR",validador)
+                        print("validator",validator)
                 # for i in range(len(ids)):
                         row_count = self.table.rowCount()
                         add_row = self.table.insertRow(row_count)
@@ -1612,9 +1612,9 @@ class Alerts(Ui_MainWindow):
         #CONFIGURAR RECORRENCIA comboBox_26
         #.TODOS DIA? lineEdit_14
 
-        #VALIDADOR SE RECORRENTE:
+        #validator SE RECORRENTE:
         if recorrente == True:
-            #VALIDADOR SE paPAGO:
+            #validator SE paPAGO:
             if pago == True:
                 if self.comboBox_11.currentText() == "" or self.comboBox_25.currentText() == "" or self.comboBox_27.currentText() == "" or self.comboBox_21.currentText() == "" or self.lineEdit_11.text() == "" or self.lineEdit_13.text() == "" or self.comboBox_22.currentText() == "" or self.comboBox_23.currentText() == "" or self.comboBox_26.currentText() == "" or self.lineEdit_14.text() == "":
                     return False
@@ -1624,8 +1624,8 @@ class Alerts(Ui_MainWindow):
                         return False
                     else:
                         val = self.lineEdit_13.text()
-                        if Alerts._validador_int(val) == False:
-                            print ("error?????????????????????",Alerts._validador_int(val))
+                        if Alerts._validator_int(val) == False:
+                            print ("error?????????????????????",Alerts._validator_int(val))
                             return False
                         else:
                             if len(self.lineEdit_14.text()) == 2:
@@ -1636,8 +1636,8 @@ class Alerts(Ui_MainWindow):
                     return False
                 else:
                     val = self.lineEdit_13.text()
-                    if Alerts._validador_int(val) == False:
-                        print ("error?????????????????????",Alerts._validador_int(val))
+                    if Alerts._validator_int(val) == False:
+                        print ("error?????????????????????",Alerts._validator_int(val))
                         return False
                     else:
                         if len(self.lineEdit_14.text()) == 2:
@@ -1649,7 +1649,7 @@ class Alerts(Ui_MainWindow):
                 else:
                     #VERIFICA VALOR SE CONTEM STRING
                     val = self.lineEdit_13.text()
-                    if Alerts._validador_int(val) == False:
+                    if Alerts._validator_int(val) == False:
                         return False
                     else:
                         return True
@@ -1662,7 +1662,7 @@ class Alerts(Ui_MainWindow):
                     
                     val = self.lineEdit_13.text()
                     print("valor dando errado", val)
-                    if Alerts._validador_int(val) == False:
+                    if Alerts._validator_int(val) == False:
                         
                         return False
                     else:
@@ -1727,7 +1727,7 @@ class Alerts(Ui_MainWindow):
                 Qms.exec_()
                 return False
             
-    def _validador_int(value):
+    def _validator_int(value):
         
         value = re.sub('[.,]', '', value)
         if value.isdigit():
@@ -1737,7 +1737,7 @@ class Alerts(Ui_MainWindow):
             print("nao passou")
             return False
         
-    def _validador_new_bank(self):
+    def _validator_new_bank(self):
         #config banco
         #BANCO = self.select_conta_bancaria.currentText()
         #PADRAO = self.combo_bank_padrao.currentText()
@@ -1769,7 +1769,7 @@ class Alerts(Ui_MainWindow):
                 #VERIFICA SALDO INICIAL E LIMITE SE CONTEM STRING
                 val = self.adc_saldo_conta.text()
                 val2 = self.adclimite_2.text()
-                if Alerts._validador_int(val) == False or Alerts._validador_int(val2) == False:
+                if Alerts._validator_int(val) == False or Alerts._validator_int(val2) == False:
                     return False
                 #VERIFCA DATA DE FECHAMENTO E VENCIMENTO:
                 elif len(self.adcvencimento_2.text()) != 2 or len(self.adcfechamento_2.text()) != 2 or self.adcvencimento_2.text().isdigit() == False or self.adcfechamento_2.text().isdigit() == False or int(self.adcvencimento_2.text()) > 31 or int(self.adcfechamento_2.text()) > 31 or int(self.adcvencimento_2.text()) < 1 or int(self.adcfechamento_2.text()) < 1: 
@@ -1793,7 +1793,7 @@ class Alerts(Ui_MainWindow):
             else :
                 #VERIFICA SALDO INICIAL SE CONTEM STRING
                 val = self.adc_saldo_conta.text()
-                if Alerts._validador_int(val) == False:
+                if Alerts._validator_int(val) == False:
                     return False
                 #VERIFICA SE AGENCIA E CONTA SAO NUMEROS:
                 elif self.adcagencia_conta.text().isdigit() == False or self.adc_conta_conta.text().isdigit() == False:

@@ -320,12 +320,12 @@ class funcoes_cartao(Ui_MainWindow):
                     errors = True
                     Alerts.Alert_all_error(self,'Preencha todos os campos da linha '+str(i+1))
                     break
-                elif funcoes_cartao._validador_data(self,table.item(i, 2).text()) == False:
+                elif funcoes_cartao._validator_data(self,table.item(i, 2).text()) == False:
                     errors = True
                     print('data invalida')
                     Alerts.Alert_all_error(self,'Data invalida na linha '+str(i+1))
                     break
-                elif funcoes_cartao._validador_int(table.item(i, 5).text()) == False:
+                elif funcoes_cartao._validator_int(table.item(i, 5).text()) == False:
                     errors = True
                     Alerts.Alert_all_error(self,'Valor invalido na linha '+str(i+1))
                     break
@@ -377,7 +377,7 @@ class funcoes_cartao(Ui_MainWindow):
             label_3_ui = self.lineEdit_3.text() #valor int
 
 
-            #VALIDADOR DE CARACTERES
+            #validator DE CARACTERES
             
             if (label_0== '') and (label_2== '')  and (label_3_ui== '') :
                 pyautogui.confirm(text='Não foi preenchido os campos: \nNome, Valor e Data de transação ', title='Lançamento incorreto!', buttons=['OK', 'Cancel'])
@@ -385,10 +385,10 @@ class funcoes_cartao(Ui_MainWindow):
             elif (label_0== '') or (label_2== '')  or (label_3_ui== '') :
                 pyautogui.confirm(text='Esta faltando campos: \nNome, Valor ou Data esta em branco! ', title='Lançamento incorreto!', buttons=['OK', 'Cancel'])
 
-            elif funcoes_cartao._validador_int(label_3_ui) == False:
+            elif funcoes_cartao._validator_int(label_3_ui) == False:
 
                 pyautogui.confirm(text='Valor invalido', title='Invalido!', buttons=['OK', 'Cancel'])
-            elif funcoes_cartao._validador_data(self,label_2) == False:
+            elif funcoes_cartao._validator_data(self,label_2) == False:
 
                 pyautogui.confirm(text='Data invalida', title='Invalido!', buttons=['OK', 'Cancel'])
                 
@@ -873,7 +873,7 @@ class funcoes_cartao(Ui_MainWindow):
             label_3_ui = self.lineEdit_3.text() #valor int
 
 
-            #VALIDADOR DE CARACTERES
+            #validator DE CARACTERES
             titular = self.adctitular.text()
             limite = self.adclimite.text()
             final = self.adcfinal.text()
@@ -1640,7 +1640,7 @@ class funcoes_cartao(Ui_MainWindow):
                 for i in range (cont): 
                     if self.extrato_cartao_0.rowCount() >= 0:
                         self.extrato_cartao_0.removeRow(self.extrato_cartao_0.rowCount()-1)
-            #VALIDADOR ONMDE VAI EXCOLHER QUAL EXTRATO FOI CHAMADO DE QUAL CARTAO
+            #validator ONMDE VAI EXCOLHER QUAL EXTRATO FOI CHAMADO DE QUAL CARTAO
 
             
             global EXTRATO_ATUAL
@@ -1764,7 +1764,7 @@ class funcoes_cartao(Ui_MainWindow):
                 for i in range (cont): 
                     if self.extrato_cartao_0.rowCount() >= 0:
                         self.extrato_cartao_0.removeRow(self.extrato_cartao_0.rowCount()-1)
-            #VALIDADOR ONMDE VAI EXCOLHER QUAL EXTRATO FOI CHAMADO DE QUAL CARTAO
+            #validator ONMDE VAI EXCOLHER QUAL EXTRATO FOI CHAMADO DE QUAL CARTAO
 
             #filtro:
             global EXTRATO_ATUAL
@@ -2105,7 +2105,7 @@ class funcoes_cartao(Ui_MainWindow):
         ano=data_br[6:10]
         return  "%s-%s-%s"%(ano,mes,dia)
     
-    def _validador_data(self,data):
+    def _validator_data(self,data):
         a = funcoes_cartao._data_br_to_eng(self,data)
         
         if a == 'None':
@@ -2141,7 +2141,7 @@ class funcoes_cartao(Ui_MainWindow):
             new_string = new_string.replace(',','.')
         return new_string
     
-    def _validador_int(value):
+    def _validator_int(value):
         value = re.sub('[.,]', '', value)
         return value.isdigit()
     

@@ -500,12 +500,12 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
                     #IF ENTRY CHANGE TEXT PAYMENT BUTTON
                     home_db_fun.Descricao_lancamento.Change_text_btn_pagar_receber(self,id)
                     #CALL QUERY TO GET THE RELEASE DESCRIPTION
-                    validador = home_db_fun.Descricao_lancamento.set_descricao_lancamento(self,id)
+                    validator = home_db_fun.Descricao_lancamento.set_descricao_lancamento(self,id)
                     #SET TEXT RELEASE DETAILS:
                     
                     
                     self.frame_options_pdf.hide()
-                    if validador== "fatura":
+                    if validator== "fatura":
                         home_db_fun.Descricao_lancamento.set_icon_desc(self,id)
                     else:
                         self.frame_if_card_main.hide()
