@@ -1278,7 +1278,7 @@ class Pagamento(Ui_MainWindow):
         
         if reco == True:
             if pago_recorrente == False:
-            #MENSAGEM BOX
+            #message BOX
                 ui_val =self.table.item(current_row,9).text()
                 format_split = ui_val.split(" ")
                 
@@ -1331,7 +1331,7 @@ class Pagamento(Ui_MainWindow):
                     Set_values_startup._set_Saldo(self)
                     mainpage.load_extrato_filter(self)
                     CardFrameBank._update_frame_cards_saldo(self,id_bank)
-                    #MENSAGEM BOX
+                    #message BOX
                     # msg = QMessageBox()
                     # msg.setWindowTitle("Sucesso")
                     # msg.setText("Lançamento pago com sucesso")
@@ -1369,7 +1369,7 @@ class Pagamento(Ui_MainWindow):
 
         if reco == True:
             if pago_recorrente == False:
-            #MENSAGEM BOX
+            #message BOX
                 ui_val =self.table.item(current_row,9).text()
                 format_split = ui_val.split(" ")
                 
@@ -1419,7 +1419,7 @@ class Pagamento(Ui_MainWindow):
                     Set_values_startup._set_Saldo(self)
                     mainpage.load_extrato_filter(self)
                     CardFrameBank._update_frame_cards_saldo(self,id_bank)
-                    #MENSAGEM BOX
+                    #message BOX
                     # msg = QMessageBox()
                     # msg.setWindowTitle("Sucesso")
                     # msg.setText("Lançamento Recebido com sucesso")

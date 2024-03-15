@@ -1,5 +1,5 @@
--- Pyside2
--- pyautogui
--- requests
--- pip install emoji
--- pip install python-dateutil
+PyScreeze==0.1.30
+PySide2==5.15.2.1
+PySide6==6.6.2
+PySide6_Addons==6.6.2
+PySide6_Essentials==6.6.2

@@ -650,9 +650,9 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
         usuario = ""
         senha = ""
 
-        def Aparecer_menssagem(mensagem):
+        def Appear_message(message):
             self.pop_error.show()
-            self.texto_error.setText(mensagem)
+            self.texto_error.setText(message)
 
         #TODO CHECK USER STILL MAKE CONNECTION TO DB
         if not self.enter_user.text():
@@ -668,12 +668,12 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
 
         if usuario + senha != '':
             text = usuario + senha
-            Aparecer_menssagem(text)
+            Appear_message(text)
 
         else:
             
             text = "Bem vindo(a)"
-            Aparecer_menssagem(text)
+            Appear_message(text)
 
             self.shows()
             a = (os.path.dirname(os.path.realpath(__file__)))
@@ -681,7 +681,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
                 card_db_fun.funcoes_cartao.hide_show_logoff(self)
                 card_db_fun.funcoes_cartao._start_values(self)
                 titulo ='Updates'
-                mensagem = 'Procurando Por Atualização'
+                message = 'Procurando Por Atualização'
                 try:
                     card_db_fun.funcoes_cartao.group_main(self)
                     
@@ -692,7 +692,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
                 home_db_fun.Charts_Main._Active_sharts(self)
                 
                 self.update()
-                show_tray_message(self.ui, tray,titulo,mensagem)
+                show_tray_message(self.ui, tray,titulo,message)
             else:
                 self.CONTAINER_geral.hide()
                 pyautogui.confirm(text='!!ATENÇÃO!!\nBanco de dados nao foi localizado, Por favor Criar arquivo em MENU>CRIAR BANCO DE DADOS',title='BANCO DE DADOS NAO LOCALIZADO', buttons=['OK', 'Cancel'])
@@ -709,7 +709,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
 
         if self.checkBox.isChecked():
             text = text + "  Usuario salvo"
-            Aparecer_menssagem(text)
+            Appear_message(text)
 
     #TODO AFTER CHECK LOGIN, OPEN THE MAIN:
     def shows(self):
@@ -719,7 +719,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
     #TODO IF YOU CLICK ON LOGOUT
     def desloga(self):
         self.stackedWidget.setCurrentIndex(0)
-        self.texto_error.setText("Sistema Deslogado, Até Mais!")
+        self.texto_error.setText("System Offline, See You Later!")
 
 
 
@@ -859,13 +859,13 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
         act_ver = GLOBAL_VERSION
         if version== act_ver:
             titulo = 'Importante'
-            mensagem = 'Nenhuma nova versao encontrada'
-            show_tray_message(window_obj, tray,titulo,mensagem)
+            message = 'Nenhuma nova versao encontrada'
+            show_tray_message(window_obj, tray,titulo,message)
         else:
             
             titulo = 'Importante'
-            mensagem = 'Nova versao encontrada clique para detalhes'
-            show_tray_message(window_obj, tray,titulo,mensagem)
+            message = 'Nova versao encontrada clique para detalhes'
+            show_tray_message(window_obj, tray,titulo,message)
 
     def open_webbrowser(self):
         webbrowser.open('https://github.com/xjhowxjhow')
@@ -928,10 +928,10 @@ def show_message():
 #######################################################################
 # Show tray message when action_tray_message tray action is clicked
 #######################################################################
-def show_tray_message(self, tray: QSystemTrayIcon,titulo,mensagem):
+def show_tray_message(self, tray: QSystemTrayIcon,titulo,message):
     print("show_tray_message")
     notificationTitle = titulo
-    notificationMessage =mensagem
+    notificationMessage =message
     icon = QIcon(u":/icons-cards/src-page-cartoes/urgencia.png")
     duration = 10 * 1000 #3 seconds
 
