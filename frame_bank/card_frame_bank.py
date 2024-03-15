@@ -37,7 +37,7 @@ class CardFrameBank(Ui_MainWindow):
             #DADOS[1] = SALDO
             #DADOS[2] = NOME DO BANCO
             #DADOS[3] = AGENCIA
-            #DADOS[4] = CONTA
+            #DADOS[4] = account
             #DADOS[5] = TITULAR
             print(dados)
             styler = CardFrameBank.style_sheet_card_(self,dados[2])
@@ -341,7 +341,7 @@ class CardFrameBank(Ui_MainWindow):
             #DADOS[1] = SALDO
             #DADOS[2] = NOME DO BANCO
             #DADOS[3] = AGENCIA
-            #DADOS[4] = CONTA
+            #DADOS[4] = account
             #DADOS[5] = TITULAR
 
 
@@ -357,7 +357,7 @@ class CardFrameBank(Ui_MainWindow):
             self.valor_limitedisponivel_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"justify\"><span style=\" font-weight:600; color:#ffffff;\"></span></p></body></html>", None))
             self.config_cartao_0.setText(QCoreApplication.translate("MainWindow", u"...", None))
             self.txt_titular_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"right\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">"+str(dados[5])+"</span></p></body></html>", None))
-            self.txt_final_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"justify\"><span style=\" font-size:10pt; font-weight:600; color:#ffffff;\">Agencia: "+str(dados[3])+" Conta: "+str(dados[4])+"</span></p></body></html>", None))
+            self.txt_final_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"justify\"><span style=\" font-size:10pt; font-weight:600; color:#ffffff;\">Agencia: "+str(dados[3])+" account: "+str(dados[4])+"</span></p></body></html>", None))
             self.limite_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">Limite Total do Cartao</span></p></body></html>", None))
             self.salva_configcartao_0.setText(QCoreApplication.translate("MainWindow", u"SALVAR", None))
             self.setlimitcartao_0.setPlaceholderText(QCoreApplication.translate("MainWindow", u"R$", None))

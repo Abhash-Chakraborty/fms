@@ -320,7 +320,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
             
             
             if obj == self.pushButton_8 and event.type() == QtCore.QEvent.MouseButtonPress:
-                btn = "conta"
+                btn = "account"
                 return effects.Effetc_slides.grid_lateral_menu(self,btn)
             if obj == self.pushButton_9 and event.type() == QtCore.QEvent.MouseButtonPress:
                 btn = "investimento"

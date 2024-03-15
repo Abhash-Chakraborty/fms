@@ -42,7 +42,7 @@ class Add_values:
             coluns = [colunas_contas,colunas_cartao]
             #QUERY EXAMPLE (['C6', '1580', 'Jhonatan titualr card', '1010 final', 'venci 10', 'fefhca 10'], ['C6', 'Jhonatan', 'ag0111', 'cont 1010', 'r$1,580,00', 'Sim'])
             
-            # data[0] TEM EM LISTA : [0] = ARGUMENTOS CONTA [1] = ARGUMENTOS CARTAO DE CREDITO
+            # data[0] TEM EM LISTA : [0] = ARGUMENTOS account [1] = ARGUMENTOS CARTAO DE CREDITO
             for i in range(len(coluns)):
                 for j in range(len(coluns[i])):
                     cursor.execute("UPDATE "+tabelas_db[i]+" SET "+coluns[i][j]+" = '"+str(data[i][j])+"' WHERE id = '"+str(id)+"'")
@@ -70,7 +70,7 @@ class Add_values:
             colunas_contas = ['nome_banco','titular','agencia','num_conta','saldo_inicial','cartao_credito_id']
             coluns = [colunas_contas]
             #QUERY EXAMPLE (['C6', '1580', 'Jhonatan titualr card', '1010 final', 'venci 10', 'fefhca 10'], ['C6', 'Jhonatan', 'ag0111', 'cont 1010', 'r$1,580,00', 'Sim'])
-            # data[0] TEM EM LISTA : [0] = ARGUMENTOS CONTA
+            # data[0] TEM EM LISTA : [0] = ARGUMENTOS account
             for i in range(len(data[0])):
                 # print(data[0][i])
                 cursor.execute("UPDATE "+tabelas_db[0]+" SET "+colunas_contas[i]+" = '"+str(data[0][i])+"' WHERE id = '"+str(id)+"'")
@@ -434,7 +434,7 @@ class Return_Values_Conditions:
     def _return_ag_b_t_c(id):
         #TITULAR
         #AGENCIA
-        #CONTA
+        #account
         #SALDO
         #BANCO
 
@@ -748,7 +748,7 @@ class Saldos:
         #SELECT DEFAULT BANK
         cursor.execute("SELECT config_contas.conta_padrao_bank FROM config_contas")
         conta_padrao = cursor.fetchall()
-        print("conta padrao:",conta_padrao)
+        print("account padrao:",conta_padrao)
         if conta_padrao:
             #SELECT SALDO INICIAL
             cursor.execute("SELECT contas_bancarias.saldo_inicial FROM contas_bancarias WHERE id = '"+str(conta_padrao[0][0])+"'")
@@ -839,8 +839,8 @@ class Saldos:
             id_bank_s_n = id_bank
             id_discount = id_bank
         else:
-            id_bank_s_n = id_no_bank #SE NAO TEM CONTA VINCULADO AO CARTAO DE CREDITO
-            id_discount = id_bank #id da conta que vai receber o desconto
+            id_bank_s_n = id_no_bank #SE NAO TEM account VINCULADO AO CARTAO DE CREDITO
+            id_discount = id_bank #id da account que vai receber o desconto
 
 
         print("-------------------------")
@@ -1035,7 +1035,7 @@ class Update_Remove:
         #UPDATE TABLE BANKS CARDS
         #id_bank
         #id_card
-        # [banco,agencia,conta,saldo,limite,final_cartao,titular,vencimento,fechamento]
+        # [banco,agencia,account,saldo,limite,final_cartao,titular,vencimento,fechamento]
         
         a = (os.path.dirname(os.path.realpath(__file__)))
         banco = sqlite3.connect(''+a+'/bando_de_valores.db')
@@ -1105,7 +1105,7 @@ class Update_Remove:
             #REMOVE config_lancamento
             cursor.execute("DELETE FROM config_lancamento WHERE config_lancamento.id_bank = '"+str(id_bank)+"'")
             
-            #REMOVE config_contas #CONTA PADRAO
+            #REMOVE config_contas #account PADRAO
             verify = cursor.execute("SELECT * FROM config_contas WHERE config_contas.conta_padrao_bank = '"+str(id_bank)+"'").fetchall()
             if verify:
                 cursor.execute("DELETE FROM config_contas WHERE config_contas.conta_padrao_bank = '"+str(id_bank)+"'")
@@ -1145,7 +1145,7 @@ class Update_Remove:
             #REMOVE config_lancamento
             cursor.execute("DELETE FROM config_lancamento WHERE config_lancamento.id_bank = '"+str(id_bank)+"'")
             
-            #REMOVE config_contas #CONTA PADRAO
+            #REMOVE config_contas #account PADRAO
             verify = cursor.execute("SELECT * FROM config_contas WHERE config_contas.conta_padrao_bank = '"+str(id_bank)+"'").fetchall()
             if verify:
                 cursor.execute("DELETE FROM config_contas WHERE config_contas.conta_padrao_bank = '"+str(id_bank)+"'")

@@ -325,7 +325,7 @@ class Effetc_slides(Ui_MainWindow):
         btn = botao
         duration = 50 #duração animação
         geometry = 0
-        if btn == "conta":
+        if btn == "account":
             self.stackedWidget_2.setCurrentWidget(self.page_1)       
             geometry = 60
         if btn == "investimento":

@@ -2761,7 +2761,7 @@ background-color: rgba(255, 255, 255, 30); </string>
                                         </font>
                                        </property>
                                        <property name="whatsThis">
-                                        <string comment="a" extracomment="Conta Principal"/>
+                                        <string comment="a" extracomment="account Principal"/>
                                        </property>
                                        <property name="styleSheet">
                                         <string notr="true"/>
@@ -2908,7 +2908,7 @@ font-size:12pt;
 border:none;</string>
                                        </property>
                                        <property name="text">
-                                        <string>Conta:</string>
+                                        <string>account:</string>
                                        </property>
                                        <property name="alignment">
                                         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -7181,7 +7181,7 @@ border-radius:3px;
 font-size:13pt;</string>
                                                              </property>
                                                              <property name="text">
-                                                              <string>Conta</string>
+                                                              <string>account</string>
                                                              </property>
                                                              <property name="alignment">
                                                               <set>Qt::AlignCenter</set>
@@ -10854,7 +10854,7 @@ border-bottom : 1px solid rgba(255,255,255,30);</string>
 </string>
                                                                </property>
                                                                <property name="text">
-                                                                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:0; color:#ffffff;&quot;&gt;Conta&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                                                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:0; color:#ffffff;&quot;&gt;account&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                                                                </property>
                                                                <property name="textFormat">
                                                                 <enum>Qt::AutoText</enum>
@@ -10950,7 +10950,7 @@ background-color:rgba(255,255,255,100);
 border:none;</string>
                                                             </property>
                                                             <property name="text">
-                                                             <string>Configurar Conta</string>
+                                                             <string>Configurar account</string>
                                                             </property>
                                                             <property name="alignment">
                                                              <set>Qt::AlignCenter</set>
@@ -12196,7 +12196,7 @@ background-color:rgba(255,255,255,0);
 border-radius:3px;</string>
                                                              </property>
                                                              <property name="text">
-                                                              <string>Conta</string>
+                                                              <string>account</string>
                                                              </property>
                                                              <property name="alignment">
                                                               <set>Qt::AlignCenter</set>
@@ -14012,7 +14012,7 @@ QTableView::item:selected{
                                                        </column>
                                                        <column>
                                                         <property name="text">
-                                                         <string>Conta</string>
+                                                         <string>account</string>
                                                         </property>
                                                        </column>
                                                        <column>

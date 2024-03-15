@@ -71,7 +71,7 @@ class mainpage(Ui_MainWindow):
         
             # TABLE new_lancamento
             id_lancamento = randint(0,99999999)
-            id_bank = self.comboBox_11.currentText() # ID DA CONTA BANCO PARA DEBITO
+            id_bank = self.comboBox_11.currentText() # ID DA account BANCO PARA DEBITO
             tipo = self.comboBox_25.currentText() #Entrada ou Saida
 
 
@@ -99,7 +99,7 @@ class mainpage(Ui_MainWindow):
 
             # TABLE config_lancamento
             id_lancamento_config_lancamento =id_lancamento
-            id_bank = self.comboBox_11.currentText() # ID DA CONTA BANCO PARA DEBITO
+            id_bank = self.comboBox_11.currentText() # ID DA account BANCO PARA DEBITO
             if self.comboBox_23.currentText() == 'Sim':
                 recorrente= self.comboBox_23.currentText()
                 recorrente_m_d_s_y = self.comboBox_26.currentText()
@@ -118,7 +118,7 @@ class mainpage(Ui_MainWindow):
 
             #TABLE STATUS_LANCAMENTO:
             id_lancamento_status =id_lancamento
-            id_bank = self.comboBox_11.currentText() # ID DA CONTA BANCO PARA DEBITO
+            id_bank = self.comboBox_11.currentText() # ID DA account BANCO PARA DEBITO
             vencimento = ''
             if self.comboBox_22.currentText() == 'Sim':
                 vencimento = self.lancamento_programado_2.text() # NAO PROGRAMADO JA FOI RECEBIDO
@@ -142,7 +142,7 @@ class mainpage(Ui_MainWindow):
 
             #TABLE_PRIORIDADE VALOR:
             id_lancamentoprioridade = id_lancamento
-            id_bank = self.comboBox_11.currentText() # ID DA CONTA BANCO PARA DEBITO
+            id_bank = self.comboBox_11.currentText() # ID DA account BANCO PARA DEBITO
             prioridade = ''
             brl_usd = Convert_Moedas._brl_to_usd(self,valor)
 
@@ -206,11 +206,11 @@ class mainpage(Ui_MainWindow):
         if validator_empty == True:
             
             
-            # CONTA BANCARIA
+            # account BANCARIA
             nome_bank = self.select_conta_bancaria.currentText()
             titular = self.adctitular_conta.text()
             agencia = self.adcagencia_conta.text()
-            conta = self.adc_conta_conta.text()
+            account = self.adc_conta_conta.text()
             saldo_inicial = self.adc_saldo_conta.text()
             if_credit_card = self.comboBox_24.currentText()
 
@@ -245,7 +245,7 @@ class mainpage(Ui_MainWindow):
 
                 # colunas_contas = ['saldo_inicial','nome_banco','agencia','num_conta','titular','cartao_credito_id']
                 # colunas_cartao = ['nome_cartao','titular','limite','final','vencimento','fechamento']
-                data.append(([saldo_inicial, nome_bank, agencia, conta, titular, if_credit_card], [cartao_nome, titular_card, limite, final_card, vencimento, fechamento]))
+                data.append(([saldo_inicial, nome_bank, agencia, account, titular, if_credit_card], [cartao_nome, titular_card, limite, final_card, vencimento, fechamento]))
                 credit_card = True
                 home_db_query.Add_values._add_new_bank(data[0], credit_card, rand_id)
                 card_db_fun.funcoes_cartao._delete_all_frame_cards(self)
@@ -261,7 +261,7 @@ class mainpage(Ui_MainWindow):
             elif if_credit_card == '':
                 print("Não tem cartão de crédito selecionar algo no campo")
             else:
-                data.append(([nome_bank, titular, agencia, conta, saldo_inicial, if_credit_card],[]))
+                data.append(([nome_bank, titular, agencia, account, saldo_inicial, if_credit_card],[]))
                 credit_card = False
                 print("data",data)
                 home_db_query.Add_values._add_new_bank(data[0], credit_card, rand_id)
@@ -1098,7 +1098,7 @@ class Set_values_startup(Ui_MainWindow):
             print("DADOS",dados_l)
             titular = self.label_68.setText(dados_l[0])
             agencia = self.label_77.setText("Agencia: "+str(dados_l[1]))
-            num_conta = self.label_78.setText("Conta: "+str(dados_l[2]))
+            num_conta = self.label_78.setText("account: "+str(dados_l[2]))
             icon_nam_style = effects.efeitos_geral.style_sheet_card_icon(self,str(dados_l[4]))
             self.frame_97.setStyleSheet("background-image: "+icon_nam_style+"; background-repeat:no-repeat; background-position:center;")
         else:
@@ -1506,7 +1506,7 @@ class Pagamento(Ui_MainWindow):
                         CardFrameBank._update_frame_cards_saldo(self,id_bank)
                         msg = QMessageBox()
                         msg.setWindowTitle("Sucesso")
-                        msg.setText("Fatura paga com sucesso debitado da conta principal!")
+                        msg.setText("Fatura paga com sucesso debitado da account principal!")
                         msg.setIcon(QMessageBox.Information)
                         msg.exec_()
                         Loading_screen_gif._payout_receiver_sucess(self)
@@ -1591,7 +1591,7 @@ class Alerts(Ui_MainWindow):
         label = QLabel(qdialog)
         label.setGeometry(10,10,380,130)
         label.setStyleSheet("color: rgb(255, 255, 255); background-color:rgba(255,255,255,0); border:none;")
-        label.setText("Está fatura é de um banco diferente do principal!\nNao existe conta bancaria vinculado a este Cartao de Credito \npara descontar o valor\ndeseja descontar no debito do banco Principal?")
+        label.setText("Está fatura é de um banco diferente do principal!\nNao existe account bancaria vinculado a este Cartao de Credito \npara descontar o valor\ndeseja descontar no debito do banco Principal?")
         label.setAlignment(Qt.AlignCenter)
         label.setFont(font3)
         qdialog.exec_()
@@ -1599,7 +1599,7 @@ class Alerts(Ui_MainWindow):
 
 
     def _combobox_empty(self,recorrente,pago):
-        #CONTA comboBox_11
+        #account comboBox_11
         #OPERAÇÃO comboBox_25
         #PAGAMENTO comboBox_27
         #CATEGORIA comboBox_21
@@ -1743,7 +1743,7 @@ class Alerts(Ui_MainWindow):
         #PADRAO = self.combo_bank_padrao.currentText()
         #TITULAR  = self.adctitular_conta.text()
         #AGENCIA = self.adcagencia_conta.text()
-        #CONTA = self.adc_conta_conta.text()
+        #account = self.adc_conta_conta.text()
         #SALDO INICIAL = self.adc_saldo_conta.text()
         
         # IF CREDIT CARD
@@ -1779,7 +1779,7 @@ class Alerts(Ui_MainWindow):
                 elif  self.adcfinal_2.text().isdigit() == False:
                     return False
                 
-                #VERIFICA SE AGENCIA E CONTA SAO NUMEROS:
+                #VERIFICA SE AGENCIA E account SAO NUMEROS:
                 elif self.adcagencia_conta.text().isdigit() == False or self.adc_conta_conta.text().isdigit() == False:
                     return False
                 else:
@@ -1795,7 +1795,7 @@ class Alerts(Ui_MainWindow):
                 val = self.adc_saldo_conta.text()
                 if Alerts._validator_int(val) == False:
                     return False
-                #VERIFICA SE AGENCIA E CONTA SAO NUMEROS:
+                #VERIFICA SE AGENCIA E account SAO NUMEROS:
                 elif self.adcagencia_conta.text().isdigit() == False or self.adc_conta_conta.text().isdigit() == False:
                     return False
                 else:
@@ -1838,7 +1838,7 @@ class Alerts(Ui_MainWindow):
         label = QLabel(qdialog)
         label.setGeometry(10,10,440,130)
         label.setStyleSheet("color: rgb(255, 255, 255); background-color:rgba(255,255,255,0); border:none;")
-        label.setText("Deseja realmente remover esta conta bancária ?\n\nATENÇÃO: Esta ação não poderá ser desfeita.\n Todos os lançamentos desta conta serão removidos, e não poderão ser recuperados\n\n Juntamente com os cartões de crédito vinculados a esta conta se houver.")
+        label.setText("Deseja realmente remover esta account bancária ?\n\nATENÇÃO: Esta ação não poderá ser desfeita.\n Todos os lançamentos desta account serão removidos, e não poderão ser recuperados\n\n Juntamente com os cartões de crédito vinculados a esta account se houver.")
         label.setAlignment(Qt.AlignCenter)
         label.setFont(font3)
         qdialog.exec_()
@@ -2524,11 +2524,11 @@ class Table_Banks_Remove_Update(Ui_MainWindow):
     def set_values_frame(self,id_bank,id_card): #SETA OS VALORES NO FRAME DE "ALTERAR DADOS"
         #lineedits para setText
         
-        #CONTA:
+        #account:
         # self.plainTextEdit.se
         #BANCO = self.plainTextEdit
         #agencia self.plainTextEdit_2
-        #conta self.plainTextEdit_3
+        #account self.plainTextEdit_3
         #saldo self.plainTextEdit_4
         
         #CARTAO:
@@ -2567,11 +2567,11 @@ class Table_Banks_Remove_Update(Ui_MainWindow):
         
     
     def _update_table_banks(self,id_bank,id_card):
-        #CONTA:
+        #account:
         # self.plainTextEdit.se
         #BANCO = self.plainTextEdit
         #agencia self.plainTextEdit_2
-        #conta self.plainTextEdit_3
+        #account self.plainTextEdit_3
         #saldo self.plainTextEdit_4
         
         #CARTAO:
@@ -2586,7 +2586,7 @@ class Table_Banks_Remove_Update(Ui_MainWindow):
             #VALIDA OS DADOS SE TIVER VAZIO DPS
             banco = self.plainTextEdit.toPlainText()
             agencia = self.plainTextEdit_2.toPlainText()
-            conta = self.plainTextEdit_3.toPlainText()
+            account = self.plainTextEdit_3.toPlainText()
             saldo = self.plainTextEdit_4.toPlainText()
             limite = self.plainTextEdit_5.toPlainText()
             final_cartao = self.plainTextEdit_9.toPlainText()
@@ -2594,7 +2594,7 @@ class Table_Banks_Remove_Update(Ui_MainWindow):
             vencimento = self.plainTextEdit_8.toPlainText()
             fechamento = self.plainTextEdit_7.toPlainText()
             
-            dados = [banco,agencia,conta,saldo,limite,final_cartao,titular,vencimento,fechamento]
+            dados = [banco,agencia,account,saldo,limite,final_cartao,titular,vencimento,fechamento]
 
             #update
             home_db_query.Update_Remove._update_table_banks_cards(id_bank,id_card,dados)
@@ -2603,10 +2603,10 @@ class Table_Banks_Remove_Update(Ui_MainWindow):
             #VALIDA OS DADOS SE TIVER VAZIO DPS
             banco = self.plainTextEdit.toPlainText()
             agencia = self.plainTextEdit_2.toPlainText()
-            conta = self.plainTextEdit_3.toPlainText()
+            account = self.plainTextEdit_3.toPlainText()
             saldo = self.plainTextEdit_4.toPlainText()
             
-            dados = [banco,agencia,conta,saldo]
+            dados = [banco,agencia,account,saldo]
 
             #update
             home_db_query.Update_Remove._update_table_banks_cards(id_bank,id_card,dados)
