@@ -328,16 +328,16 @@ class Effetc_slides(Ui_MainWindow):
         if btn == "account":
             self.stackedWidget_2.setCurrentWidget(self.page_1)       
             geometry = 60
-        if btn == "investimento":
+        if btn == "investment":
             self.stackedWidget_2.setCurrentWidget(self.page_4)
             geometry = 180
-        if btn == "cartao":
+        if btn == "card":
             self.stackedWidget_2.setCurrentWidget(self.page_3)
             geometry = 120
-        if btn == "transferencia":
+        if btn == "transfer":
             self.stackedWidget_2.setCurrentWidget(self.page_5)
             geometry = 240
-        if btn == "estoque":
+        if btn == "stock":
             self.stackedWidget_2.setCurrentWidget(self.page_6)
             geometry = 300
         if btn == "config" :

@@ -42,7 +42,7 @@ class Add_values:
             coluns = [colunas_contas,colunas_cartao]
             #QUERY EXAMPLE (['C6', '1580', 'Jhonatan titualr card', '1010 final', 'venci 10', 'fefhca 10'], ['C6', 'Jhonatan', 'ag0111', 'cont 1010', 'r$1,580,00', 'Sim'])
             
-            # data[0] TEM EM LISTA : [0] = ARGUMENTOS account [1] = ARGUMENTOS CARTAO DE CREDITO
+            # data[0] TEM EM LISTA : [0] = ARGUMENTOS account [1] = ARGUMENTOS card DE CREDITO
             for i in range(len(coluns)):
                 for j in range(len(coluns[i])):
                     cursor.execute("UPDATE "+tabelas_db[i]+" SET "+coluns[i][j]+" = '"+str(data[i][j])+"' WHERE id = '"+str(id)+"'")
@@ -356,7 +356,7 @@ class Return_values:
 class Return_Values_Conditions:
     
     
-    def return_talbe_banks(id_bank,id_card):#RETONA DADOS DO BANCO E DO CARTAO DE CREDITO PARA TABLE
+    def return_talbe_banks(id_bank,id_card):#RETONA DADOS DO BANCO E DO card DE CREDITO PARA TABLE
         #CONNECT DB
         a = (os.path.dirname(os.path.realpath(__file__)))
         banco = sqlite3.connect(''+a+'/bando_de_valores.db')
@@ -839,7 +839,7 @@ class Saldos:
             id_bank_s_n = id_bank
             id_discount = id_bank
         else:
-            id_bank_s_n = id_no_bank #SE NAO TEM account VINCULADO AO CARTAO DE CREDITO
+            id_bank_s_n = id_no_bank #SE NAO TEM account VINCULADO AO card DE CREDITO
             id_discount = id_bank #id da account que vai receber o desconto
 
 

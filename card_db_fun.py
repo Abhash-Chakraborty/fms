@@ -177,7 +177,7 @@ class funcoes_cartao(Ui_MainWindow):
             self.label_41.setText("Olá, Boa noite"+emoji.emojize(" :noite_estrelada:", language="pt"))
             self.frame_45.setStyleSheet(u"background-image: url(:/time/night.png);background-repeat:no-repeat;background-position:center;")
 
-            #page cartao
+            #page card
             self.label_36.setText("Olá, Boa noite"+emoji.emojize(" :noite_estrelada:", language="pt"))
             self.frame_34.setStyleSheet(u"background-image: url(:/time/night.png);background-repeat:no-repeat;background-position:center;")
 
@@ -245,7 +245,7 @@ class funcoes_cartao(Ui_MainWindow):
                 
                 for val in range (2):
                     
-                    #SETA FATURA CARTAO E LIMITE DISPONIVEL
+                    #SETA FATURA card E LIMITE DISPONIVEL
                     card_info = ['valor_faturaatual_cartao_','valor_limitedisponivel_cartao_']
                     fatura_atual = card_db_test.Return_Values_Calcs._fatural_atual(listdb,mes)
                     if float(fatura_atual) == 0:
@@ -269,7 +269,7 @@ class funcoes_cartao(Ui_MainWindow):
                     
                 try:
                     
-                    #SETA FINAL DO CARTAO
+                    #SETA FINAL DO card
                     
                     final_cartao = card_db_test.Ui_db._final_cartao(listdb)
                     card_info = 'txt_final_cartao_'
@@ -282,7 +282,7 @@ class funcoes_cartao(Ui_MainWindow):
 
                 try:
                     
-                    #SETA TITULAR DO CARTAO
+                    #SETA TITULAR DO card
         
                     titular_cartao = card_db_test.Ui_db._titular(listdb)
                     card_info = 'txt_titular_cartao_'
@@ -368,7 +368,7 @@ class funcoes_cartao(Ui_MainWindow):
         except:
             pass
 
-    def _addRow(self): #TODO ADICIONA NOVA LINHA NO EXTRATO CARTAO #NTS
+    def _addRow(self): #TODO ADICIONA NOVA LINHA NO EXTRATO card #NTS
         def thead(self):
             global EXTRATO_ATUAL
             card = EXTRATO_ATUAL
@@ -867,7 +867,7 @@ class funcoes_cartao(Ui_MainWindow):
     def adicionar_cartao(self): #T
         def thead(self):
             #TODO INICIO 0.4
-            #todo vai chamar a funcao cartao ativos
+            #todo vai chamar a funcao card ativos
             label_0 = self.lineEdit.text() # nome str
             label_2 = self.lineEdit_2.text() # data str
             label_3_ui = self.lineEdit_3.text() #valor int
@@ -881,25 +881,25 @@ class funcoes_cartao(Ui_MainWindow):
             fehcamento = self.adcfechamento.text()
             
             if (titular== '') and (limite== '')  and (final== '') and (vencimento== ''):
-                pyautogui.confirm(text='Não foi preenchido os campos: Titular, Limite, Final do cartao e Vencimento ', title='Lançamento incorreto!', buttons=['OK', 'Cancel'])
+                pyautogui.confirm(text='Não foi preenchido os campos: Titular, Limite, Final do card e Vencimento ', title='Lançamento incorreto!', buttons=['OK', 'Cancel'])
            
             elif (titular== '') or (limite== '')  or (final== '') or (vencimento== '') :
-                pyautogui.confirm(text='Esta faltando campos: \nTitular, Limite, Final do cartao ou Vencimento esta em branco! ', title='Lançamento incorreto!', buttons=['OK', 'Cancel'])
+                pyautogui.confirm(text='Esta faltando campos: \nTitular, Limite, Final do card ou Vencimento esta em branco! ', title='Lançamento incorreto!', buttons=['OK', 'Cancel'])
                 
             elif bool(re.search(r'\d', str(limite))) == False:
                 pyautogui.confirm(text='Valor de limite invalido', title='Invalido!', buttons=['OK', 'Cancel'])
 
             elif bool(re.search(r'\d', str(final))) == False:
-                pyautogui.confirm(text='Final de cartao invalido', title='Invalido!', buttons=['OK', 'Cancel'])
+                pyautogui.confirm(text='Final de card invalido', title='Invalido!', buttons=['OK', 'Cancel'])
                 
             elif bool(re.search(r'\d', str(vencimento))) == False:
-                pyautogui.confirm(text='Vencimento de cartao invalido', title='Invalido!', buttons=['OK', 'Cancel'])
+                pyautogui.confirm(text='Vencimento de card invalido', title='Invalido!', buttons=['OK', 'Cancel'])
                 
             elif int(vencimento) > 31 :
-                pyautogui.confirm(text='Vencimento de cartao invalido data acima de 31', title='Invalido!', buttons=['OK', 'Cancel'])
+                pyautogui.confirm(text='Vencimento de card invalido data acima de 31', title='Invalido!', buttons=['OK', 'Cancel'])
     
             elif int(vencimento) < 0 :
-                pyautogui.confirm(text='Vencimento de cartao invalido data invalida', title='Invalido!', buttons=['OK', 'Cancel'])
+                pyautogui.confirm(text='Vencimento de card invalido data invalida', title='Invalido!', buttons=['OK', 'Cancel'])
             
             else:
             
@@ -994,7 +994,7 @@ class funcoes_cartao(Ui_MainWindow):
 
                 try:
 
-                    #SETA TITULAR DO CARTAO
+                    #SETA TITULAR DO card
 
                     cursor.execute("SELECT titular FROM card_active WHERE id = "+str(rand_id)+"")
                     final_card = cursor.fetchall()
@@ -1172,7 +1172,7 @@ class funcoes_cartao(Ui_MainWindow):
             self.frame_cartao_0 = QWidget()
             self.frame_cartao_0.setObjectName(u"frame_cartao_"+str(NUMERO_DE_CARTOES))
 
-            #TODO LOGO DO CARTAO DE ACORDO COM O CARTAO SELECIONADO:
+            #TODO LOGO DO card DE ACORDO COM O card SELECIONADO:
 
             self.logo_cartao_0 = QFrame(self.frame_cartao_0)
             self.logo_cartao_0.setObjectName(u"logo_cartao_"+str(NUMERO_DE_CARTOES))
@@ -1288,7 +1288,7 @@ class funcoes_cartao(Ui_MainWindow):
             self.valor_faturaatual_cartao_0.setWordWrap(False)
             self.stackedWidget_cartao_0.addWidget(self.frame_cartao_0)
 
-            #TODO PAGE 2 DO CARTAO FRAME CONFIG :
+            #TODO PAGE 2 DO card FRAME CONFIG :
 
 
             self.frame_verso_0 = QWidget()
@@ -1323,7 +1323,7 @@ class funcoes_cartao(Ui_MainWindow):
             self.logo_config_cartao_0.setFrameShape(QFrame.StyledPanel)
             self.logo_config_cartao_0.setFrameShadow(QFrame.Raised)
 
-            #TODO LABEL LIMITE CARTAO:
+            #TODO LABEL LIMITE card:
 
             self.limite_cartao_0 = QLabel(self.frame_config_cartao_0)
             self.limite_cartao_0.setObjectName(u"limite_cartao_"+str(NUMERO_DE_CARTOES))
@@ -1334,7 +1334,7 @@ class funcoes_cartao(Ui_MainWindow):
             self.limite_cartao_0.setAlignment(Qt.AlignCenter)
             self.limite_cartao_0.setWordWrap(False)
 
-            #TODO BOTAO SALVA CONFIG CARTAO VERSO LIMITE E ETC:
+            #TODO BOTAO SALVA CONFIG card VERSO LIMITE E ETC:
             self.salva_configcartao_0 = QPushButton(self.frame_config_cartao_0,clicked = lambda:funcoes_cartao.exec_function(self))
             self.salva_configcartao_0.setObjectName(u"salva_configcartao_"+str(NUMERO_DE_CARTOES))
             self.salva_configcartao_0.setGeometry(QRect(280, 150, 110, 30))
@@ -1367,7 +1367,7 @@ class funcoes_cartao(Ui_MainWindow):
             "	border: 2px solid  rgb(55, 55, 55);\n"
             "}")
 
-            # TODO LABEL DE COLOCAR LIMITE DO CARTAO:
+            # TODO LABEL DE COLOCAR LIMITE DO card:
             self.setlimitcartao_0 = QLineEdit(self.frame_config_cartao_0)
             self.setlimitcartao_0.setObjectName(u"setlimitcartao_"+str(NUMERO_DE_CARTOES))
             self.setlimitcartao_0.setGeometry(QRect(10, 80, 171, 31))
@@ -1404,7 +1404,7 @@ class funcoes_cartao(Ui_MainWindow):
             "	border: 1px solid  rgb(55, 55, 55);")
             self.settitularcartao_0.setAlignment(Qt.AlignCenter)
 
-            #TODO LABEL SET FINAL DO CARTAO:
+            #TODO LABEL SET FINAL DO card:
 
             self.final_cartao_0 = QLabel(self.frame_config_cartao_0)
             self.final_cartao_0.setObjectName(u"final_cartao_"+str(NUMERO_DE_CARTOES))
@@ -1416,7 +1416,7 @@ class funcoes_cartao(Ui_MainWindow):
             self.final_cartao_0.setAlignment(Qt.AlignCenter)
             self.final_cartao_0.setWordWrap(False)
 
-            # TODO SET LABEL FINAL DO CARTAO OS NUMEROS:
+            # TODO SET LABEL FINAL DO card OS NUMEROS:
 
             self.setfinalcartao_0 = QLineEdit(self.frame_config_cartao_0)
             self.setfinalcartao_0.setObjectName(u"setfinalcartao_"+str(NUMERO_DE_CARTOES))
@@ -1448,7 +1448,7 @@ class funcoes_cartao(Ui_MainWindow):
             self.config_cartao_0.setText(QCoreApplication.translate("MainWindow", u"...", None))
             self.txt_titular_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"right\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">Madalena Souza</span></p></body></html>", None))
             self.txt_final_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"justify\"><span style=\" font-size:10pt; font-weight:600; color:#ffffff;\">XXXX-XXXX-XXXX-0474</span></p></body></html>", None))
-            self.limite_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">Limite Total do Cartao</span></p></body></html>", None))
+            self.limite_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">Limite Total do card</span></p></body></html>", None))
             self.salva_configcartao_0.setText(QCoreApplication.translate("MainWindow", u"SALVAR", None))
             self.setlimitcartao_0.setPlaceholderText(QCoreApplication.translate("MainWindow", u"R$", None))
             self.titular_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"justify\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">Titular</span></p></body></html>", None))
@@ -1494,7 +1494,7 @@ class funcoes_cartao(Ui_MainWindow):
                 
                 global EXTRATO_ATUAL
                 EXTRATO_ATUAL = index
-                # IDENTIFICAÇÃO PARA PLANILHAS ID DO CARTAO ESCOLHIDO
+                # IDENTIFICAÇÃO PARA PLANILHAS ID DO card ESCOLHIDO
                 self.id_card_xlsx_cliked.setText(str(index))
                 execut = lambda:effects.efeitos_geral.expandecomprascartao(self)
                 effects.efeitos_geral.expandecomprascartao(self)
@@ -1640,7 +1640,7 @@ class funcoes_cartao(Ui_MainWindow):
                 for i in range (cont): 
                     if self.extrato_cartao_0.rowCount() >= 0:
                         self.extrato_cartao_0.removeRow(self.extrato_cartao_0.rowCount()-1)
-            #validator ONMDE VAI EXCOLHER QUAL EXTRATO FOI CHAMADO DE QUAL CARTAO
+            #validator ONMDE VAI EXCOLHER QUAL EXTRATO FOI CHAMADO DE QUAL card
 
             
             global EXTRATO_ATUAL
@@ -1764,7 +1764,7 @@ class funcoes_cartao(Ui_MainWindow):
                 for i in range (cont): 
                     if self.extrato_cartao_0.rowCount() >= 0:
                         self.extrato_cartao_0.removeRow(self.extrato_cartao_0.rowCount()-1)
-            #validator ONMDE VAI EXCOLHER QUAL EXTRATO FOI CHAMADO DE QUAL CARTAO
+            #validator ONMDE VAI EXCOLHER QUAL EXTRATO FOI CHAMADO DE QUAL card
 
             #filtro:
             global EXTRATO_ATUAL
@@ -1818,7 +1818,7 @@ class funcoes_cartao(Ui_MainWindow):
         
     def _limite_disponive_usado(self,id): #TODO PAGINA DE EXTRATO, MOSTRA DETALHES DO CARD
         
-        #LIMITE CARTAO:
+        #LIMITE card:
         limite = card_db_test.Ui_db._limite(id)
         self.label_28.setText('R$'+limite)
         #VENCIMENTO:
@@ -1833,11 +1833,11 @@ class funcoes_cartao(Ui_MainWindow):
         limite_disponivel= card_db_test.Return_Values_Calcs._limite_disponivel(id)
         self.labelTitle_10.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:14pt; color:#ffffff;\">Limite Disponivel</span></p><p><span style=\" font-size:14pt;  color:#ffffff;\">R$"+str(limite_disponivel)+"</span></p></body></html>", None))
         self.label_30.setText('R$'+limite_disponivel)
-        #NOME DO CARTAO:
+        #NOME DO card:
         nome = card_db_test.Ui_db._cartao(id)
         self.name_bank_2.setText(nome)
         logo = nome
-        #LOGO DO CARTAO:
+        #LOGO DO card:
         icon = effects.efeitos_geral.style_sheet_card_icon(self,logo)
         self.icon_2.setStyleSheet(u"border-bottom: 0px;border-radius: 5px;border-image: "+icon+";")
         

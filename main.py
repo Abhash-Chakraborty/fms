@@ -323,16 +323,16 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
                 btn = "account"
                 return effects.Effetc_slides.grid_lateral_menu(self,btn)
             if obj == self.pushButton_9 and event.type() == QtCore.QEvent.MouseButtonPress:
-                btn = "investimento"
+                btn = "investment"
                 return effects.Effetc_slides.grid_lateral_menu(self,btn)
             if obj == self.pushButton_10 and event.type() == QtCore.QEvent.MouseButtonPress:
-                btn = "cartao"
+                btn = "card"
                 return effects.Effetc_slides.grid_lateral_menu(self,btn)
             if obj == self.pushButton_11 and event.type() == QtCore.QEvent.MouseButtonPress:
-                btn = "transferencia"
+                btn = "transfer"
                 return effects.Effetc_slides.grid_lateral_menu(self,btn)
             if obj == self.pushButton_15 and event.type() == QtCore.QEvent.MouseButtonPress:
-                btn = "estoque"
+                btn = "stock"
                 return effects.Effetc_slides.grid_lateral_menu(self,btn)
             
             if obj == self.pushButton_16 and event.type() == QtCore.QEvent.MouseButtonPress:
@@ -621,7 +621,7 @@ class MainWindow(Ui_MainWindow,QtWidgets.QMainWindow):
                 return home_db_fun.Remove_lancamentos._Delet_lancamento(self,id)
             
             if obj == self.btn_if_card_2 and event.type() == QtCore.QEvent.MouseButtonPress:
-                btn = "cartao"
+                btn = "card"
                 return effects.Effetc_slides.grid_lateral_menu(self,btn)
             
             if obj == self.remover_card_3 and event.type() == QtCore.QEvent.MouseButtonPress:

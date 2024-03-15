@@ -75,7 +75,7 @@ class CardFrameBank(Ui_MainWindow):
             self.frame_cartao_0 = QWidget()
             self.frame_cartao_0.setObjectName(u"frame_cartao_"+str(NUMERO_DE_CARTOES))
 
-            #TODO LOGO DO CARTAO DE ACORDO COM O CARTAO SELECIONADO:
+            #TODO LOGO DO card DE ACORDO COM O card SELECIONADO:
 
             self.logo_cartao_0 = QFrame(self.frame_cartao_0)
             self.logo_cartao_0.setObjectName(u"logo_cartao_"+str(NUMERO_DE_CARTOES))
@@ -191,7 +191,7 @@ class CardFrameBank(Ui_MainWindow):
             self.valor_faturaatual_cartao_0.setWordWrap(False)
             self.stackedWidget_cartao_0.addWidget(self.frame_cartao_0)
 
-            #TODO PAGE 2 DO CARTAO FRAME CONFIG :
+            #TODO PAGE 2 DO card FRAME CONFIG :
 
 
             self.frame_verso_0 = QWidget()
@@ -226,7 +226,7 @@ class CardFrameBank(Ui_MainWindow):
             self.logo_config_cartao_0.setFrameShape(QFrame.StyledPanel)
             self.logo_config_cartao_0.setFrameShadow(QFrame.Raised)
 
-            #TODO LABEL LIMITE CARTAO:
+            #TODO LABEL LIMITE card:
 
             self.limite_cartao_0 = QLabel(self.frame_config_cartao_0)
             self.limite_cartao_0.setObjectName(u"limite_cartao_"+str(NUMERO_DE_CARTOES))
@@ -237,7 +237,7 @@ class CardFrameBank(Ui_MainWindow):
             self.limite_cartao_0.setAlignment(Qt.AlignCenter)
             self.limite_cartao_0.setWordWrap(False)
 
-            #TODO BOTAO SALVA CONFIG CARTAO VERSO LIMITE E ETC:
+            #TODO BOTAO SALVA CONFIG card VERSO LIMITE E ETC:
             self.salva_configcartao_0 = QPushButton(self.frame_config_cartao_0,clicked = lambda:CardFrameBank.object_name(self))
             self.salva_configcartao_0.setObjectName(u"salva_configcartao_"+str(NUMERO_DE_CARTOES))
             self.salva_configcartao_0.setGeometry(QRect(280, 150, 110, 30))
@@ -270,7 +270,7 @@ class CardFrameBank(Ui_MainWindow):
             "	border: 2px solid  rgb(55, 55, 55);\n"
             "}")
 
-            # TODO LABEL DE COLOCAR LIMITE DO CARTAO:
+            # TODO LABEL DE COLOCAR LIMITE DO card:
             self.setlimitcartao_0 = QLineEdit(self.frame_config_cartao_0)
             self.setlimitcartao_0.setObjectName(u"setlimitcartao_"+str(NUMERO_DE_CARTOES))
             self.setlimitcartao_0.setGeometry(QRect(10, 80, 171, 31))
@@ -307,7 +307,7 @@ class CardFrameBank(Ui_MainWindow):
             "	border: 1px solid  rgb(55, 55, 55);")
             self.settitularcartao_0.setAlignment(Qt.AlignCenter)
 
-            #TODO LABEL SET FINAL DO CARTAO:
+            #TODO LABEL SET FINAL DO card:
 
             self.final_cartao_0 = QLabel(self.frame_config_cartao_0)
             self.final_cartao_0.setObjectName(u"final_cartao_"+str(NUMERO_DE_CARTOES))
@@ -319,7 +319,7 @@ class CardFrameBank(Ui_MainWindow):
             self.final_cartao_0.setAlignment(Qt.AlignCenter)
             self.final_cartao_0.setWordWrap(False)
 
-            # TODO SET LABEL FINAL DO CARTAO OS NUMEROS:
+            # TODO SET LABEL FINAL DO card OS NUMEROS:
 
             self.setfinalcartao_0 = QLineEdit(self.frame_config_cartao_0)
             self.setfinalcartao_0.setObjectName(u"setfinalcartao_"+str(NUMERO_DE_CARTOES))
@@ -358,7 +358,7 @@ class CardFrameBank(Ui_MainWindow):
             self.config_cartao_0.setText(QCoreApplication.translate("MainWindow", u"...", None))
             self.txt_titular_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"right\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">"+str(dados[5])+"</span></p></body></html>", None))
             self.txt_final_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"justify\"><span style=\" font-size:10pt; font-weight:600; color:#ffffff;\">Agencia: "+str(dados[3])+" account: "+str(dados[4])+"</span></p></body></html>", None))
-            self.limite_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">Limite Total do Cartao</span></p></body></html>", None))
+            self.limite_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">Limite Total do card</span></p></body></html>", None))
             self.salva_configcartao_0.setText(QCoreApplication.translate("MainWindow", u"SALVAR", None))
             self.setlimitcartao_0.setPlaceholderText(QCoreApplication.translate("MainWindow", u"R$", None))
             self.titular_cartao_0.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"justify\"><span style=\" font-size:11pt; font-weight:600; color:#ffffff;\">Titular</span></p></body></html>", None))

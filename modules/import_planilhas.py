@@ -47,7 +47,7 @@ class Planilhas(Ui_MainWindow):
         # apaga a tabela
         self.table_view.setRowCount(0)
         
-        print('cartao para importar: ', self.id_card_xlsx_cliked.text())
+        print('card para importar: ', self.id_card_xlsx_cliked.text())
         try:
             file = QFileDialog.getOpenFileName(
                 self, 'Open file', 'c:\\', "Pdf files (*.xlsx)")

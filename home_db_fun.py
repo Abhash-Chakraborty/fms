@@ -215,7 +215,7 @@ class mainpage(Ui_MainWindow):
             if_credit_card = self.comboBox_24.currentText()
 
 
-            #CARTAO DE CREDITO
+            #card DE CREDITO
             cartao_nome = self.select_conta_bancaria.currentText()
             limite = self.adclimite_2.text()
             titular_card = self.adctitular_2.text()
@@ -1252,11 +1252,11 @@ class Descricao_lancamento(Ui_MainWindow):
         
     def _verifi_is_credit_card(self,id):
         if home_db_query.Return_Values_Conditions._verify_id_is_credit_card(id) == True:
-            print("cartao")
+            print("card")
             
             return True
         else:
-            print("nao cartao")
+            print("nao card")
             return False
 class Pagamento(Ui_MainWindow):
 
@@ -1591,7 +1591,7 @@ class Alerts(Ui_MainWindow):
         label = QLabel(qdialog)
         label.setGeometry(10,10,380,130)
         label.setStyleSheet("color: rgb(255, 255, 255); background-color:rgba(255,255,255,0); border:none;")
-        label.setText("Está fatura é de um banco diferente do principal!\nNao existe account bancaria vinculado a este Cartao de Credito \npara descontar o valor\ndeseja descontar no debito do banco Principal?")
+        label.setText("Está fatura é de um banco diferente do principal!\nNao existe account bancaria vinculado a este card de Credito \npara descontar o valor\ndeseja descontar no debito do banco Principal?")
         label.setAlignment(Qt.AlignCenter)
         label.setFont(font3)
         qdialog.exec_()
@@ -1752,14 +1752,14 @@ class Alerts(Ui_MainWindow):
         
         #CONFIG CARD
         
-        # LIMITE TOTAL DO CARTAO  = self.adclimite_2.text()
-        #titular do cartao = self.adctitular_2.text()
-        #final do cartao = self.adcfinal_2.text()
-        #vebcuneto do cartao = self.adcvencimento_2.text()
-        #fechamneto do cartao = self.adcfechamento_2.text()
+        # LIMITE TOTAL DO card  = self.adclimite_2.text()
+        #titular do card = self.adctitular_2.text()
+        #final do card = self.adcfinal_2.text()
+        #vebcuneto do card = self.adcvencimento_2.text()
+        #fechamneto do card = self.adcfechamento_2.text()
         
-        #   VERIFICA SE VAI TER CARTAO DE CREDITO :
-        if self.comboBox_24.currentText() == "Sim": #COM CARTAO DE CREDITO
+        #   VERIFICA SE VAI TER card DE CREDITO :
+        if self.comboBox_24.currentText() == "Sim": #COM card DE CREDITO
             if self.select_conta_bancaria.currentText() == "" or self.combo_bank_padrao.currentText() == ""\
                 or self.adctitular_conta.text() == "" or self.adcagencia_conta.text() == "" or self.adc_conta_conta.text() == "" \
                     or self.adc_saldo_conta.text() == "" or self.adclimite_2.text() == "" or self.adctitular_2.text() == "" or \
@@ -1775,7 +1775,7 @@ class Alerts(Ui_MainWindow):
                 elif len(self.adcvencimento_2.text()) != 2 or len(self.adcfechamento_2.text()) != 2 or self.adcvencimento_2.text().isdigit() == False or self.adcfechamento_2.text().isdigit() == False or int(self.adcvencimento_2.text()) > 31 or int(self.adcfechamento_2.text()) > 31 or int(self.adcvencimento_2.text()) < 1 or int(self.adcfechamento_2.text()) < 1: 
                     return False
                 
-                #VERIFICA FINAL DO CARTAO:
+                #VERIFICA FINAL DO card:
                 elif  self.adcfinal_2.text().isdigit() == False:
                     return False
                 
@@ -1785,7 +1785,7 @@ class Alerts(Ui_MainWindow):
                 else:
                     return True
                 
-        else: #SEM CARTAO DE CREDITO
+        else: #SEM card DE CREDITO
             if self.select_conta_bancaria.currentText() == "" or self.combo_bank_padrao.currentText() == ""\
                 or self.adctitular_conta.text() == "" or self.adcagencia_conta.text() == "" or self.adc_conta_conta.text() == "" \
                     or self.adc_saldo_conta.text() == "":
@@ -2531,10 +2531,10 @@ class Table_Banks_Remove_Update(Ui_MainWindow):
         #account self.plainTextEdit_3
         #saldo self.plainTextEdit_4
         
-        #CARTAO:
+        #card:
         
         #LIMITE self.plainTextEdit_5
-        #FINAL DO CARTAO self.plainTextEdit_9
+        #FINAL DO card self.plainTextEdit_9
         #TITULAR self.plainTextEdit_6
         #VENCIMENTO self.plainTextEdit_8
         #FECHAMENTO self.plainTextEdit_7
@@ -2574,10 +2574,10 @@ class Table_Banks_Remove_Update(Ui_MainWindow):
         #account self.plainTextEdit_3
         #saldo self.plainTextEdit_4
         
-        #CARTAO:
+        #card:
         
         #LIMITE self.plainTextEdit_5
-        #FINAL DO CARTAO self.plainTextEdit_9
+        #FINAL DO card self.plainTextEdit_9
         #TITULAR self.plainTextEdit_6
         #VENCIMENTO self.plainTextEdit_8
         #FECHAMENTO self.plainTextEdit_7

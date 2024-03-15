@@ -6,7 +6,7 @@ class Category:
         return ['Energia','Gás','Água','Luz','Telefone','Internet','Boletos','Servicos','Aluguel','Impostos','Educação','Veiculos','IPVA','IPTU','Esgoto','Outros']
     
     def _entradas():
-        return ['Salario','Rendimentos','Beneficios','Criptomoedas','Investimentos','Cheques','Transferencia','Depositos','Pagamentos','Bolsa','Vendas','Outros']
+        return ['Salario','Rendimentos','Beneficios','Criptomoedas','Investimentos','Cheques','transfer','Depositos','Pagamentos','Bolsa','Vendas','Outros']
     
     def patch_icons(icon):
         
@@ -52,7 +52,7 @@ class Category:
             return ':/category_main/category_main/investimentos.png'
         elif icon == 'Cheques':
             return ':/category_main/category_main/cheques.png'
-        elif icon == 'Transferencia':
+        elif icon == 'transfer':
             return ':/category_main/category_main/transferencias.png'
         elif icon == 'Depositos':
             return ':/category_main/category_main/depositos.png'
